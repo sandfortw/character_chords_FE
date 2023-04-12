@@ -6,14 +6,9 @@ class QuizFacade
 
   def quizzes 
     json = QuizService.new.quizzes
-    json[:data].map do |simple_quiz_data|
-      SimpleQuiz.new(simple_quiz_data)
+    json.map do |quiz_data|
+      Quiz.new(quiz_data)
     end
   end
 
-
-  def quiz
-    json = QuizService.new.quiz(@params)
-    Quiz.new(json[:data])
-  end
 end
