@@ -35,3 +35,6 @@ module CcFe
     config.generators.system_tests = nil
   end
 end
+
+
+RSpotify::authenticate(ENV["spotify_client_id"], ENV["spotify_client_secret"])
