@@ -1,8 +1,8 @@
 class QuizFacade
 
-  def initialize(params)
-    @params = params
-  end
+  # def initialize(params)
+  #   @params = params
+  # end
 
   def quizzes 
     json = QuizService.new.quizzes
