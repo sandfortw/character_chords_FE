@@ -8,6 +8,7 @@ RSpec.describe QuizService do
     it 'returns all quizzes' do
       json = service.quizzes
       expect(json).to be_a(Hash)
+      #TODO: WRITE MORE EXPECTATIONS
     end
   end
 

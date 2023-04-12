@@ -5,8 +5,8 @@ class QuestionFacade
   end
 
   def questions
-    json = QuestionService.new.questions(@params)
-    json.map do |question_data|
+    json = QuestionService.new.questions(@params[:id])
+    json[:data].map do |question_data|
       Question.new(question_data)
     end
   end

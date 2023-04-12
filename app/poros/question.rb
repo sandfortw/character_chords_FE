@@ -1,8 +1,10 @@
 class Question 
+  attr_reader :id, :name, :spectrum
 
   def initialize(data)
     @id = data[:id]
     @name = data[:attributes][:name]
+    @spectrum = data[:attributes][:spectrum]
     @answers = data[:attributes][:answers]
   end
 
