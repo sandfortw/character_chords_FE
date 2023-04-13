@@ -26,7 +26,7 @@ RSpec.describe 'Home Page', type: :feature do
   end
 
   describe "Link to logout" do
-    it "when clicked, the user is logged out with a message notification them " do
+    it "when clicked, the user is logged out with a message notification" do
       login_with_oauth
       expect(page).to have_link("Logout")
       click_link "Logout"
@@ -42,6 +42,14 @@ RSpec.describe 'Home Page', type: :feature do
       expect(page).to have_link("Home")
       click_link("Home")
       expect(current_path).to eq(root_path)
+    end
+  end
+
+  describe "Link to take a quiz" do
+    it "when clicked, the user is redirected to the quiz show page" do
+      expect(page).to have_link("what kind of lawyer are you?")
+      click_link("what kind of lawyer are you?")
+      expect(current_path).to eq(quiz_path)
     end
   end
 end
