@@ -10,4 +10,7 @@ class ApplicationController < ActionController::Base
     current_user ? true : false
   end
 
+  def current_character
+    @_current_character ||= session[:character] if session[:character] 
+  end
 end
