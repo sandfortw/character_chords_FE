@@ -19,7 +19,7 @@ RSpec.describe Question do
                           }
                         }
                       }}
-  let(:question) { Question.new(question_data)}
+  let(:question) { Question.new(question_data, 1)}
 
   describe 'attr_readers' do
     it 'should have basic attributes' do
@@ -27,6 +27,7 @@ RSpec.describe Question do
       expect(question.name).to eq("A high-profile client offers you a significant sum of money to represent them in a case where they are clearly guilty. What do you do?")
       expect(question.spectrum).to eq("good_evil")
       expect(question.quiz).to eq("lawyer")
+      expect(question.quiz_id).to eq(1)
     end
   end
 

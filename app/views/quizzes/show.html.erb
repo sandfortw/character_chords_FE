@@ -1,0 +1,17 @@
+<h1><%= @questions.first.quiz.upcase %> QUIZ</h1>
+
+<%= form_with url: characters_path, method: :post do |form|%>
+  <% count = 1 %>
+  <%@questions.each do |question| %>
+    <h2><%= "#{count.to_s}. #{question.name}" %> </h2>
+    <% answer_count = 0 %>
+    <% question.answers.each do |answer| %>
+     <p> <%= form.label answer.letter, "#{answer.letter}) #{answer.text}" %> </p>
+     <p> <%= form.radio_button "#{question.id.to_s}#{question.spectrum}", answer_count.to_s, name: "answers['#{question.id.to_s}#{question.spectrum}']"%></p>
+      <% answer_count += 1 %>
+    <% end %>
+    <% count += 1  %>
+  <% end %>
+  <%= form.hidden_field :quiz_id, value: params[:id] %>
+ <p> <%= form.submit "Get your results" %> </p>
+<% end %>
