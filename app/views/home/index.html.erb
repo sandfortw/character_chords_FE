@@ -1,4 +1,16 @@
-<%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-4 py-2 rounded-md shadow-md' %>
+<%if !current_user%>
+  <%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-4 py-2 rounded-md shadow-md' %>
+<%end%>
 
-<h2 class="text-4xl font-bold mb-4">Hello World</h2>
-<p class="text-lg">The time is now: <%= Time.now %></p>
+<div class="container">
+  <h2 class="text-4xl font-bold mb-8 text-center">Character Chords</h2>
+  <p class="text-lg mb-8 text-center">Choose a Quiz!</p>
+  <p>
+    <% @quizzes.each do |quiz|%>
+      <div class="quiz-container">
+        <%= image_tag quiz.image_link, class: 'quiz-image' %>
+        <%= link_to "what kind of #{quiz.title} are you?", quiz_path(quiz.id)%>
+      </div>
+    <%end%>
+  </p>
+</div>

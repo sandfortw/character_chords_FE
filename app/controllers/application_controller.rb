@@ -10,6 +10,4 @@ class ApplicationController < ActionController::Base
     current_user ? true : false
   end
 
-
-
 end
