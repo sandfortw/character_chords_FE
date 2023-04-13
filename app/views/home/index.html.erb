@@ -8,8 +8,7 @@
   <p>
     <% @quizzes.each do |quiz|%>
       <div class="quiz-container">
-        <%# <%= image_tag quiz.image_link %>
-        <%= image_tag 'https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg', class: 'quiz-image' %>
+        <%= image_tag quiz.image_link, class: 'quiz-image' %>
         <%= link_to "what kind of #{quiz.title} are you?", quiz_path(quiz.id)%>
       </div>
     <%end%>
