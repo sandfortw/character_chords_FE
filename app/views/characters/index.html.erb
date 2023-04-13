@@ -1,1 +1,10 @@
 <h1> You are <%= @character.name %> </h1>
+
+
+
+
+<%= form_with url: playlist_path, method: :post do |form| %>
+  <%= form.label :query, "Enter a genre of music to generate your playlist!" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Create Playlist" %>
+<% end %>
