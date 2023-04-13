@@ -10,6 +10,6 @@ class CharactersController < ApplicationController
   end
 
   def index
-    @character = current_character #for some reason it is transformed into a hash here. Idk if character objects can be stored in sessions.
+    @character = Character.new(current_character.deep_symbolize_keys) #for some reason it is transformed into a hash here. Idk if character objects can be stored in sessions.
   end
 end
