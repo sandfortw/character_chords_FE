@@ -7,7 +7,7 @@ class QuestionFacade
   def questions
     json = QuestionService.new.questions(@params[:id])
     json[:data].map do |question_data|
-      Question.new(question_data)
+      Question.new(question_data, @params[:id])
     end
   end
 

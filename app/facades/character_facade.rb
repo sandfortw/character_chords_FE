@@ -1,14 +1,14 @@
-class ScoresController < ApplicationController
+class CharacterFacade
 
-  def create
-    permitted_params = params.permit(answers: {})
-    answer_hash =  permitted_params[:answers].to_h
-    good_score = good_score(answer_hash)
-    lawful_score = lawful_score(answer_hash)
-    require 'pry'; binding.pry
-    
+  def initialize(answer_params, quiz_id)
+    @params = answer_params
+    @quiz_id = quiz_id
   end
 
+  def character
+    answer_hash =  @params[:answers].to_h
+    CharacterService.new.get_character({good_score: good_score(answer_hash), lawful_score: lawful_score(answer_hash), quiz_id: @quiz_id})
+  end
 
   private
 
