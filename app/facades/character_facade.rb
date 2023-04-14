@@ -7,6 +7,7 @@ class CharacterFacade
 
   def character
     answer_hash =  @params[:answers].to_h
+    require 'pry'; binding.pry
     CharacterService.new.get_character({good_score: good_score(answer_hash), lawful_score: lawful_score(answer_hash), quiz_id: @quiz_id})
   end
 
