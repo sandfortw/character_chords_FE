@@ -12,14 +12,24 @@
   </head>
 
   <body>
-  <% flash.each do |type, msg| %>
-    <center>
-      <div>
-        <%= msg %>
-      </div>
-    </center>
-  <% end %>
-  <p><%= link_to "Home", root_path %> <% if current_user %> <%= link_to "Logout", logout_path %> <%end%>
-    <%= yield %>
+    <nav class="toolbar">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <% if current_user %>
+          <li><%= link_to "Logout", logout_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+    
+    <% flash.each do |type, msg| %>
+      <center>
+        <div>
+          <%= msg %>
+        </div>
+      </center>
+    <% end %>
+    
+    <p><%= yield %></p>
   </body>
+
 </html>
