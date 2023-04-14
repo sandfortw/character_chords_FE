@@ -6,10 +6,6 @@ class ApplicationController < ActionController::Base
     @_current_user ||= RSpotify::User.new(session[:user_hash]) if session[:user_hash]
   end
 
-  def current_user?
-    current_user ? true : false
-  end
-
   def current_character
     @_current_character ||= session[:character] if session[:character] 
   end
