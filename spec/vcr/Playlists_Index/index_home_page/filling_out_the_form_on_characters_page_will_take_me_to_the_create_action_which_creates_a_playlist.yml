@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/6/playlists?genre=90s%20rap
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"9f74502c9d36ca71d492d540a901467f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 82a7f996-25dc-4fd2-83e5-3fdc4626b387
+      X-Runtime:
+      - '8.932613'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.19, sql.active_record;dur=83.94,
+        instantiation.active_record;dur=1.66, process_action.action_controller;dur=8922.12
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/3/34/Jimmy_McGill_BCS_S3.png"},"data":{"type":"playlist","genre":"90s
+        rap","id":12,"attributes":{"character_name":"Saul Goodman","quiz_theme":"lawyer","character_alignment":"Chaotic
+        Neutral","song_titles":["\"Shook Ones Pt. II\" by Mobb Deep","\"Protect Ya
+        Neck\" by Wu-Tang Clan","\"Nuthin'' But A G Thang\" by Dr. Dre","\"It Was
+        A Good Day\" by Ice Cube","\"Juicy\" by The Notorious B.I.G.","\"Can''t Truss
+        It\" by Public Enemy","\"Regulate\" by Warren G, Nate Dogg","\"Hypnotize\"
+        by The Notorious B.I.G.","\"Gangsta''s Paradise\" by Coolio, L.V.","\"California
+        Love\" by 2Pac, Dr. Dre\""]}}}'
+  recorded_at: Fri, 14 Apr 2023 22:18:19 GMT
+recorded_with: VCR 6.1.0
