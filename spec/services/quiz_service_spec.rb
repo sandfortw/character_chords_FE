@@ -5,7 +5,7 @@ RSpec.describe QuizService do
   let(:service) { QuizService.new }
 
   describe '#quizzes' do
-    it 'returns an array of quizzes' do
+    it 'returns an array of quizzes', :vcr do
       json = service.quizzes
       expect(json).to be_a(Hash)
       expect(json[:data]).to be_an(Array)

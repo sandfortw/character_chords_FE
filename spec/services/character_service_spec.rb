@@ -2,7 +2,7 @@ RSpec.describe CharacterService do
   let(:service) { CharacterService.new }
   let(:hash) {{:good_score=>0.0, :lawful_score=>1.0, :quiz_id=>"1"}} 
   describe '#get_character(hash)' do
-    it 'should return a hash with attributes' do
+    it 'should return a hash with attributes', :vcr do
       json = service.get_character(hash)
       expect(json[:links]).to be_a(Hash)
       expect(json[:links][:image]).to be_a(String)
