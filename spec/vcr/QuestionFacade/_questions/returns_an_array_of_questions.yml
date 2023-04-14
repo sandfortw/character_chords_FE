@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 49b86d2f-2ea6-4413-8b68-89022c7c2766
+      - 8d0ac5b4-27ae-4d50-821a-099bc2ff2a87
       X-Runtime:
-      - '0.049592'
+      - '0.018339'
       Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=13.16,
-        instantiation.active_record;dur=9.84, process_action.action_controller;dur=24.70
+      - start_processing.action_controller;dur=0.14, sql.active_record;dur=6.31, instantiation.active_record;dur=0.66,
+        process_action.action_controller;dur=11.58
       Transfer-Encoding:
       - chunked
     body:
@@ -139,7 +139,7 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
+  recorded_at: Fri, 14 Apr 2023 21:57:38 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/1/questions
@@ -179,12 +179,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e027a068-5912-43ca-bf8f-eb67e2a9a038
+      - df8c009d-ed21-45b3-8fca-f2139562bcd9
       X-Runtime:
-      - '0.022403'
+      - '0.017574'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=13.99,
-        instantiation.active_record;dur=0.29, process_action.action_controller;dur=17.75
+      - start_processing.action_controller;dur=0.39, sql.active_record;dur=4.83, instantiation.active_record;dur=0.35,
+        process_action.action_controller;dur=9.30
       Transfer-Encoding:
       - chunked
     body:
@@ -279,5 +279,5 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
+  recorded_at: Fri, 14 Apr 2023 21:57:38 GMT
 recorded_with: VCR 6.1.0
