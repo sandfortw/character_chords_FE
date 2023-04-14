@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe CharacterService do
   let(:service) { CharacterService.new }
   let(:hash) {{:good_score=>0.0, :lawful_score=>1.0, :quiz_id=>"1"}} 

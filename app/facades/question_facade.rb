@@ -10,5 +10,4 @@ class QuestionFacade
       Question.new(question_data, @params[:id])
     end
   end
-
 end
