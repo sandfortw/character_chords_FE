@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - afc5cfa6-73e5-409f-ab72-1f5a49e4f120
+      - fe4b2496-1027-45b2-98cd-65eec1d9de0d
       X-Runtime:
-      - '0.015480'
+      - '0.026724'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=5.59, instantiation.active_record;dur=0.34,
-        process_action.action_controller;dur=9.18
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=6.79, instantiation.active_record;dur=0.75,
+        process_action.action_controller;dur=12.65
       Transfer-Encoding:
       - chunked
     body:
@@ -128,7 +128,7 @@ http_interactions:
         the task and keep your concerns to yourself.","value":3},"D":{"text":"Do the
         task and use it as an opportunity to raise awareness about the issue.","value":4},"E":{"text":"Do
         the task and actively try to cover up any unethical behavior.","value":5}}}}]}'
-  recorded_at: Fri, 14 Apr 2023 21:57:39 GMT
+  recorded_at: Fri, 14 Apr 2023 22:33:40 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/2/characters/find_character?good_evil=0.25&lawful_chaotic=0.25
@@ -168,17 +168,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 67821c85-df79-4d37-ae71-bde5959641e3
+      - 1b4185eb-2cbb-4ad2-9d07-2f40a8d7aebc
       X-Runtime:
-      - '0.023822'
+      - '0.038815'
       Server-Timing:
-      - start_processing.action_controller;dur=0.17, sql.active_record;dur=3.73, instantiation.active_record;dur=0.29,
-        process_action.action_controller;dur=7.49
+      - start_processing.action_controller;dur=0.19, sql.active_record;dur=16.26,
+        instantiation.active_record;dur=0.30, process_action.action_controller;dur=25.73
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":2,"attributes":{"name":"Chaotic
         Evil","quiz":"alignment","alignment":"Chaotic Evil"}}}'
-  recorded_at: Fri, 14 Apr 2023 21:57:39 GMT
+  recorded_at: Fri, 14 Apr 2023 22:33:41 GMT
 recorded_with: VCR 6.1.0

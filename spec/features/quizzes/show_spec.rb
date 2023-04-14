@@ -57,26 +57,5 @@ RSpec.describe 'Quiz Show Page', type: :feature do
         expect(page).to have_content("All questions must be answered to recive your results")
       end
     end
-
-    context "When filling out a quiz, you will recive different results based off your selection" do 
-     it "Chaotic Evil" do
-        within('form') do
-          choose("answers['1good_evil']", option: "1")
-          choose("answers['2good_evil']", option: "1")
-          choose("answers['3good_evil']", option: "1")
-          choose("answers['4good_evil']", option: "1")
-          choose("answers['5good_evil']", option: "1")
-          choose("answers['6good_evil']", option: "1")
-          choose("answers['7chaotic_lawful']", option: "1")
-          choose("answers['8chaotic_lawful']", option: "1")
-          choose("answers['9chaotic_lawful']", option: "1")
-          choose("answers['10chaotic_lawful']", option: "1")
-          choose("answers['11chaotic_lawful']", option: "1")
-          choose("answers['12chaotic_lawful']", option: "1")
-          click_button "Get your results"
-          expect(page).to have_content("You are Chaotic Evil")
-        end
-      end
-    end
   end
 end
