@@ -10,6 +10,7 @@ class CharactersController < ApplicationController
       redirect_to quiz_path(params[:quiz_id])
     end
   end
+  #test comment
 
   def index
     @character = Character.new(current_character.deep_symbolize_keys)
