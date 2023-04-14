@@ -55,6 +55,8 @@ group :development, :test do
   gem 'shoulda-matchers', '~> 5.0'
   gem 'simplecov'
   gem 'launchy'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do
@@ -68,10 +70,16 @@ group :development do
   # gem "spring"
 end
 
+group :test do 
+  gem 'vcr'
+  gem 'webmock'
+end 
+
 gem 'figaro'
 gem 'faraday'
 gem 'rspotify'
 gem 'foreman'
+
 
 
 
