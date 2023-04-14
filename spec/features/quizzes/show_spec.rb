@@ -35,5 +35,27 @@ RSpec.describe 'Quiz Show Page', type: :feature do
         expect(page).to have_content("You are Chaotic Evil")
       end
     end
+
+    context "When each question is NOT answered and you click submit" do
+      it " redirects you to the quiz show page with a flash message" do
+
+        within('form') do
+          choose("answers['1good_evil']", option: "0")
+          choose("answers['2good_evil']", option: "0")
+          choose("answers['3good_evil']", option: "0")
+          choose("answers['4good_evil']", option: "0")
+          choose("answers['5good_evil']", option: "0")
+          choose("answers['6good_evil']", option: "0")
+          choose("answers['7chaotic_lawful']", option: "0")
+          choose("answers['8chaotic_lawful']", option: "0")
+          choose("answers['9chaotic_lawful']", option: "0")
+          choose("answers['10chaotic_lawful']", option: "0")
+          choose("answers['11chaotic_lawful']", option: "0")
+        end
+
+        click_button "Get your results"
+        expect(page).to have_content("All questions must be answered to recive your results")
+      end
+    end
   end
 end

@@ -39,18 +39,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9d4ab9f1-dad7-4394-a4be-86d114e0a68a
+      - 3031dfcc-bdb8-4ff6-bb69-879a497c2c58
       X-Runtime:
-      - '0.008374'
+      - '0.009841'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.11, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.94
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.55, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=4.54
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
+  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/1/questions
@@ -90,12 +90,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8d33f3ee-7b8d-42cb-94fc-9970f61331fa
+      - ce2de7c9-e77d-44f8-b0b6-b79899b8754c
       X-Runtime:
-      - '0.018514'
+      - '0.017175'
       Server-Timing:
-      - start_processing.action_controller;dur=0.16, sql.active_record;dur=7.24, instantiation.active_record;dur=0.40,
-        process_action.action_controller;dur=11.70
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=5.00, instantiation.active_record;dur=0.49,
+        process_action.action_controller;dur=9.28
       Transfer-Encoding:
       - chunked
     body:
@@ -190,5 +190,5 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
+  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
 recorded_with: VCR 6.1.0

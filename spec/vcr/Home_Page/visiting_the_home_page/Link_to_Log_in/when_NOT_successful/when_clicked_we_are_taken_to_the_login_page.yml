@@ -39,18 +39,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 833eff6d-812b-4166-9cfe-280d1deee34d
+      - 7ee031e0-0a96-4ec1-a582-48fa8e55ea1f
       X-Runtime:
-      - '0.010996'
+      - '0.021777'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=3.47, instantiation.active_record;dur=0.07,
-        process_action.action_controller;dur=4.56
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.03, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=14.53
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
+  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -90,16 +90,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0e6229b2-2178-433b-93d8-5ea867de59ae
+      - 20e8cb15-1287-4e55-865f-6b459f84bfcc
       X-Runtime:
-      - '0.029839'
+      - '0.018191'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.87, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=10.43
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.58, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=9.19
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
+  recorded_at: Fri, 14 Apr 2023 21:32:11 GMT
 recorded_with: VCR 6.1.0
