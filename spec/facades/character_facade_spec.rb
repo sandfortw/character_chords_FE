@@ -6,7 +6,7 @@ RSpec.describe CharacterFacade do
   let(:facade) {CharacterFacade.new(params, quiz_id)}
   let(:character_hash) {facade.character}
   describe '#character' do
-    it 'returns a hash with character info' do
+    it 'returns a hash with character info', :vcr do
       expect(character_hash).to be_a(Hash)
       expect(character_hash[:links][:image]).to be_a(String)
       expect(character_hash[:data][:theme_id]).to be_an(Integer)
