@@ -25,6 +25,6 @@ class CharacterFacade
     total_score = good_array.values
                             .map(&:to_i)
                             .sum
-    total_score / (good_array.length * 4).to_f
+    total_score / (good_array.length * 4).to_f.round(2)
   end
 end
