@@ -20,7 +20,9 @@
         </div>
         <% count += 1  %>
       <% end %>
-      
+        <% count -= 1  %>
+
+      <%= form.hidden_field :question_count, value: count %>
       <%= form.hidden_field :quiz_id, value: params[:id] %>
       
       <div class="text-center">
