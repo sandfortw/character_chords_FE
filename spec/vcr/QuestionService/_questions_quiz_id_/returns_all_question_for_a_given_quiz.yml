@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 077c2bad-cb3b-4a4e-a273-70767d5e7120
+      - d8211729-06b0-49d9-8ae3-6714233d447e
       X-Runtime:
-      - '0.026524'
+      - '0.012361'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=11.69,
-        instantiation.active_record;dur=0.43, process_action.action_controller;dur=17.34
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=4.16, instantiation.active_record;dur=0.28,
+        process_action.action_controller;dur=7.14
       Transfer-Encoding:
       - chunked
     body:
@@ -139,5 +139,5 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
 recorded_with: VCR 6.1.0

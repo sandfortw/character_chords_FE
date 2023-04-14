@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe 'Quiz Show Page', type: :feature do
   
-  describe "When visiting the quiz show page" do
+  describe "When visiting the quiz show page", :vcr do
 
     before :each do
       visit quiz_path(2)
@@ -31,6 +31,8 @@ RSpec.describe 'Quiz Show Page', type: :feature do
         end
         
         click_button "Get your results"
+        expect(current_path).to eq(characters_path)
+        expect(page).to have_content("You are Chaotic Evil")
       end
     end
   end

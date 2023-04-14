@@ -39,18 +39,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - af520025-340a-410d-894f-b4c81103117e
+      - 98ebee59-2eff-411f-ab5f-af57751f8b95
       X-Runtime:
-      - '0.008601'
+      - '0.008303'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.71, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.53
+      - start_processing.action_controller;dur=0.04, sql.active_record;dur=1.94, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=2.86
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -90,18 +90,18 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9ffdbe23-a4d4-4e66-ba15-5192020e5695
+      - 5597d83c-56b5-4991-9018-092178667a3c
       X-Runtime:
-      - '0.012569'
+      - '0.006695'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.91, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=6.12
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.63, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.46
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -141,16 +141,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 42dac67d-7149-43ac-b099-c28b690429ac
+      - 2c1b9416-1246-4a44-8200-5fb6ee16a855
       X-Runtime:
-      - '0.068997'
+      - '0.007772'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=1.81, instantiation.active_record;dur=0.08,
-        process_action.action_controller;dur=62.13
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=0.77, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.77
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
 recorded_with: VCR 6.1.0

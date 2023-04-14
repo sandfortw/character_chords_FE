@@ -39,17 +39,17 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9db9fa8f-611f-40b2-bb27-d13776a5331e
+      - 66b35ecd-50ac-4abc-8f6b-af59a9d02c11
       X-Runtime:
-      - '0.013387'
+      - '0.021345'
       Server-Timing:
-      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.91, instantiation.active_record;dur=0.21,
-        process_action.action_controller;dur=5.62
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=2.44, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=4.94
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Roy_Cohn.jpg/463px-Roy_Cohn.jpg"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Roy
         Cohn","quiz":"lawyer","alignment":"Lawful Evil"}}}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Fri, 14 Apr 2023 20:50:26 GMT
 recorded_with: VCR 6.1.0

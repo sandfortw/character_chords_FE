@@ -1,0 +1,132 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/2/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"119098e05fc5c4b8442cbf771ad32bd9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 95e93ae8-42d2-4c20-8a81-10e2c9fb2b09
+      X-Runtime:
+      - '0.086705'
+      Server-Timing:
+      - start_processing.action_controller;dur=1.45, sql.active_record;dur=10.40,
+        instantiation.active_record;dur=1.30, process_action.action_controller;dur=56.17
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"http://image.com"},"data":[{"type":"question","id":1,"attributes":{"name":"You
+        witness a friend stealing money from their workplace. What do you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Confront
+        your friend and urge them to confess and return the money.","value":1},"B":{"text":"Report
+        your friend''s actions to their employer.","value":2},"C":{"text":"Ignore
+        your friend''s behavior and distance yourself from them.","value":3},"D":{"text":"Help
+        your friend cover up their actions to avoid getting caught.","value":4},"E":{"text":"Encourage
+        your friend to continue stealing for mutual benefit.","value":5}}}},{"type":"question","id":2,"attributes":{"name":"You
+        are presented with an opportunity to cheat on an exam in order to get a better
+        grade. What do you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Reject
+        the opportunity on moral grounds and accept the grade you earn honestly.","value":1},"B":{"text":"Consider
+        the opportunity but ultimately decide against it.","value":2},"C":{"text":"Go
+        through with the cheating but confess to your teacher afterward.","value":3},"D":{"text":"Cheat
+        on the exam without any remorse.","value":4},"E":{"text":"Offer to help others
+        cheat for personal gain.","value":5}}}},{"type":"question","id":3,"attributes":{"name":"You
+        see a stranger drop their wallet on the street. What do you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Pick
+        up the wallet and attempt to return it to its owner.","value":1},"B":{"text":"Pick
+        up the wallet and keep the money for yourself.","value":2},"C":{"text":"Ignore
+        the wallet and walk away","value":3},"D":{"text":"Pick up the wallet and use
+        the owner''s personal information for personal gain.","value":4},"E":{"text":"Steal
+        the wallet and use the money for personal gain.","value":5}}}},{"type":"question","id":4,"attributes":{"name":"You
+        are aware of a co-worker taking credit for your work. What do you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Confront
+        your co-worker and demand that they give you credit for your work.","value":1},"B":{"text":"Discuss
+        the situation with your supervisor and ask for their help.","value":2},"C":{"text":"Ignore
+        the situation and continue working hard.","value":3},"D":{"text":"Take credit
+        for your co-worker''s work to get ahead.","value":4},"E":{"text":"Sabotage
+        your co-worker''s work to make them look bad.","value":5}}}},{"type":"question","id":5,"attributes":{"name":"You
+        witness a group of people bullying someone else. What do you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Intervene
+        and stand up for the person being bullied.","value":1},"B":{"text":"Confront
+        the bullies and urge them to stop their behavior.","value":2},"C":{"text":"Ignore
+        the situation and walk away.","value":3},"D":{"text":"Join in on the bullying
+        to fit in with the group.","value":4},"E":{"text":"Encourage the bullies to
+        continue their behavior for personal gain.","value":5}}}},{"type":"question","id":6,"attributes":{"name":"You
+        find a lost cell phone with personal information about the owner. What do
+        you do?","quiz":"alignment","spectrum":"good_evil","answers":{"A":{"text":"Try
+        to contact the owner and return the phone to them.","value":1},"B":{"text":"Keep
+        the phone for yourself and use the information for personal gain.","value":2},"C":{"text":"Ignore
+        the phone and leave it where you found it.","value":3},"D":{"text":"Sell the
+        phone and use the money for personal gain.","value":4},"E":{"text":"Use the
+        information on the phone to blackmail the owner for personal gain.","value":5}}}},{"type":"question","id":7,"attributes":{"name":"A
+        new policy is implemented that you believe is unethical. How do you handle
+        situations that involve this policy?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Uphold
+        the policy, as it is your duty to follow the rules.","value":1},"B":{"text":"Work
+        within the system to challenge the policy or find alternatives.","value":2},"C":{"text":"Selectively
+        follow the policy, depending on the specific circumstances.","value":3},"D":{"text":"Encourage
+        others to protest against the policy.","value":4},"E":{"text":"Actively work
+        to undermine the policy and encourage others to break it.","value":5}}}},{"type":"question","id":8,"attributes":{"name":"You
+        are aware that someone has done something wrong, but they ask you to keep
+        it a secret. How do you handle the situation?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Advise
+        the person to confess and seek forgiveness.","value":1},"B":{"text":"Respect
+        the person''s wishes and keep their secret within moral limits.","value":2},"C":{"text":"Use
+        reasoning to convince the person to do the right thing.","value":3},"D":{"text":"Encourage
+        others to protest against the policy.","value":4},"E":{"text":"Use any means
+        necessary to protect the person, even if it involves lying.","value":5}}}},{"type":"question","id":9,"attributes":{"name":"You
+        encounter a person who has committed a wrongdoing out of desperation and is
+        facing a harsh punishment. How do you approach this situation?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Seek
+        the appropriate punishment under the law, regardless of the circumstances.","value":1},"B":{"text":"Argue
+        for leniency based on the person''s difficult situation.","value":2},"C":{"text":"Use
+        creative legal strategies to secure the best outcome for the person.","value":3},"D":{"text":"Discredit
+        or suppress evidence to ensure a favorable outcome for the person.","value":4},"E":{"text":"Encourage
+        the person to lie or manipulate the facts to avoid punishment.","value":5}}}},{"type":"question","id":10,"attributes":{"name":"You
+        are offered a bribe to act against your principles. How do you respond?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Refuse
+        the bribe and report the incident to the appropriate authorities.","value":1},"B":{"text":"Refuse
+        the bribe but keep the incident to yourself.","value":2},"C":{"text":"Accept
+        the bribe but continue to act according to your principles.","value":3},"D":{"text":"Accept
+        the bribe and subtly compromise your principles.","value":4},"E":{"text":"Accept
+        the bribe and actively work against your principles.","value":5}}}},{"type":"question","id":11,"attributes":{"name":"You
+        have the opportunity to cheat on a test or assignment without getting caught.
+        What do you do?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Refuse
+        to cheat, as it goes against your moral code.","value":1},"B":{"text":"Cheat,
+        but only in a small way that won''t affect the overall outcome.","value":2},"C":{"text":"Cheat
+        to improve your grade, but only if you are struggling.","value":3},"D":{"text":"Cheat
+        to get ahead, even if you are already doing well.","value":4},"E":{"text":"Cheat
+        and also help others cheat to improve their grades.","value":5}}}},{"type":"question","id":12,"attributes":{"name":"You
+        are given a task that you believe to be unethical. How do you respond?","quiz":"alignment","spectrum":"chaotic_lawful","answers":{"A":{"text":"Refuse
+        to do the task and explain your reasons to your supervisor.","value":1},"B":{"text":"Do
+        the task, but document your concerns and report them to your supervisor.","value":2},"C":{"text":"Do
+        the task and keep your concerns to yourself.","value":3},"D":{"text":"Do the
+        task and use it as an opportunity to raise awareness about the issue.","value":4},"E":{"text":"Do
+        the task and actively try to cover up any unethical behavior.","value":5}}}}]}'
+  recorded_at: Fri, 14 Apr 2023 20:51:14 GMT
+recorded_with: VCR 6.1.0
