@@ -5,7 +5,7 @@ RSpec.describe QuestionService do
   let(:service) { QuestionService.new }
 
   describe '#questions(quiz_id)' do
-    it 'returns all question for a given quiz' do
+    it 'returns all question for a given quiz', :vcr do
       json = service.questions(1)
       expect(json).to be_a(Hash)
       expect(json[:links][:image]).to be_a(String)
