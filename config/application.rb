@@ -37,4 +37,4 @@ module CcFe
 end
 
 
-RSpotify::authenticate(ENV["spotify_client_id"], ENV["spotify_client_secret"])
+RSpotify::authenticate(ENV["SPOTIFY_CLIENT_ID"], ENV["SPOTIFY_CLIENT_SECRET"])
