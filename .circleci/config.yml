@@ -12,6 +12,7 @@ jobs:
           PGHOST: localhost
           PGUSER: cc_fe # THIS SHOULD BE NAME OF YOUR APP
           RAILS_ENV: test
+          CC_API_URL: https://frozen-savannah-58383.herokuapp.com
       - image: postgres:13.2
         environment:
           POSTGRES_USER: cc_fe # THIS SHOULD BE NAME OF YOUR APP
