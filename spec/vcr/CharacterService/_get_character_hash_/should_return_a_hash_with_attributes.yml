@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/find_character?good_evil=0.0&lawful_chaotic=1.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fe5242053eec4d7a4e33ffaab7a54c9e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 67ce8ac9-4098-4d7d-91b5-6cfb41f5e0fc
+      X-Runtime:
+      - '0.022542'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.20, sql.active_record;dur=3.19, instantiation.active_record;dur=0.18,
+        process_action.action_controller;dur=6.15
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Roy_Cohn.jpg/463px-Roy_Cohn.jpg"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Roy
+        Cohn","quiz":"lawyer","alignment":"Lawful Evil","character_id":7}}}'
+  recorded_at: Sat, 15 Apr 2023 16:01:01 GMT
+recorded_with: VCR 6.1.0
