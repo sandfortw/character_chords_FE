@@ -79,6 +79,8 @@ gem 'figaro'
 gem 'faraday'
 gem 'rspotify'
 gem 'foreman'
+gem 'activerecord-session_store'
+
 
 
 
