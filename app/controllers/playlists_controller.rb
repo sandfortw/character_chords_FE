@@ -2,6 +2,7 @@ class PlaylistsController < ApplicationController
 
   def create
     playlist_json = PlaylistFacade.new(params).create_playlists
+    session[:character] = nil
     session[:playlist] = playlist_json
     redirect_to playlist_path(current_playlist.id)
   end
