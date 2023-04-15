@@ -39,16 +39,16 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ee9005f6-331f-4efa-a24a-a633167146cf
+      - 8c71c110-cbb9-45e3-bff4-b0591f389310
       X-Runtime:
-      - '0.009777'
+      - '0.008739'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.72, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=1.81
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.85, instantiation.active_record;dur=0.03,
+        process_action.action_controller;dur=1.80
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Fri, 14 Apr 2023 17:53:48 GMT
+  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
 recorded_with: VCR 6.1.0
