@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def current_playlist 
-    @_current_playlist ||=session[:playlist] if session[:playlist]
+    @_current_playlist ||= session[:playlist] if session[:playlist]
   end
 end

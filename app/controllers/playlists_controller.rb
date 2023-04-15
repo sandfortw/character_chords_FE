@@ -24,3 +24,4 @@ class PlaylistsController < ApplicationController
     spotify_playlist
   end
 end
+
