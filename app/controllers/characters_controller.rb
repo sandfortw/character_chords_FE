@@ -12,7 +12,7 @@ class CharactersController < ApplicationController
   end
 
   def index
-    @character = Character.new(current_character.deep_symbolize_keys)
+    @character = current_character
   end
   
   private

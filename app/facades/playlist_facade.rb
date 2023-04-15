@@ -7,4 +7,8 @@ class PlaylistFacade
   def create_playlists
     PlaylistService.new(@info).retrieve_playlist
   end
+
+  def playlist
+    PlaylistService.new(@info).get_playlist
+  end
 end

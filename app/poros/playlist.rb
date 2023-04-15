@@ -4,9 +4,11 @@ class Playlist
               :character, 
               :theme, 
               :alignment, 
-              :songs
+              :songs,
+              :id
               
   def initialize(data)
+    @id = data[:data][:id]
     @image = data[:links][:image]
     @genre = data[:data][:genre]
     @character = data[:data][:attributes][:character_name]

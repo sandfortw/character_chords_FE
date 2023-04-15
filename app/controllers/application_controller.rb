@@ -7,10 +7,10 @@ class ApplicationController < ActionController::Base
   end
 
   def current_character
-    @_current_character ||= session[:character] if session[:character] 
+    @_current_character ||= Character.new(session[:character].deep_symbolize_keys) if session[:character] 
   end
 
   def current_playlist 
-    @_current_playlist ||=session[:playlist] if session[:playlist]
+    @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys) if session[:playlist]
   end
 end

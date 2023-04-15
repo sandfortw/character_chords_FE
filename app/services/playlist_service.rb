@@ -1,4 +1,4 @@
-class PlaylistService
+class PlaylistService < ApplicationService
   def initialize(info)
     @info = info
   end
@@ -15,5 +15,9 @@ class PlaylistService
 
   def connection
     Faraday.new(url: "http://localhost:4000/chordsapi/v1/")
+  end
+
+  def get_playlist
+    get_url("#{@@base_url}/chordsapi/v1/themes/#{@info[:theme_id]}/characters/#{@info[:character_id]}/playlists/#{@info[:playlist_id]}")
   end
 end
