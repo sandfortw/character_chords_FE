@@ -24,10 +24,9 @@ RSpec.describe PlaylistFacade do
             "Panda by Desiigner",
             "Bodak Yellow by Cardi B",
             "Mask Off by Future"]}}}
-      PlaylistService.new.get_playlist({ theme_id: 1, character_id: 1, playlist_id: 1 })
-
-      expect_any_instance_of(PlaylistService).to receive(:get_playlist).with({ theme_id: 1, character_id: 1, playlist_id: 1 }).and_return(playlist_json)
-      expect(PlaylistFacade.new(params).playlists).to be_an(Array)
+            
+      expect_any_instance_of(PlaylistService).to receive(:get_playlist).and_return(playlist_json)
+      expect(PlaylistFacade.new(params).playlist).to be_a(Hash)
     end
   end
 end

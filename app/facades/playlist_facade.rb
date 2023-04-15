@@ -9,6 +9,6 @@ class PlaylistFacade
   end
 
   def playlist
-    PlaylistService.new.get_playlist(@info) 
+    PlaylistService.new(@info).get_playlist
   end
 end
