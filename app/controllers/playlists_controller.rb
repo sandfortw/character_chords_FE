@@ -24,8 +24,6 @@ class PlaylistsController < ApplicationController
 
   private
   def create_spotify_playlist(playlist)
-
-  def show 
-    # @playlist = LOOK UP THE FACADE WITH A 
+    
   end
 end
