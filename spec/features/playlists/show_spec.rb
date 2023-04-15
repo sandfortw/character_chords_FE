@@ -15,15 +15,12 @@ RSpec.describe 'Playlists Index', type: :feature do
 
       fill_in :query, with: "90s rap"
       click_button "Create Playlist"
-      save_and_open_page
       expect(current_path).to match(/\/playlists\/\d+/)      
       expect(page).to have_content("10 Recommended Songs")
       expect(page).to have_css('div#song', count: 10)
       page.all('div.song').each do |song_div|
         expect(song_div).not_to be_empty
       end
-
-      
     end
   end 
 end 
