@@ -1,12 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe PlaylistService do
-  let(:service) { PlaylistService.new }
-  let(:hash) {{:theme_id=>"1", :character_id=>"1", hash[:playlist_id]=>"1"}}
+  let(:params) { { theme_id: 1, character_id: 1, playlist_id: 1 } }
   describe '#get_playlist(hash)' do
-    it 'should return a hash with attributes' do
-      json = service.get_playlist(hash)
-      binding.pry
+    it 'should return a hash with attributes', :vcr do
+      json = PlaylistService.new(params).get_playlist 
       expect(json).to be_a(Hash)
       expect(json[:links]).to be_a(Hash)
       expect(json[:links][:image]).to be_a(String)

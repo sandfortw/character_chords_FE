@@ -17,7 +17,7 @@ class PlaylistService < ApplicationService
     Faraday.new(url: "http://localhost:4000/chordsapi/v1/")
   end
 
-  def get_playlist(hash)
-    get_url("#{@@base_url}/chordsapi/v1/themes/#{hash[:theme_id]}/characters/#{hash[:character_id]}/playlists/#{hash[:playlist_id]}")
+  def get_playlist
+    get_url("#{@@base_url}/chordsapi/v1/themes/#{@info[:theme_id]}/characters/#{@info[:character_id]}/playlists/#{@info[:playlist_id]}")
   end
 end
