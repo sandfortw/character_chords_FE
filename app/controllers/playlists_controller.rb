@@ -1,9 +1,17 @@
 class PlaylistsController < ApplicationController
 
   def create
-    playlist_json = PlaylistFacade.new(params).create_playlists
-    session[:playlist] = playlist_json
-    redirect_to playlist_path(current_playlist.id)
+    if !params[:remix_character]
+      playlist_json = PlaylistFacade.new(params).create_playlists
+      session[:playlist] = playlist_json
+      redirect_to playlist_path(current_playlist.id)
+    else
+      remixed =  JSON.parse(params[:remix_character], symbolize_names: true)
+      remixed[:query] = params["query"]
+      playlist_json = PlaylistFacade.new(remixed).create_playlists
+      session[:playlist] = playlist_json
+      redirect_to playlist_path(current_playlist.id)
+    end
   end
 
   def show
