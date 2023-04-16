@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
 
+  get '/home/clear', to: "home#clear_playlist_and_character"
+
   resources :quizzes, only: :show
   resources :characters, only: [:create, :index]
   resources :playlists, only: [:create, :show] 
