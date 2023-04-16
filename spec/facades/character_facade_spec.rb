@@ -14,6 +14,7 @@ RSpec.describe CharacterFacade do
       expect(character_hash[:data][:attributes][:name]).to be_a(String)
       expect(character_hash[:data][:attributes][:quiz]).to be_a(String)
       expect(character_hash[:data][:attributes][:alignment]).to be_a(String)
+      expect(character_hash[:data][:attributes][:description]).to be_a(String)
     end
   end
 
