@@ -8,7 +8,6 @@ class Playlist
               :id
               
   def initialize(data)
-    require 'pry'; binding.pry
     @id = data[:data][:id]
     @image = data[:links][:image]
     @genre = data[:data][:genre]
