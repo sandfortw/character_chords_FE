@@ -98,12 +98,14 @@ end
 Capybara.default_host = 'http://example.org'
 
 OmniAuth.config.test_mode = true
-OmniAuth.config.add_mock(:spotify, {
-  :uid => '12345',
-  :info => {
-    :display_name => 'Test User'
-  }
-})
+OmniAuth.config.add_mock(:spotify, {"provider"=>"spotify",
+  "uid"=>"realboy01",
+  "info"=>
+   {"display_name"=>"Pinocchio",
+    "email"=>"pinocchio@gmail.com",
+    "id"=>"12345",
+    "type"=>"user"}}
+)
 
 def login_with_oauth(service = :spotify)
   visit "/auth/#{service}"

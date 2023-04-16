@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get '/home/clear', to: "home#clear_playlist_and_character"
 
+  get '/callback', to: "callback#index"
+
   resources :quizzes, only: :show
   resources :characters, only: [:create, :index]
   resources :playlists, only: [:create, :show] 
