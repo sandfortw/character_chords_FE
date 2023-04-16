@@ -9,13 +9,11 @@
 
 <h2>Don't like what you see? Refactor your playlist</h2>
 
-<h3>Choose one of the remaining characters from your theme:</h3> 
-
 <%= form_with url: playlists_path, method: :post do |form| %>
-  <%= form.label :query, "Enter a genre of music to generate your playlist!" %>
+  <%= form.label :query, "Genre:" %>
   <%= form.text_field :query %>
   <select id="character_select" name="character">
-  <% @remaining_characters.each do |character| %>
+  <% @characters.each do |character| %>
       <% character_data = {
             character_id: character.character_id,
             name: character.name,
