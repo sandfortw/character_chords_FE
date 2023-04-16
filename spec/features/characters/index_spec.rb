@@ -25,5 +25,24 @@ RSpec.describe 'Character Index', type: :feature do
       expect(page).to have_selector('form')
       expect(page).to have_field(:query)
     end
+
+    it "the page will have a link to let you Create Playlist" do 
+      visit "/characters"
+      expect(page).to have_button("Create Playlist")
+    end
+
+    it "the page will have a link to let you Create Playlist", :vcr do 
+      visit "/characters"
+      
+      fill_in :query, with: "Country"
+
+      find("#character_name", visible: false).set("Michael Cohen")
+      find("#alignment", visible: false).set("Neutral Evil")
+      find("#theme_id", visible: false).set("1")
+      find("#character_id_id", visible: false).set("1")
+
+      click_button("Create Playlist")
+      expect(current_path).to match(%r{/playlists/\d+})
+    end
   end 
 end 

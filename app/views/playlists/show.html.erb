@@ -1,9 +1,9 @@
 <h1>10 Recommended Songs</h1>
 
-
+<%binding.pry%>
 
 <ol><% @playlist.songs.each do |song|%>
   <li><%= song %></li>
 <% end %></ol>
-<%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary" %>
+<%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false } %>
 

@@ -4,4 +4,5 @@ pin "application", preload: true
 pin "@hotwired/turbo-rails", to: "turbo.min.js", preload: true
 pin "@hotwired/stimulus", to: "stimulus.min.js", preload: true
 pin "@hotwired/stimulus-loading", to: "stimulus-loading.js", preload: true
+pin "prevent_double_submit", to: "prevent_double_submit.js"
 pin_all_from "app/javascript/controllers", under: "controllers"

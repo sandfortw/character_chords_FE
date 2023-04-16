@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  helper_method :current_user
+  helper_method :current_user, :current_playlist
   before_action :current_user
 
   def current_user

@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists?genre=Country
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"b1f14258bf83c2c1705a85b08dc55918"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5838e123-8c99-4e7c-a967-00f5a07f9f90
+      X-Runtime:
+      - '4.816405'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.15, sql.active_record;dur=15.34,
+        instantiation.active_record;dur=0.52, process_action.action_controller;dur=4808.73
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Thurgood-marshall-2.jpg/220px-Thurgood-marshall-2.jpg"},"data":{"type":"playlist","genre":"Country","id":63,"attributes":{"character_name":"Thurgood
+        Marshall","quiz_theme":"lawyer","character_alignment":"Lawful Good","song_titles":["\"Love
+        Wins\" by Carrie Underwood","\"This Is America\" by Childish Gambino","\"The
+        Good Ones\" by Gabby Barrett","\"God Bless The USA\" by Lee Greenwood","\"Courtesy
+        of the Red, White and Blue\" by Toby Keith","\"Redneck Woman\" by Gretchen
+        Wilson","\"Beer Never Broke My Heart\" by Luke Combs","\"The Devil Went Down
+        to Georgia\" by Charlie Daniels Band","\"All-American Girl\" by Carrie Underwood","\"Folsom
+        Prison Blues\" by Johnny Cash\""]}}}'
+  recorded_at: Sat, 15 Apr 2023 23:22:02 GMT
+recorded_with: VCR 6.1.0

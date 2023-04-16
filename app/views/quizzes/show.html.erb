@@ -1,5 +1,5 @@
 <head>
-  <link rel="stylesheet" href="app/assets/stylesheets/quiz_form.css">
+  <%= stylesheet_link_tag "quiz_form", "data-turbo-track": "reload" %>
 </head>
 <div class="max-w-2xl mx-auto">
   <h1 class="text-3xl font-bold mb-4 text-center uppercase"><%= @questions.first.quiz.upcase %> QUIZ</h1>
