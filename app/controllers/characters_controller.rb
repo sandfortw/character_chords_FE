@@ -1,5 +1,5 @@
 class CharactersController < ApplicationController
-  before_action :current_character
+
 
   def create
     if answer_params[:answers].to_h.size == params[:question_count].to_i #checks if the count of the questions is the same as the number of submitted answers
