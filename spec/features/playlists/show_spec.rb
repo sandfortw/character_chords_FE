@@ -1,15 +1,5 @@
 require 'rails_helper'
 
-# as a logged in user,
-# from the playlist show page,
-# when I click "open with spotify",
-# spotify will attempt to open the desktop client, or the web service,
-# where I will see the new playlist that was shown on the playlist show page
-
-# . . .
-
-# As a not-logged-in user I do not see the button to open-with-spotify
-
 RSpec.describe 'Playlist Show Page', type: :feature do
   let(:params) { { theme_id: 1, character_id: 1, playlist_id: 1 } }
   describe 'As a logged in user', :vcr do
