@@ -5,7 +5,8 @@ class Character
               :name,
               :alignment, 
               :theme_id, 
-              :character_id
+              :character_id,
+              :description
 
   def initialize(data)
     @image_url = data[:links][:image]
@@ -15,5 +16,6 @@ class Character
     @alignment = data[:data][:attributes][:alignment]
     @theme_id = data[:data][:theme_id]
     @character_id = data[:data][:attributes][:character_id]
+    @description = data[:data][:attributes][:description]
   end
 end
