@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Character Index', type: :feature do
 
-  describe 'index home page' do
+  describe 'character page', :vcr do
     before(:each) do 
       character_data = 
       {"links"=>{"image"=>"https://upload.wikimedia.org/wikipedia/commons/b/ba/Michael_Cohen_in_2019.png"},
@@ -24,6 +24,23 @@ RSpec.describe 'Character Index', type: :feature do
       expect(page).to have_content("Enter a genre of music to generate your playlist!")
       expect(page).to have_selector('form')
       expect(page).to have_field(:query)
+    end
+
+    context "when logged in" do
+      before do
+        login_with_oauth
+        visit "/characters"
+      end
+      it 'should have a link, \'logout\'' do
+        expect(page).to have_link("Logout")
+      end
+    end
+
+    context "when logged out" do
+      it 'should have a link, Sign in with Spotify' do
+        visit "/characters"
+        expect(page).to have_link("Sign in with Spotify")
+      end
     end
   end 
 end 

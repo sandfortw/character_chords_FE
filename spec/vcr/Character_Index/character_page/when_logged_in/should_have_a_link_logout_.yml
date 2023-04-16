@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"ec31d52213765b3776884e35ca3958d0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - d9e69594-5e07-4872-a00d-07745fa365aa
+      X-Runtime:
+      - '0.039505'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=1.54, instantiation.active_record;dur=0.20,
+        process_action.action_controller;dur=28.20
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"debugger","image":"https://media.istockphoto.com/id/1202688372/photo/error-programming-social-networking-seo-search-and-service-delivery-concept-chart-with.jpg?s=1024x1024\u0026w=is\u0026k=20\u0026c=I0Oued_6FvH_MoQo98ccgZ4WRc6r-OdQTBZYjv9J0gY="}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg"}}]}'
+  recorded_at: Sun, 16 Apr 2023 20:38:12 GMT
+recorded_with: VCR 6.1.0
