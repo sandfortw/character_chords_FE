@@ -1,16 +1,22 @@
 class PlaylistsController < ApplicationController
 
   def create
-    playlist_json = PlaylistFacade.new(params).create_playlists
-    session[:playlist] = playlist_json
-    redirect_to playlist_path(current_playlist.id)
+    if !params[:remix_character]
+      playlist_json = PlaylistFacade.new(params).create_playlists
+      session[:playlist] = playlist_json
+      redirect_to playlist_path(current_playlist.id)
+    else
+      remixed =  JSON.parse(params[:remix_character], symbolize_names: true)
+      remixed[:query] = params["query"]
+      playlist_json = PlaylistFacade.new(remixed).create_playlists
+      session[:playlist] = playlist_json
+      redirect_to playlist_path(current_playlist.id)
+    end
   end
 
   def show
     @playlist = current_playlist
-    characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
-    @remaining_characters = characters
-    # @remaining_characters = characters.delete_if { |character| character.name == current_character.name }
+    @characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
   end  
 
   def open_with_spotify
