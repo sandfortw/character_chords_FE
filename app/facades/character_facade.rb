@@ -5,6 +5,14 @@ class CharacterFacade
     @quiz_id = quiz_id
   end
 
+  def all_characters_for_theme_id
+    characters = CharacterService.new.get_all_characters(@quiz_id)
+    nine_characters = characters.map do |character|
+      Character.new(character)
+    end
+    return nine_characters
+  end
+
   def character
     answer_hash =  @params[:answers].to_h
     CharacterService.new.get_character({good_score: good_score(answer_hash), lawful_score: lawful_score(answer_hash), quiz_id: @quiz_id})

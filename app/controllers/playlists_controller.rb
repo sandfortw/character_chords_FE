@@ -2,13 +2,15 @@ class PlaylistsController < ApplicationController
 
   def create
     playlist_json = PlaylistFacade.new(params).create_playlists
-    session[:character] = nil
     session[:playlist] = playlist_json
     redirect_to playlist_path(current_playlist.id)
   end
 
   def show
     @playlist = current_playlist
+    characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
+    @remaining_characters = characters
+    # @remaining_characters = characters.delete_if { |character| character.name == current_character.name }
   end  
 
   def open_with_spotify
