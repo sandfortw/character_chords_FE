@@ -1,8 +1,49 @@
 <h1>10 Recommended Songs</h1>
 
-
-
 <ol><% @playlist.songs.each do |song|%>
   <li><%= song %></li>
 <% end %></ol>
 <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false } %>
+
+<h2>Don't like what you see? Refactor your playlist</h2>
+
+<h3>Choose one of the remaining characters from your theme:</h3> 
+
+<%= form_with url: playlists_path, method: :post do |form| %>
+  <%= form.label :query, "Enter a genre of music to generate your playlist!" %>
+  <%= form.text_field :query %>
+  <select id="character_select" name="character">
+  <% @remaining_characters.each do |character| %>
+      <% character_data = {
+            character_id: character.character_id,
+            name: character.name,
+            alignment: character.alignment,
+            theme_id: character.theme_id
+          }.to_json
+      %>
+    <option value="<%=character_data %>"><%= character.name %></option>
+  <% end %>
+  </select>
+  <%= form.hidden_field :character_name, id: 'character_name' %>
+  <%= form.hidden_field :alignment, id: 'alignment' %>
+  <%= form.hidden_field :theme_id, id: 'theme_id' %>
+  <%= form.hidden_field :character_id_id, id: 'character_id' %>
+  <%= form.submit "Create Playlist" %>
+<% end %>
+
+<script>
+  document.getElementById('character_select').addEventListener('change', function() {
+    const characterData = JSON.parse(this.value);
+    document.getElementById('character_name').value = characterData.name;
+    document.getElementById('alignment').value = characterData.alignment;
+    document.getElementById('theme_id').value = characterData.theme_id;
+    document.getElementById('character_id').value = characterData.character_id;
+  });
+
+  // Set initial hidden field values based on the selected character
+  const initialCharacterData = JSON.parse(document.getElementById('character_select').value);
+  document.getElementById('character_name').value = initialCharacterData.name;
+  document.getElementById('alignment').value = initialCharacterData.alignment;
+  document.getElementById('theme_id').value = initialCharacterData.theme_id;
+  document.getElementById('character_id').value = initialCharacterData.character_id;
+</script>
