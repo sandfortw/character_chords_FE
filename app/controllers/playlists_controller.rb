@@ -1,7 +1,6 @@
 class PlaylistsController < ApplicationController
 
   def create
-    require 'pry'; binding.pry
     playlist_json = PlaylistFacade.new(params).create_playlists
     session[:playlist] = playlist_json
     redirect_to playlist_path(current_playlist.id)
@@ -12,7 +11,6 @@ class PlaylistsController < ApplicationController
     characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
     @remaining_characters = characters
     # @remaining_characters = characters.delete_if { |character| character.name == current_character.name }
-    require 'pry'; binding.pry
   end  
 
   def open_with_spotify

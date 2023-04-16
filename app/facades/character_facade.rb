@@ -10,7 +10,6 @@ class CharacterFacade
     nine_characters = characters.map do |character|
       Character.new(character)
     end
-    require 'pry'; binding.pry
     return nine_characters
   end
 
