@@ -1,0 +1,131 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists?genre=90s%20rap
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c4391dc60e5f1614d03e1710a00ea81d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6227c828-0c3d-40a6-bc7f-00d777e2b026
+      X-Runtime:
+      - '5.090669'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.47, sql.active_record;dur=112.63,
+        instantiation.active_record;dur=1.40, process_action.action_controller;dur=5075.02
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"playlist","genre":"90s
+        rap","id":13,"attributes":{"character_name":"Lawful Good","quiz_theme":"debugger","character_alignment":"Lawful
+        Good","song_titles":["Can''t Nobody Hold Me Down by Puff Daddy","Mo Money
+        Mo Problems by The Notorious B.I.G.","California Love by 2Pac","Gin and Juice
+        by Snoop Dogg","Regulate by Warren G","It Was A Good Day by Ice Cube","Nuthin''
+        But A G Thang by Dr. Dre","Hypnotize by The Notorious B.I.G.","Jump Around
+        by House of Pain","Gettin'' Jiggy Wit It by Will Smith"]}}}'
+  recorded_at: Sun, 16 Apr 2023 22:32:21 GMT
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"58ad5cd66a76e9cfdbec29562426ebb9"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bfafcecc-9b84-4361-88dc-61418e3d376c
+      X-Runtime:
+      - '0.017837'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=10.45,
+        instantiation.active_record;dur=0.22, process_action.action_controller;dur=12.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '[{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Good","quiz":"debugger","alignment":"Lawful Good","character_id":1,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
+        Good","quiz":"debugger","alignment":"Neutral Good","character_id":2,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Good","quiz":"debugger","alignment":"Chaotic Good","character_id":3,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Neutral","quiz":"debugger","alignment":"Lawful Neutral","character_id":4,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"True
+        Neutral","quiz":"debugger","alignment":"True Neutral","character_id":5,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Neutral","quiz":"debugger","alignment":"Chaotic Neutral","character_id":6,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Evil","quiz":"debugger","alignment":"Lawful Evil","character_id":7,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
+        Evil","quiz":"debugger","alignment":"Neutral Evil","character_id":8,"description":"This
+        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Evil","quiz":"debugger","alignment":"Chaotic Evil","character_id":9,"description":"This
+        is a description of the character"}}}]'
+  recorded_at: Sun, 16 Apr 2023 22:32:21 GMT
+recorded_with: VCR 6.1.0

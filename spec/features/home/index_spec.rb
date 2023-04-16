@@ -13,7 +13,7 @@ RSpec.describe 'Home Page', type: :feature do
           expect(page).to have_link("Sign in with Spotify")
           login_with_oauth
           expect(current_path).to eq(root_path)
-          expect(page).to have_content("Welcome, Test User")
+          expect(page).to have_content("Welcome, Pinocchio")
         end
       end 
       

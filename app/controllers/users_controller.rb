@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     session[:user_hash] =  request.env['omniauth.auth']
     current_user
     flash[:success] = "Welcome, #{current_user.display_name}!"
-    redirect_to root_path
+    return_to_last_page
   end
 
   def failure
@@ -17,7 +17,19 @@ class UsersController < ApplicationController
   def logout
     session.delete(:user_hash)
     flash[:success] = "You have been logged out"
-    redirect_to root_path
+    return_to_last_page
+  end
+
+  private 
+
+  def return_to_last_page
+    if current_playlist
+      redirect_to playlist_path(current_playlist.id)
+    elsif current_character
+      redirect_to characters_path
+    else
+      redirect_to root_path
+    end
   end
 
 end

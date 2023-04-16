@@ -1,7 +1,9 @@
 <h1>10 Recommended Songs</h1>
 
 <ol><% @playlist.songs.each do |song|%>
-  <li><%= song %></li>
+  <div id="song">
+    <li><%= song %></li>
+  </div>
 <% end %></ol>
 <% if current_user %>
   <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false } %>
