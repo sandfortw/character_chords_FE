@@ -1,17 +1,22 @@
 class PlaylistsController < ApplicationController
 
   def create
-    if !params[:remix_character]
-      playlist_json = PlaylistFacade.new(params).create_playlists
-      session[:playlist] = playlist_json
-      redirect_to playlist_path(current_playlist.id)
+    if params[:query].length < 40
+      if !params[:remix_character]
+        playlist_json = PlaylistFacade.new(params).create_playlists
+        session[:playlist] = playlist_json
+        redirect_to playlist_path(current_playlist.id)
+      else
+        remixed =  JSON.parse(params[:remix_character], symbolize_names: true)
+        remixed[:query] = params["query"]
+        playlist_json = PlaylistFacade.new(remixed).create_playlists
+        session[:playlist] = playlist_json
+        redirect_to playlist_path(current_playlist.id)
+      end   
     else
-      remixed =  JSON.parse(params[:remix_character], symbolize_names: true)
-      remixed[:query] = params["query"]
-      playlist_json = PlaylistFacade.new(remixed).create_playlists
-      session[:playlist] = playlist_json
-      redirect_to playlist_path(current_playlist.id)
-    end
+      flash[:error] = "Sorry, please enter a valid genre that is less than 40 characters."
+      redirect_to characters_path
+    end  
   end
 
   def show
