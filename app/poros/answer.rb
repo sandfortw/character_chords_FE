@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Answer
   attr_reader :letter, :text, :type, :value
 

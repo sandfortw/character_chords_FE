@@ -1,5 +1,6 @@
-class QuestionFacade
+# frozen_string_literal: true
 
+class QuestionFacade
   def initialize(params)
     @params = params
   end

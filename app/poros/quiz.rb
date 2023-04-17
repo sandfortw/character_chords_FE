@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Quiz
   attr_reader :id, :image_link, :title
 

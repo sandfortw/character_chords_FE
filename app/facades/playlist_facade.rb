@@ -1,5 +1,6 @@
-class PlaylistFacade 
+# frozen_string_literal: true
 
+class PlaylistFacade
   def initialize(info)
     @info = info
   end

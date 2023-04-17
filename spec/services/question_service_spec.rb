@@ -1,5 +1,6 @@
-require 'rails_helper'
+# frozen_string_literal: true
 
+require 'rails_helper'
 
 RSpec.describe QuestionService do
   let(:service) { QuestionService.new }
@@ -24,5 +25,4 @@ RSpec.describe QuestionService do
       expect(json[:data].first[:attributes][:answers][:A][:value]).to be_an(Integer)
     end
   end
-
 end

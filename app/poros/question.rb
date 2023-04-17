@@ -1,4 +1,6 @@
-class Question 
+# frozen_string_literal: true
+
+class Question
   attr_reader :id, :name, :spectrum, :quiz, :quiz_id
 
   def initialize(data, quiz_id)
@@ -9,7 +11,6 @@ class Question
     @quiz = data[:attributes][:quiz]
     @quiz_id = quiz_id
   end
-
 
   def answers
     @answers.map do |answer_data|

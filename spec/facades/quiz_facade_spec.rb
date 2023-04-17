@@ -3,12 +3,10 @@
 require 'rails_helper'
 
 RSpec.describe QuizFacade do
-
   describe '#quizzes' do
     it 'returns an array of quizes', :vcr do
       expect(QuizFacade.new.quizzes).to be_an Array
       expect(QuizFacade.new.quizzes.first).to be_a Quiz
     end
   end
-
 end

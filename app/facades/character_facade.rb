@@ -1,5 +1,6 @@
-class CharacterFacade
+# frozen_string_literal: true
 
+class CharacterFacade
   def initialize(answer_params, quiz_id)
     @params = answer_params
     @quiz_id = quiz_id
@@ -7,15 +8,15 @@ class CharacterFacade
 
   def all_characters_for_theme_id
     characters = CharacterService.new.get_all_characters(@quiz_id)
-    nine_characters = characters.map do |character|
+    characters.map do |character|
       Character.new(character)
     end
-    return nine_characters
   end
 
   def character
-    answer_hash =  @params[:answers].to_h
-    CharacterService.new.get_character({good_score: good_score(answer_hash), lawful_score: lawful_score(answer_hash), quiz_id: @quiz_id})
+    answer_hash = @params[:answers].to_h
+    CharacterService.new.get_character({ good_score: good_score(answer_hash), lawful_score: lawful_score(answer_hash),
+                                         quiz_id: @quiz_id })
   end
 
   private
@@ -29,7 +30,7 @@ class CharacterFacade
   end
 
   def score_calculator(regex, answer_hash)
-    good_array = answer_hash.select { |key, value| key.match(regex) }
+    good_array = answer_hash.select { |key, _value| key.match(regex) }
     total_score = good_array.values
                             .map(&:to_i)
                             .sum
