@@ -72,11 +72,6 @@ group :development do
   # gem "spring"
 end
 
-group :test do
-  gem 'vcr'
-  gem 'webmock'
-end
-
 gem 'activerecord-session_store'
 gem 'faraday'
 gem 'figaro'
