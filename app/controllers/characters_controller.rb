@@ -6,7 +6,7 @@ class CharactersController < ApplicationController
       session[:character] = CharacterFacade.new(answer_params, params[:quiz_id]).character
       redirect_to characters_path
     else
-      flash[:error] = 'All questions must be answered to recive your results'
+      flash[:error] = 'All questions must be answered to receive your results'
       redirect_to quiz_path(params[:quiz_id])
     end
   end
