@@ -49,8 +49,8 @@ RSpec.describe 'Home Page', type: :feature do
 
     describe 'Link to take a quiz' do
       it 'when clicked, the user is redirected to the quiz show page' do
-        expect(page).to have_link('what kind of lawyer are you?')
-        click_link('what kind of lawyer are you?')
+        expect(page).to have_link('What kind of lawyer are you?')
+        click_link('What kind of lawyer are you?')
         expect(current_path).to eq(quiz_path(1))
       end
     end
