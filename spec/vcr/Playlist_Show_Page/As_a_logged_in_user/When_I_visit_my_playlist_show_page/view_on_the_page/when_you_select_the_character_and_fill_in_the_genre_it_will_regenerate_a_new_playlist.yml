@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - e3ba8c59-73e0-4b12-9758-9ae6ac6b141a
+      - b3b43ccc-4f46-49a4-9ef3-769ff0339bc1
       X-Runtime:
-      - '0.092587'
+      - '0.006793'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=15.65,
-        instantiation.active_record;dur=0.07, process_action.action_controller;dur=75.73
+      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.90, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=1.88
       Transfer-Encoding:
       - chunked
     body:
@@ -53,277 +53,7 @@ http_interactions:
         Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
         Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
         of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg"}}]}'
-  recorded_at: Mon, 17 Apr 2023 02:57:26 GMT
-- request:
-    method: post
-    uri: http://localhost:4000/chordsapi/v1/themes/1/characters//playlists?genre=rock
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Request-Id:
-      - 8c834630-0536-4f5a-b99b-5c9ab8de5279
-      X-Runtime:
-      - '0.021769'
-      Server-Timing:
-      - ''
-      Content-Length:
-      - '6438'
-    body:
-      encoding: UTF-8
-      string: '{"status":404,"error":"Not Found","exception":"#\u003cActionController::RoutingError:
-        No route matches [POST] \"/chordsapi/v1/themes/1/characters/playlists\"\u003e","traces":{"Application
-        Trace":[],"Framework Trace":[{"exception_object_id":21480,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21480,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21480,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21480,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21480,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21480,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21480,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21480,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21480,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21480,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21480,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21480,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21480,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21480,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21480,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21480,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21480,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21480,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21480,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21480,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21480,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21480,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21480,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21480,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21480,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21480,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":21480,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21480,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21480,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21480,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21480,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21480,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21480,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21480,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21480,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21480,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21480,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21480,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21480,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21480,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21480,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21480,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21480,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21480,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21480,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21480,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21480,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21480,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21480,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21480,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21480,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21480,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}]}}'
-  recorded_at: Mon, 17 Apr 2023 03:00:25 GMT
-- request:
-    method: post
-    uri: http://localhost:4000/chordsapi/v1/themes/1/characters//playlists?genre=rock
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Request-Id:
-      - 0c0a0ec9-6bac-41e1-9902-9e5026020961
-      X-Runtime:
-      - '0.016941'
-      Server-Timing:
-      - ''
-      Content-Length:
-      - '6438'
-    body:
-      encoding: UTF-8
-      string: '{"status":404,"error":"Not Found","exception":"#\u003cActionController::RoutingError:
-        No route matches [POST] \"/chordsapi/v1/themes/1/characters/playlists\"\u003e","traces":{"Application
-        Trace":[],"Framework Trace":[{"exception_object_id":21540,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21540,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21540,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21540,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21540,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21540,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21540,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21540,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21540,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21540,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21540,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21540,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21540,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21540,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21540,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21540,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21540,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21540,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21540,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21540,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21540,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21540,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21540,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21540,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21540,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21540,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":21540,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21540,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21540,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21540,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21540,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21540,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21540,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21540,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21540,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21540,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21540,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21540,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21540,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21540,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21540,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21540,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21540,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21540,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21540,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21540,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21540,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21540,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21540,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21540,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21540,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21540,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}]}}'
-  recorded_at: Mon, 17 Apr 2023 03:12:31 GMT
-- request:
-    method: post
-    uri: http://localhost:4000/chordsapi/v1/themes/1characters//playlists?genre=rock
-    body:
-      encoding: UTF-8
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      X-Request-Id:
-      - dfc5f941-c58c-4913-9a68-21da1faee4bd
-      X-Runtime:
-      - '0.014303'
-      Server-Timing:
-      - ''
-      Content-Length:
-      - '6437'
-    body:
-      encoding: UTF-8
-      string: '{"status":404,"error":"Not Found","exception":"#\u003cActionController::RoutingError:
-        No route matches [POST] \"/chordsapi/v1/themes/1characters/playlists\"\u003e","traces":{"Application
-        Trace":[],"Framework Trace":[{"exception_object_id":21580,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21580,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21580,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21580,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21580,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21580,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21580,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21580,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21580,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21580,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21580,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21580,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21580,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21580,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21580,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21580,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21580,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21580,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21580,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21580,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21580,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21580,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21580,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21580,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21580,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21580,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}],"Full Trace":[{"exception_object_id":21580,"id":0,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call''"},{"exception_object_id":21580,"id":1,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call''"},{"exception_object_id":21580,"id":2,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app''"},{"exception_object_id":21580,"id":3,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call''"},{"exception_object_id":21580,"id":4,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged''"},{"exception_object_id":21580,"id":5,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged''"},{"exception_object_id":21580,"id":6,"trace":"activesupport
-        (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged''"},{"exception_object_id":21580,"id":7,"trace":"railties
-        (7.0.4.3) lib/rails/rack/logger.rb:25:in `call''"},{"exception_object_id":21580,"id":8,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call''"},{"exception_object_id":21580,"id":9,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call''"},{"exception_object_id":21580,"id":10,"trace":"rack
-        (2.2.6.4) lib/rack/runtime.rb:22:in `call''"},{"exception_object_id":21580,"id":11,"trace":"activesupport
-        (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in
-        `call''"},{"exception_object_id":21580,"id":12,"trace":"actionpack (7.0.4.3)
-        lib/action_dispatch/middleware/server_timing.rb:61:in `block in call''"},{"exception_object_id":21580,"id":13,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events''"},{"exception_object_id":21580,"id":14,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call''"},{"exception_object_id":21580,"id":15,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call''"},{"exception_object_id":21580,"id":16,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call''"},{"exception_object_id":21580,"id":17,"trace":"rack
-        (2.2.6.4) lib/rack/sendfile.rb:110:in `call''"},{"exception_object_id":21580,"id":18,"trace":"actionpack
-        (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call''"},{"exception_object_id":21580,"id":19,"trace":"railties
-        (7.0.4.3) lib/rails/engine.rb:530:in `call''"},{"exception_object_id":21580,"id":20,"trace":"puma
-        (5.6.5) lib/puma/configuration.rb:252:in `call''"},{"exception_object_id":21580,"id":21,"trace":"puma
-        (5.6.5) lib/puma/request.rb:77:in `block in handle_request''"},{"exception_object_id":21580,"id":22,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown''"},{"exception_object_id":21580,"id":23,"trace":"puma
-        (5.6.5) lib/puma/request.rb:76:in `handle_request''"},{"exception_object_id":21580,"id":24,"trace":"puma
-        (5.6.5) lib/puma/server.rb:443:in `process_client''"},{"exception_object_id":21580,"id":25,"trace":"puma
-        (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread''"}]}}'
-  recorded_at: Mon, 17 Apr 2023 03:20:29 GMT
+  recorded_at: Mon, 17 Apr 2023 17:34:50 GMT
 - request:
     method: post
     uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists?genre=rock
@@ -361,26 +91,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"08c395c8917261d879ff0647702957fc"
+      - W/"176ff01c8ea293ea8d9637a03eed036d"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9832cc28-59f9-460a-ab89-2bdec2197950
+      - 4f6c1610-95e4-41b7-b9f5-f5a8822658ec
       X-Runtime:
-      - '7.218127'
+      - '6.327159'
       Server-Timing:
-      - start_processing.action_controller;dur=0.14, sql.active_record;dur=22.36,
-        instantiation.active_record;dur=0.98, process_action.action_controller;dur=7206.65
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=10.82,
+        instantiation.active_record;dur=0.45, process_action.action_controller;dur=6322.20
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"playlist","genre":"rock","id":54,"attributes":{"character_name":"Lawful
-        Good","quiz_theme":"debugger","character_alignment":"Lawful Good","song_titles":["\"Back
-        in Black\" by AC/DC","\"Eye of the Tiger\" by Survivor","\"Welcome to the
-        Jungle\" by Guns N'' Roses","\"Bad Reputation\" by Joan Jett","\"Renegades
-        of Funk\" by Rage Against the Machine","\"The Pretender\" by Foo Fighters","\"I
-        Fought the Law\" by The Clash","\"Born to Run\" by Bruce Springsteen","\"The
-        Trooper\" by Iron Maiden","\"The Final Countdown\" by Europe\""]}}}'
-  recorded_at: Mon, 17 Apr 2023 03:29:45 GMT
+      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"playlist","genre":"rock","id":19,"attributes":{"character_name":"Lawful
+        Good","quiz_theme":"debugger","character_alignment":"Lawful Good","song_titles":["\"Warriors\"
+        by Imagine Dragons","\"The Trooper\" by Iron Maiden","\"Cult of Personality\"
+        by Living Colour","\"The Fighter\" by Gym Class Heroes ft. Ryan Tedder","\"Hero\"
+        by Skillet","\"The Pretender\" by Foo Fighters","\"Bulls on Parade\" by Rage
+        Against the Machine","\"Eye of the Tiger\" by Survivor","\"Remember the Name\"
+        by Fort Minor","\"The Champion\" by Carrie Underwood ft. Ludacris\""]}}}'
+  recorded_at: Mon, 17 Apr 2023 17:34:56 GMT
 recorded_with: VCR 6.1.0

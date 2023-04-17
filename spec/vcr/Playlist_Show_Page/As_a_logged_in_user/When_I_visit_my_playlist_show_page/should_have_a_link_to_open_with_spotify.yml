@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 90d98dd9-4ca6-4813-9bb1-c104e1a927f4
+      - c17a8821-c3e0-486c-befe-45d73201c5d9
       X-Runtime:
-      - '0.192368'
+      - '0.009146'
       Server-Timing:
-      - start_processing.action_controller;dur=0.32, sql.active_record;dur=77.61,
-        instantiation.active_record;dur=0.64, process_action.action_controller;dur=152.14
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=1.17, instantiation.active_record;dur=0.10,
+        process_action.action_controller;dur=3.18
       Transfer-Encoding:
       - chunked
     body:
@@ -53,5 +53,5 @@ http_interactions:
         Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
         Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
         of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg"}}]}'
-  recorded_at: Sun, 16 Apr 2023 21:59:39 GMT
+  recorded_at: Mon, 17 Apr 2023 17:34:50 GMT
 recorded_with: VCR 6.1.0

@@ -37,28 +37,29 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"c4391dc60e5f1614d03e1710a00ea81d"
+      - W/"a14cb35e0665b15be1bb01394ed2aab7"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6227c828-0c3d-40a6-bc7f-00d777e2b026
+      - 489a2dfc-7b18-4522-876e-d6915d5d3114
       X-Runtime:
-      - '5.090669'
+      - '8.467029'
       Server-Timing:
-      - start_processing.action_controller;dur=0.47, sql.active_record;dur=112.63,
-        instantiation.active_record;dur=1.40, process_action.action_controller;dur=5075.02
+      - start_processing.action_controller;dur=0.17, sql.active_record;dur=59.01,
+        instantiation.active_record;dur=37.22, process_action.action_controller;dur=8446.19
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
       string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"playlist","genre":"90s
-        rap","id":13,"attributes":{"character_name":"Lawful Good","quiz_theme":"debugger","character_alignment":"Lawful
-        Good","song_titles":["Can''t Nobody Hold Me Down by Puff Daddy","Mo Money
-        Mo Problems by The Notorious B.I.G.","California Love by 2Pac","Gin and Juice
-        by Snoop Dogg","Regulate by Warren G","It Was A Good Day by Ice Cube","Nuthin''
-        But A G Thang by Dr. Dre","Hypnotize by The Notorious B.I.G.","Jump Around
-        by House of Pain","Gettin'' Jiggy Wit It by Will Smith"]}}}'
-  recorded_at: Sun, 16 Apr 2023 22:32:21 GMT
+        rap","id":18,"attributes":{"character_name":"Lawful Good","quiz_theme":"debugger","character_alignment":"Lawful
+        Good","song_titles":["\"California Love\" by 2Pac","\"Gin and Juice\" by Snoop
+        Dogg","\"Nuthin'' But A G Thang\" by Dr. Dre","\"Can''t Nobody Hold Me Down\"
+        by Puff Daddy feat. Mase","\"It Was A Good Day\" by Ice Cube","\"Regulate\"
+        by Warren G feat. Nate Dogg","\"Shook Ones Pt. II\" by Mobb Deep","\"Protect
+        Ya Neck\" by Wu-Tang Clan","\"U.N.I.T.Y.\" by Queen Latifah","\"Ruff Ryders''
+        Anthem\" by DMX"]}}}'
+  recorded_at: Mon, 17 Apr 2023 17:34:49 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/1/characters
@@ -98,12 +99,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - bfafcecc-9b84-4361-88dc-61418e3d376c
+      - 80350565-6800-4dcc-824d-54138e959ff3
       X-Runtime:
-      - '0.017837'
+      - '0.017178'
       Server-Timing:
-      - start_processing.action_controller;dur=0.07, sql.active_record;dur=10.45,
-        instantiation.active_record;dur=0.22, process_action.action_controller;dur=12.80
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=3.86, instantiation.active_record;dur=0.57,
+        process_action.action_controller;dur=9.63
       Transfer-Encoding:
       - chunked
     body:
@@ -127,5 +128,5 @@ http_interactions:
         is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
         Evil","quiz":"debugger","alignment":"Chaotic Evil","character_id":9,"description":"This
         is a description of the character"}}}]'
-  recorded_at: Sun, 16 Apr 2023 22:32:21 GMT
+  recorded_at: Mon, 17 Apr 2023 17:34:49 GMT
 recorded_with: VCR 6.1.0
