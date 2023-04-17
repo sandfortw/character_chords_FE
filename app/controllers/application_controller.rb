@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ApplicationController < ActionController::Base
   helper_method :current_user
   before_action :current_user
@@ -7,10 +9,10 @@ class ApplicationController < ActionController::Base
   end
 
   def current_character
-    @_current_character ||= Character.new(session[:character].deep_symbolize_keys) if session[:character] 
+    @_current_character ||= Character.new(session[:character].deep_symbolize_keys) if session[:character]
   end
 
-  def current_playlist 
+  def current_playlist
     @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys) if session[:playlist]
   end
 end

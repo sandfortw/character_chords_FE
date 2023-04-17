@@ -11,6 +11,4 @@ RSpec.describe QuestionFacade do
       expect(QuestionFacade.new(params).questions.first).to be_a Question
     end
   end
-
-
 end

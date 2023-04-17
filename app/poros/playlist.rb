@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 class Playlist
-  attr_reader :image, 
-              :genre, 
-              :character, 
-              :theme, 
-              :alignment, 
+  attr_reader :image,
+              :genre,
+              :character,
+              :theme,
+              :alignment,
               :songs,
               :id
-              
+
   def initialize(data)
     @id = data[:data][:id]
     @image = data[:links][:image]

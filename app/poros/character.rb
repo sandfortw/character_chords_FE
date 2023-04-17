@@ -1,10 +1,12 @@
-class Character 
+# frozen_string_literal: true
+
+class Character
   attr_reader :image_url,
               :quiz_id,
               :quiz,
               :name,
-              :alignment, 
-              :theme_id, 
+              :alignment,
+              :theme_id,
               :character_id,
               :description
 

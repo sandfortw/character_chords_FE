@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe CharacterFacade do
-  let(:params) { {answers: {"'1good_evil'"=>"0", "'12chaotic_lawful'"=>"4"}} }
-  let(:quiz_id) { "1" }
-  let(:facade) {CharacterFacade.new(params, quiz_id)}
-  let(:character_hash) {facade.character}
+  let(:params) { { answers: { "'1good_evil'" => '0', "'12chaotic_lawful'" => '4' } } }
+  let(:quiz_id) { '1' }
+  let(:facade) { CharacterFacade.new(params, quiz_id) }
+  let(:character_hash) { facade.character }
   describe '#character' do
     it 'returns a hash with character info', :vcr do
       expect(character_hash).to be_a(Hash)
@@ -17,6 +19,4 @@ RSpec.describe CharacterFacade do
       expect(character_hash[:data][:attributes][:description]).to be_a(String)
     end
   end
-
-
 end

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class PlaylistService < ApplicationService
   def initialize(info)
     @info = info
@@ -14,7 +16,7 @@ class PlaylistService < ApplicationService
   end
 
   def connection
-    Faraday.new(url: "http://localhost:4000/chordsapi/v1/")
+    Faraday.new(url: 'http://localhost:4000/chordsapi/v1/')
   end
 
   def get_playlist
