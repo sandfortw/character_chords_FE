@@ -2,60 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"ec31d52213765b3776884e35ca3958d0"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 23a6b224-3af0-4537-83fb-5b3f30b8f3d8
-      X-Runtime:
-      - '0.006908'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.62, instantiation.active_record;dur=0.04,
-        process_action.action_controller;dur=1.40
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"debugger","image":"https://media.istockphoto.com/id/1202688372/photo/error-programming-social-networking-seo-search-and-service-delivery-concept-chart-with.jpg?s=1024x1024\u0026w=is\u0026k=20\u0026c=I0Oued_6FvH_MoQo98ccgZ4WRc6r-OdQTBZYjv9J0gY="}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}},{"type":"theme","id":4,"attributes":{"name":"Star
-        Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
-        Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
-        of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg"}}]}'
-  recorded_at: Mon, 17 Apr 2023 17:34:50 GMT
-- request:
-    method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Money%20Longer%20by%20Lil%20Uzi%20Vert&type=track
     body:
       encoding: US-ASCII
@@ -68,7 +14,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -100,7 +46,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:23 GMT
       Server:
       - envoy
       Via:
@@ -113,7 +59,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALxWyW7bMBC99ysEH3zJon2xASNIFyBNnDaFnQ1FIVAibROhllKUEyXwv5eiVGtJ5ChBUZ9kzWjm4c2bRz59kKQBo8C/SwbSWHrif/mLFUWL/O9gxVicjGUZxPgwiSOGF9mhHwXyWpUTBKi/OvqdIppNzqMQZXvTKFwiuufxJ0z2Lh/x3hWibMiyGE1Ej2EA6B1ik8vZMFosEv6kDAkOMJuog/2iNWYoEFB+lmD4O0C8NKjgVe/cJY3SWCAtcvbbCXnvjjhlOGGtViKCHhiiISBuSknSbCviJRENgqIYhQ2GivKy8V01v5HsbPr1ePaQnCoX9OZi8TioFdzs13v3Yb5E3lW7UQ9DUa1PagiCgio+PIkPT8qH10yp2BQQmsGUYhEr0Y6LnPFrDGykX7Wp7OS+J/P5pGU7WML52fwTXITTCKgnNyfr6e15rW2taS/S86pJV9lasZLxHokBWKKX9LdCeLliecAylBbFpIGTo/RhyCHKopgMPMu2VAsq/Odptu54SLFVRwVgpJuaZgJroZnQtJqDu8eQrcp2NX66QOnK+0GpSNHeCIq36wHKMt6NyXBM9c1EdcgXJ25MQAY8IvaE0RTVoi9umLRODqX5CknXESWwLhCKCAIJciFgxWeaoloHinmg2V1pbkyRjxMcheIDCLJ6JosY36zK7Uf1WKdRPtvrPGG8e7+229Vls/9k0ftZ7Js3va+99jbXV611h7G+z1ZrqhxAnPhumAYeonkhtQqkFDAuFbc4cNWRMzK2a8QHFBPsY9bWcTU5DFuD4/KnvgB7OTuea6qlKJalPNfEjtn3m7yQsKx8dH48fj6xb6/xyjGvzNmX8zA7fd6uz9CLpegquS1VTvzVtMQlkQ+EBy0ASVA90mUQlUrEbUoqblNV0TiKUwIoZoIc26oCFK0xunfbphdvTS+I9YMyS4a+DXVfcywdjHwIR1AzPGgZ3PwczTeAqXi+AS3VOfIxnBiGBjXPA4YOFcOG6sjQdUPjQrHs/Hip7Kq4Q9ZkpleRv9oWKdUXbWGL8HjXULeqHohLY03Ng5Br6v/cWNX2jbV4nzcvz8ViIFEqpB2mhJSvhf2K48PJz4/Nh80fAAAA//8DABPT6A5+CwAA
-  recorded_at: Mon, 17 Apr 2023 21:09:28 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:23 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=I%20Dont%20Like%20by%20Chief%20Keef&type=track
@@ -128,7 +74,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -160,7 +106,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:23 GMT
       Server:
       - envoy
       Via:
@@ -173,7 +119,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALxWbW/bNhD+3l9B6EO6wUkkUrIsGzAKJ+marE7qxkmKbRgESqRsznorSSU1ivz3SZRqyU7lKMEwf7LujncPnrvnyO9vANAkx/5KaGAEvuefuWHJaVB8akspUzHSdZyyY5EmkgXrYz+J9HuoC4q5v3z3NaN8Pb7onSWx7E3Ziva8de90yWjQ+0hpcCDXKR2rAgcR5isqx7fzgyQIRP7POAhZxOQYaodlXSZppHD8VSHJbTj0sqjGVtvcBU+yVMEsYw53A4raLX4umZA7pZSHfpOUxzh0Mx6K7bLKX7GwxU6S0niLnjK9bpydJHfXk9Ton3+O5g+L2R9308tYayR8PGzW7kJ7hbwt91Y+RlS2LqExjkqqpuxrxgiYZIQl2yE1mwrCtjPjTPkqtKMyZvQcA4/g70ZX9nLfkfmi07r14R8+O72RH/sP6OzL+t5Z+Gh13ijbKNqJ9CKraEvbSFYx3iEwwgv6s/lbUrZYysJhW8YOxeEWzhylT+Icoq6S6dizBza0iZH/PDQw/aHlIzSA0DMRpcinASIegtZ24x4YkcuqXIOfNlCm8XpQkBrohaDych1A2darMVlOH76YqJbxZcJNQ7zGXqh0InlGG96Nwq4nM3BxNb+5vr18f3Uzmc7B3afpcbOaxmlIsaAuwbI8gwyIjoz+EXTawtyUU58JlsTqAMHrZqRMZC6res8Pm77WLflE1EXAaL+4NtJq27H/icq77dcXy7zrbu28WZ/dq3u26ut2amMkNcKE78ZZ5FFeJIK1I+NY5qPilretaUID9jde+i0Nmc+UtAIcCtrwVK1jZKdz+fBzX6G9nf9+eg6RYfRt++lQ7Gl+t9arGdZt8kFkt7Pgz/cC4fRkNrkarpL0abkuXS9V0ZZyk6pq+bNhwg0TH4dPyduzHuoxuQAkid9KEOYvKfDLRIBLTCj4DUdJJsDJGqiXFSheVuAiFnmOiMa5tMFpck/5rzWMNEmzEHMmFZ2otnN6z+iDu7sj082OjFLzqIrSh+bAIdAwqUMDmxqOhTwDwaGJLQIdy6CO1bdN6ATvfEbGloUI8jxsmcSwBgQOLdO00NAZ2oP8NnJIDU4x3hhMq/b8UIMKqU/sSkG5R/umYKMDTb0xG/OvxfkQ/g+vW7j7ui3tReXqDi27kXe2sMVZGFZmta0VYkPdf49vHv8FAAD//wMAq3qkM6gLAAA=
-  recorded_at: Mon, 17 Apr 2023 21:09:28 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:23 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Famous%20by%20Kanye%20West&type=track
@@ -188,7 +134,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -220,7 +166,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:23 GMT
       Server:
       - envoy
       Via:
@@ -233,7 +179,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALRW227TQBB95yusPESg0vq28SVShFouBaFSRKlaCSFrbY+TVdcXdtcUF/XfWa+NY6dN6lZQ5aHZmZw5OjNzdn8/07SJYDi64hNtrv2WX+XBikFSf52shCj4XNdxQQ54kQuSVAdRnuo/TZ0DZtHq1Y8SWLV4h9O85HthtfcRZxXsXQAXU1EVsFDY0xSzKxCL87NpniRc/mdMKUmJWJiTl01JIiBVFL61JOQZpmGZrmmtz4Ily8tCMeQkW1JoUXoZdfFtCUwQLjaKqQj8EsAyTIOSUT4srOKtBANp8gKygTYNvI7c/LS6Notji52dk9OLz/7VJ+ZNeoC3L/u1x2jeMt+GPcAjsUIbk5rhtNHq6wq0L9Mj7TPFFTA+zOoUbVgMgyUjjdoN4XmTM39IhFvte68xO+UfKX7dfB29vjz+YDg38fLLyZv3J5fi8pAmH3tle0VH6V6j8m2wPbC/oj+cmOIl3DeCKyDLlagDDjI2JKYDnpJlFGeSoq7AdBw6rmM6sSH/Qsu1YyNJXORZRowhdH0TXMOcedgZNu6axGLVluvps42UbTydlAmG9UhSstwIUg56MifkzcxHC7VlfAkPCrk4OKRqTwQroRftluwwBUYinGlHedUfCQYUMIcgxqJJtAzD2zf8fcPclhYUDCLCSZ6pH8R4AChyIXdpbe6oH+uWWXlsL3Jnk+uE+e6N6vZpm7f+k9Ue56uP3u2xnjraUcf46Q43fZqX9kZxEhMeBVmZhsBqIHMdKBkWclqC5qq1PM+37S4KvwpKIqJWKsGUQy/Sdo/EG82TQ88ixfb87HDmGJ7ty8/dudjR/3HdV2OsW6fWSYGOjz+c+Dc3R4eufXPBv5p3y41pfLMY2yA7qLbrD6bxgOYRpnfF22EL95uC9jzFMUiU+k2lhZX2lgugVJ4AFgeaemFp9Qvrxbp8kRclxYwIJaPprQMMfhK4DjZNsehMMS3s/TZLt/3E8WzL8FAcWqHvY2SiWYjBM73ENz1wZra0S8d9FZF4gZAVW2GIkbxqkBubPrJtZPme77jy+vHiNTsl9b0T2a2BSln/YnMHVHi+q/3dAkzUy7JXZpLJ6fu/z1lz8znbnNdF2/uyaYRErc+yktL2WJm0Imuou+722e0fAAAA//8DAGiYAuOUCwAA
-  recorded_at: Mon, 17 Apr 2023 21:09:28 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:23 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Flexicution%20by%20Logic&type=track
@@ -248,7 +194,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -280,7 +226,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:23 GMT
       Server:
       - envoy
       Via:
@@ -293,7 +239,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALRW227bOBB971cIegh20aYidaFkA0YRoA02adpt1w22i6IQKImyCVOXklQToci/L01pZcqJXSXY+snijM4cnJk51I9nlmVLjtONsK259UM9qoM1J/n20V5LWYu54+CavhR1JWnevkyrwvkOHUEwT9evvjWEt4tzRm5p2khalc+T9vlVtaLpiWxrstDYJwXmGyIX18uTKs+F+gdOGC2oXED7RVeSSlJoCl96EuoMs6QpdrR2Z/GKV02tGQparhjpUYyMbfFDCVxSIfeK6Qi5lYSXmMUNZ2JcWMd7CUbSVDUpR9p08E5wtkrOq6vP4vPrVbXc/MOW/vXra9sAvHth1p6iec/8EPYIj2YabUpqiYtOq7eY42pDrHNOsBqIUdIgaEdiHGw47cTu+M67nPnPNLizvhp9Oar+RO23vXfA5fuzm8tPH2W4JN/puw8XyV/vwSejrFF0kuxbVHEI1gDrNZ+QWOAVeWgC14Su1nIbQD7Yk5iNeCqWaVYqio4Gc3CCQgRRBtQvcUMvQLPAJ1Ee5VkOUQAS3wtD4Objxt3QTK77coY+h0h54OmkIAHuI0mpchNIIf/JnPwogI8W6sD4UhHXDLc4YXpPJG+IER12zLBK67c/OV1RNfKstT4Qnle8IJmVtJY20N+tL/8t5EUpFF5BSonZV3OQOGEECxJnWHbwLoDoFKBTGBxKi2tOUipUff1ChlszU1aqRLy7EaAZGyxAG7MRubf/24T58T0ctvCQIf8vhjDNjB/tCFONeLINTzDhIxb8NAM25tfOqEjjsikSwkdtt7OG4+2wxt317MLQm4VDlNzWjKZU72GOmSBGpG8ezfZ6pzaFp5rtm+UZgBC5EILg/lgcaf+05uspdrzL4g+3hOCqvbig1zdnH/8Gm+yBclP63u3FIcgBqm/6T9NEzKoUs/viHfGSpznJqfWQleyo1FXdMMyp1JKC3TlXm0tu4n1TrQdTLWrvtM9yckhUJyHykgjnYZAnLopyHEZ+hAJIUhR4bopQGL5KabbwfTdzkwT7Xgb8MIMz3/N8dxbNUKiuryjbkdOqPzicw0bolN0b++ugw/NjkzDsgq0/TI0ydqkG8dd+DcP9r+Hu3GhF14iq0XtQNoz1x9quNVmg78q7Z3f/AgAA//8DADrCNvLTCwAA
-  recorded_at: Mon, 17 Apr 2023 21:09:28 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=No%20Role%20Modelz%20by%20J.%20Cole&type=track
@@ -308,7 +254,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -340,7 +286,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:23 GMT
       Server:
       - envoy
       Via:
@@ -353,7 +299,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALxXbU/bOhT+vl8R9QPaVCBxkiZtpWrSGGODsUlw4Y5NU+TYDvVwXnAcaJn479dxchunLCWwaf2SxufknCfPOeex8/OFYQwEh+gqHxhT46e8lQtzTqLydjAXIsunpgkzuptnqaDRchelsXkDzJxAjuavrwvCl7NP6fAkZWR4nGLC7obhcni4O9yTK1timZGZSrAVQ35FxOzsdCuNolz+s7YYjamYgcF2lZcKEisc32okcg2ysIgbbM1acMnTIlMwK5/tdYcyd4edC5qLtVTKQhaC8ASyoOAsb6dV9pqFFjtpRpIWPVV4EzhLf+/y4/sfx+cnx2+vF3hhfcHpQAt4v63n7kN7jbwrdisexSpaH9cExhVVBwVC1DiGCWk7NFwqAG1jwamy1Vinlc/0sfe/N75rNdnIfE/eyzqb7uHHU//86Prfiws7fff1zHZO4gnV0mpJe1FeRs27wmrBar57OMbwkvyq++aEXs5FafBca41i1sIpUSKcSIimCmbC0PM94GFL/kLbdxBwXMsPR2EYjX3H8n2AJ3BMULtwtxSLeZ1O46cLlGM9HxQglv1EUDJdD1Ce+2xM7ngEnkxUR/vSPMgYXMKQqTkRvCCadTVf/8yJ8RnjCIo54XpPcMIIzEmAoag8bQuMdoC9A0CXW5BxgmhO00Q9gOFS9xSpkMPUaDtwdWOnND6Y5dJhunmmVhPVJax/ZLj7ieqTp7uvoPaW00fEdIOUPk9IW6PxB5keiaMP5IwmfLknfnxCLvHPz49+R0drpjviPmT6cccV028YvCPGKeE3NPk9rje/tTbzA0xzFCRFHMpBLuerMRQcCjmVQXWYsYFl+d7KShYZo4iKdZVoKkfxWuGkuHCkwJ6dft0/ACPLBmP74fRtqH2/yiu1kAVKL4p9zxrt397so+LtgXV3e7h4mK5P0Sv96Qq5CrWq+CNuecBSBJXCR5DlRLd0ya/WJZyiKyMxquvLiECxa+it86pJlaVZwSCnQlEGmupK0b2h5DZY32iy1UYTZ85O7WW6YxuMnMgaech3PRJBHIUg9CxghyFCoU3CCRmHOHyNKJ65ro3lOnQdbLk+BhPXcVx7Mp54vtzSx7hBp2jVms9tLP93vHJpnlhvd2Webir1qtcH6piu9fggkZ32Fz4QwPoHQrVeZq4PIlU10kJ1e1IwVi+rza8qXHmGuH9x/x8AAAD//wMAh8Sru+oMAAA=
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=HUMBLE.%20by%20Kendrick%20Lamar&type=track
@@ -368,7 +314,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -400,7 +346,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:28 GMT
+      - Mon, 17 Apr 2023 21:21:24 GMT
       Server:
       - envoy
       Via:
@@ -413,7 +359,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALxW227TQBB95yssP1SgNvXdTiJFCFQupUWAqiAoQtbaO05WWV/YXacYlH9nszaJnTapWyHyFO+M5xydmTnr3080TRcMxQuua2Ptt3yUB3MGyfpRnwtR8LFhoIKc8iIXJKlO4zw1lpbBAbF4/vxHCayavJ2+f3n56vQ4qo4vIMOMxIvjS5QidiSqAiYK4Eg+LkBMpldHeZJw+c88oiQlYmLpJzUuEZAqHt8aJvIM0ahMt9y2Z+GM5WWhaHKSzSg0VVoZa/B9CUwQLnbAVAR+CmAZomHJKO8Cq3ijQ0efvICsI1Bd3vBezKLX+eUX/uVsll8tvtIrd3o21VsFVydt7D7CN8z31e7UI1hV65OaobTW6gIxlC9Ae80AyanoJG0ErUl0gyUjtdg133GdM75Pg5X2vdWXg+r31H7de8P7dTZKpssbGy7ewPXn69mns8y/bMG2QHvJvq7K95VtFfur+f2JKZrBXRM4BzKbi3XAd80diWmHp2QZ40xSNFQxA0V+4Fs+NuUvsgPH84YjZMe2a2Gc2GAie4jiAPxu424IFvMGrqXPPlKO+XhSFpj2A0lJuB6kfPfRnNyhZz1YqD3jS3hYUFShiKo9EayEVnSzY2/LVGZoTz8wMiNy2mmlfQSW5CwFrEWV9tdENWWiz7Rv5xmXtVLIBKLaZ2Cc5Nn39jAxoIA4hBiJGsI2rWBgOgPH2pcWFgxisq6kXsCoameKXEKF26vBasc2NqDMuRW55QHrhPHhXdxs4j5T/iem0M+QH+wKfc24txX3MOIDNvw4E27NsI4Jj8NMziewTtt1XDIk5LCE9RVtBZ7jbKPws6AkJmoXE0Q5tCJN8wje6Z3cFhYrtq+uXpiWFZjByDdvj8WB9vdrvppiwy5GH/3h+ZvrPPuAF5i/c1Lxa3kbrk/f673YV3JTqmn6vWk8pHmM6G3xDvjJ491koN1lJ1s6RV6UFDEiqrrR2wCDJYGbcNddi427poUzaLKMEQDYiee7Q99LnER6qul4fuJC5Pmx9F4vkhdUMnSfxwRPXNfGdhQh18GmG2Br5DqOa4+GIz+Q99gQb9kp6e+c0M1aqJTtG7s7ocLjQ+OwWQhdfaG2YPRMTuN/+Da2dr+N6/M1cnP71t3IS7URWUlpc6yMWzE21c25erL6AwAA//8DABmXpUvmCwAA
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Backseat%20Freestyle%20by%20Kendrick%20Lamar&type=track
@@ -428,7 +374,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -460,7 +406,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:29 GMT
+      - Mon, 17 Apr 2023 21:21:24 GMT
       Server:
       - envoy
       Via:
@@ -473,7 +419,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALxW247bNhB9z1cIelgk2Gx0o3UxYARI0aTNBm0Sx2mRohAokrLZpS4hqayVYP+9FKWVaW/saBdF/WRxRjMHZ+Yc6tsjy7Ilh+hK2Nbc+qYe1cGGk7x7tDdS1mLuOLCmz0RdSZq3z1BVOF88RxDI0eb554bwdvGiK0CgPH/JCRGyZeQ8a88vSYk5RVfnb2AB+Zlsa7LQvc7U4xWRi9XyrMpzof65Z4wWVC48+2kPgUpSaEh/DaDUGWRZU+xg7s7SNa+aWiMWtFwzMlQxMrrmxxK4pEIeNNMRspWEl5ClDWdiv7GOD5TsUVXVpNzjqi/vBGu0bFarHItl88+75Qf3dZLg2DYK3jw1e0+ZwYD8WO29ehTralNSS1j0XF1CDqsrYr2CDG7b/aSR0B7EfrDhtCe7xzvvc+Y/4uDG+tuYy0n2J3Lfzd4BpfTe//Tzpw/RZfLHm1eo/eXjqvlktDWaTqK9qyqOlTWKDZxPSCzgmnxvAzeErjeyC4TAPaCY7eFUKBEuFURHF3NgFkahF2JX/TI/CkAQzpIozgOsjv1ZCGNAYISC/cFdUyw3QzuDn2OgAvfhoDzi+vcEpdpNABWCB2MC8cy7N1FH1peKtGawhRnTOpG8IUZ01NitdVqjdVqPb3X3kXBBq/KJ9fh3TtdUaYG11lvC84oXBFsvWuvWYi1tsU/MneKEEShIiqHsO/muBy4878KNjqWlNSeIdi31CxiamrdlJZUYd5eFb8ZGN9AebUTuWEGXMD8tyVGQx7z5P/GGab58b3OY6smTHXmCH59w44d5sbHKNqYCpWVTZIR3hbxdoOFQqmVJ+5va98I4TMYo2daMIqolmUMmiBEZhkfxweyUaDjSaF++9/8EHvDC0PXvrsWJ8U8bvt5iJwpXMHpX+ddfX7cztA6W29+2Ab7bbsrce10cKzmWGob+wzSRsgpBdpe8E7YyzVR+LYV6qSClUvPOYS6saRazg1hXdcMgp1JT7e7OOflCyXV66Lv16LtFHVwMWY4HAUBJiHAOUTJTF1WWZXkeoyhxfRdmPppBP54l2XNE8QIAH/tZBkGAXRBhLwFBAPwkTsJI3XCxwZ+exneXdlSKTtm9cSgTHZ6f2pBRI7b+djXa2KVa0P/3A9o7/IDuz43R9IOpGq2XsmFsONa2rsG7+nq9eXTzLwAAAP//AwAytsIsFgwAAA==
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Panda%20by%20Desiigner&type=track
@@ -488,7 +434,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -520,7 +466,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:29 GMT
+      - Mon, 17 Apr 2023 21:21:24 GMT
       Server:
       - envoy
       Via:
@@ -533,7 +479,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALRW227bOBB971cYeshLm4qUZF0MGEV6RdILdutt093FQqDIkc1Gt1BUYqHIv1emvDLlVI6Stn6yOKOZozM8h/z2aDIxpCD0ojQms8m35rFZWAmIN4/GSsqinJkmKfjTssglj+unNE/NK2yWQARdPbusQNTzP0jGyOOofvwSSs6XGYgjWRcwV5WPUiIuQM4/LY7yOC6bf+go4SmXc2w8aRtyCakC8O8WQrNGkqhKd6B2a+FS5FWh8JU8WyawraJlbJoPJQjJS7nXTEVgLUFkJAkrkZT9xiq+JaBHTF5A1mOmLW/akSjOT7y39tmbv+oXJL1+swryytAK3jzRe49hfIt8qHavHmeq2pjUjKQtV2cQxyLvBzsi2+b9YCV4S3KLc9bmzO769pvJf9o8DrI+kvPNzM2pOP9iresL//xdBMKJsuKrfC20tlrTUXRvqpZDZbViW65HJKZkCT/aeSvgy5XcBFwH7VGc9HA2KCnLGoimKmaSyPVc7DLU/CLLswEIdYhDbMujMQ18FjCMqE/6g7vmTK627TR+hkDZ6OGgMCDrnqCadiNAuc6DMTn+FN+bqIHty8uwSEhNokTpRIoKtGinrXcgJ+9hsgCYnOoqMgQkQEoIGZFtpoUsfIzRMZ4OpYWFAMpLnmfqBUZqPVPmshHTztKxHuvUrLxVi9yS8iZhdlhSnaCGPPWXaHucn95b3GO9dLSTHvDRAy76MA/tqeIXsoyuPi/Wi1foo7fgJ6//vlx7FzR9+fMsD9S9zfLdiR3LzwHYT5J8+HM1nRuMlzTMqrRRQU9TBqsEkY0Sw/b6goPAdnZRWBcJp1zuO8NuZJztTawxFEEV2D//+XC+sLBrTz37tuQODH3cyJVDmKhGJ2f5q7Xn1J9P/fdn16f8A4pvtxsz7dZzhkp2pf4f9V1pZZjklChXj0lSgh4Zsty7DNco8qJKiOBSsYN26wKuOFyH+8dI0R0jaWEfb7NMm/keZb5Npy64kR9Ejo1tHwghgGIH4mjKcIQheEY5mzuOxawoIo7NkOMxHDi27ViBH7hec2D7bAdOEfjDbdbtbZWye2N/Y6vw7NBQu11tqCu41sbImj31O2/9eP/W365rg2jHkFdqQ2dVkmyX1ZmmoCJ1N7h5dPMdAAD//wMAIsa5iLkMAAA=
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Bodak%20Yellow%20by%20Cardi%20B&type=track
@@ -548,7 +494,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -580,7 +526,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:29 GMT
+      - Mon, 17 Apr 2023 21:21:24 GMT
       Server:
       - envoy
       Via:
@@ -593,7 +539,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALRWXW/TMBR951dEfZhAYyTOl5tKFVKRJiEQrBoUDTRFTuw2ps4HtrMtTPvvOE5I027tsgn6lPrenHt07r3HuX1hGCPJUbwWI2Ni3Kq/6iDhZFn/HSVSFmJimqigb0SRS7qs3sR5al4BUxDE4+Ttr5LwajrLMVofXxDG8uvjqDp+hzimx7MjWRVkquGPUsTXRE6/nh/ly6VQT9YRoymVUzB63VSlkqSaxY+WhzpDLCrTDbPNWbjieVlokoJmK0ZalF5GXXxfApdUyJ1iOkJuJOEZYmHJmdgurOOtClvq5AXJtuRp4E17Pl/MLsrTX+toAX4S+2OAFuD7qAd497pfe4jsLfN92Ft4FGu0IakZShutPiCO8jUxzni+ndGp2TDYDpacNko3ZCdNzuQxAe6My15TDko/UPi68aYHcEmT1TybV+cXNMm+fV0H72e9sr2igzSvUcU+2B5YK/iAxBStyEPjlxC6SmQd8F1rR2K2xVOxjHGmKJoazESRD33gY0v9Ihs6IIbL2HKhH6gHgK0I+TFC42C7cdcUy6Qt19NnHynHej4pQCz7iaRUuQGkfPfZnNyxB54s1J7xpSIsGKpQxPSeSF6SXrRbMG2VRmOVxsvPnK6omnlWGWeEL3OeEmxElaEN1Ji9Mn78XcgF4YLm2WV/jDhhBAkSYiQbcNsC8MSCJ/Z4X1pYcBLTGkm/gFHVz5S5VPu3uQ/sfqwzAO3Jvci97a8TJoe3sNvBfV78T+xgmA8/2Q+GevBgB37Mfw+47/O8tze6I0xFHGZlGhFeA4FNoORIqkkJm2vZBtBxxl2U3BSMxlSv4BIxQXqRtnMU7zROLQmPNdv5d+/0E4AWhNC5PxMHej+s83qETajUjD8txDu6vjp1kt839ObLl6v75YY0vVmKfZAdVNvxR9NEyPIYsfviHbCRZ5vIifE+EwopJZna779WsmFT5EXJEKdSq+pszjm5ouQ63LXUorPUtHBO2izTjXyX2C4cE+h5BAduAIGFMLQiz7Nw7CHkLW3Hi97GFE9d18Z2FCHXwcp7MQhcx3HtYBz4UF1eY7whp4V/cD67pdApmzd2N0KHJ4eGoVuHkf4m7ZUZZWoW//u3MNj9Fm7O67rthdv0Ii/1NmQlY+2xdmzN19KX5d2Luz8AAAD//wMAX8NH2dQLAAA=
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 - request:
     method: get
     uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Mask%20Off%20by%20Future&type=track
@@ -608,7 +554,7 @@ http_interactions:
       User-Agent:
       - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
       Authorization:
-      - Bearer BQCz3BDAYdTQB9FoUJhzVIkotoa2uMrW_aDWtZqkJ0gWK34gj2myHl2SQo0AYPKnS_Kbc5t_McTBxBDtCR94SxT4rLUZQdb8VqMYUfZ2w0j8QDTzsysL
+      - Bearer BQAqQBqF9Eg2_Pb-PZwbPjG9BTi7o9TIIBcsRoC4J4J-4AVm6KZEYFjnykzIMNvn0Z_QiTT7GVBJbKlBisA0dkGHgVhgbL7CQbvKcjeHUxNJBHeWLVaG
       Host:
       - api.spotify.com
   response:
@@ -640,7 +586,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Date:
-      - Mon, 17 Apr 2023 21:09:29 GMT
+      - Mon, 17 Apr 2023 21:21:24 GMT
       Server:
       - envoy
       Via:
@@ -653,5 +599,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         H4sIAAAAAAAAALRWa2+bMBT9vl+B+FBt6lowEB6RoqnSWu29SVG7TdOEjG0SK+ZR26TNpv73GYMIpE1Gqy2fgu/l3KNz7z3m9zPDMCWHaCVMY2r8Vo/qYMlJWj+aSylLMbUsWNJTURaSpptTVGTWGliCQI6Wr64rwjezj1Csjj+n6XGyOb6oZMXJkdyUZKaRjzLIV0TOLudHRZoK9c8+YjSjcgbMl01BKkmmCfxoKagzyJIq25LansULXlSl5idovmCkRell1MX3JXBJhdwppiPkVhKeQxZXnIlhYR1vBRgIU5QkHyjTwFuTs0VyUXz4Jr69XhTz1Xc29y5fX5o9wLuX/dpjFG+Z78Me4FGs0cak5jBrtHoPOSxWxLjgBKpxGCR1gjYkhsGK00bshu+0yZn+TYM742evLwfVH6l93XvL9Rbw67tf87fnl9+vgoSvr68L/1OvbK/oKNlrVLEPtgfWaj4iMYML8tAELgldLGUd8D17R2I24KlYIpwripYGs2DiBz7wsa1+iRO4wEndCYS+F/qTKEAomPjIT3E4bNwNxXLZluvps4+Uaz+dFCC280hSqtwIUr73ZE5eOAGPFmrP+FIRlwxuYML0nkhekV6027HaKA3lgsbzz5wuqJp3tjG+EJ4WPCPYSDZGY58vjB9vc6FQMpJLyIwrwgUt8p/9MeKEEShIjKFswB0bBCe2e2L7+9LikhNEayT9AoabfqYsVKl4exuAfqwzAG3Lvci97a8Tpoe3sNvBfXb8T+xgnBU/2g/G2vBoEx5hwQcM+Gn225teE1OB4rzKEsIHbTdxxaFUwxI3l7NjuyAKuyi5LRlFVG9hCpkgvUjbPIp3eqf2hCPN9nx+ZgMQ2IHj2PfH4kD7xzVfT7EFonT+hpzdnK+dN5ItbUGTX+vJ/XJj+t7sxT7IDqpt+l/TRMwKBNl98Q44yVN85MR4yEi2RMqirBjkVGpBHX8b4GRNyU2866hl56hZ6Z60WZaNUBgiEISJE3po4obJRNkrcqATYqAM1U9ghIgNXiGKZ57nYCdJoOdi2wswiDzX9ZwojPxA3V0h3rLToj84m91C6JTtG7vboMPTQ4PQrYKpv0p7ZcxczeH//BAGux/CzXldsr1qmzYUlV6CvGKsPdZeXZ9FXqRO7p7d/QEAAP//AwDtiq87ywsAAA==
-  recorded_at: Mon, 17 Apr 2023 21:09:29 GMT
+  recorded_at: Mon, 17 Apr 2023 21:21:24 GMT
 recorded_with: VCR 6.1.0

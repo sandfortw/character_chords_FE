@@ -24,7 +24,7 @@ RSpec.describe Playlist do
   end
   let(:playlist) { Playlist.new(playlist_data) }
 
-  describe 'attr_readers' do
+  describe 'attr_readers', :vcr do
     it 'should have attributes' do
       expect(playlist.image).to eq('https://media.npr.org/assets/img/2022/07/22/bcs_609_gl_1005_0864-rt_wide-c958ce0b1e351340c63e2f5823f499afe3fbf840-s1600-c85.webp')
       expect(playlist.genre).to eq('hip-hop')
