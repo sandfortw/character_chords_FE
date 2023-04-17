@@ -91,7 +91,6 @@ RSpec.describe 'Playlist Show Page', type: :feature do
             fill_in :query, with: "rock"
             click_button("Create Playlist")
             expect(current_path).to match(%r{/playlists/\d+})
-            save_and_open_page
             expect(page).to have_css('div.song', count: 10)
             prohibited_songs = [
               "Money Longer by Lil Uzi Vert",
