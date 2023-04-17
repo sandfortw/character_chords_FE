@@ -1,5 +1,4 @@
-require 'rails_helper'
-
+7
 RSpec.describe 'Character Index', type: :feature do
 
   describe 'character page', :vcr do
@@ -30,9 +29,9 @@ RSpec.describe 'Character Index', type: :feature do
       click_button "Create Playlist"
       expect(current_path).to match(/\/playlists\/\d+/)      
       expect(page).to have_content("10 Recommended Songs")
-      expect(page).to have_css('div#song', count: 10)
+      expect(page).to have_css('.song', count: 10)
       page.all('div.song').each do |song_div|
-        expect(song_div).not_to be_empty
+        expect(song_div).to have_css('li', text: /\w+/) # Use 'have_css' with ':text' option to check for text
       end     
     end
     
