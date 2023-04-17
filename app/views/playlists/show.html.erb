@@ -2,7 +2,7 @@
 
 <ol><% @playlist.songs.each do |song|%>
   <div class="song">
-    <li><%= song %></li>
+    <li><%= "#{song.name}, by #{song.artists.first.name}"%></li>
   </div>
 <% end %></ol>
 <% if current_user %>
@@ -10,6 +10,8 @@
 <% end %>
 
 <h2>Don't like what you see? Remix your playlist</h2>
+<br>
+<br>
 <%= form_with url: playlists_path, method: :post do |form| %>
   <%= form.label :query, "Genre:" %>
   <%= form.text_field :query %>
