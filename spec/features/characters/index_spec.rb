@@ -1,5 +1,4 @@
-require 'rails_helper'
-
+7
 RSpec.describe 'Character Index', type: :feature do
 
   describe 'character page', :vcr do

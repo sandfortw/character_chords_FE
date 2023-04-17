@@ -28,7 +28,7 @@ class PlaylistsController < ApplicationController
     spotify_playlist = create_spotify_playlist(current_playlist)
     redirect_to(spotify_playlist.external_urls["spotify"], allow_other_host: true)
   end 
-
+  
   private
   def create_spotify_playlist(playlist)
     spotify_playlist = current_user.create_playlist!("#{playlist.character}, #{playlist.genre} AI Playlist")
