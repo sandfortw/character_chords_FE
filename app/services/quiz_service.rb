@@ -2,6 +2,6 @@
 
 class QuizService < ApplicationService
   def quizzes
-    get_url("#{@@base_url}/chordsapi/v1/themes")
+    get_url("#{ENV['CC_API_URL']}/chordsapi/v1/themes")
   end
 end
