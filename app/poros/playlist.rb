@@ -21,7 +21,8 @@ class Playlist
 
   def clean_up(songs)
     songs.map do |song|
-      song.gsub(/[^a-zA-Z\s.]+/, '')
+      cleaned_up_song = song.gsub(/[^a-zA-Z\s.]+/, '')
+      RSpotify::Track.search(cleaned_up_song, limit: 1, market: 'US').first
     end
   end
 end

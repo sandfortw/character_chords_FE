@@ -32,9 +32,7 @@ class PlaylistsController < ApplicationController
 
   def create_spotify_playlist(playlist)
     spotify_playlist = current_user.create_playlist!("#{playlist.character}, #{playlist.genre} AI Playlist")
-    playlist.songs.each do |song|
-      spotify_playlist.add_tracks!(RSpotify::Track.search(song, limit: 1, market: 'US'))
-    end
+    spotify_playlist.add_tracks!(playlist.songs)
     spotify_playlist
   end
 end
