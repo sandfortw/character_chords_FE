@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Character
-  attr_reader :image_url,
+  attr_reader :s3key,
               :quiz_id,
               :quiz,
               :name,
@@ -11,7 +11,7 @@ class Character
               :description
 
   def initialize(data)
-    @image_url = data[:links][:image]
+    @s3key = data[:links][:image]
     @quiz_id = data[:data][:theme_id]
     @quiz = data[:data][:attributes][:quiz]
     @name = data[:data][:attributes][:name]

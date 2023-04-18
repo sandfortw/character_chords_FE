@@ -6,7 +6,7 @@
   <div class="quiz-container">
     <% @quizzes.each do |quiz|%>
       <div class="quiz">
-        <%= image_tag quiz.image_link, class: 'quiz-image', alt: "#{quiz.title} quiz image" %>
+        <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image', alt: "#{quiz.title} quiz image" %>
         <%= link_to "what kind of #{quiz.title} are you?", quiz_path(quiz.id), class: 'quiz-link'%>
       </div>
     <%end%>
