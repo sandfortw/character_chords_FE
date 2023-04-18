@@ -2,7 +2,7 @@
 
 class PlaylistsController < ApplicationController
   def create
-    if params[:query].length < 40 && params[:query].length > 0
+    if params[:query].length <= 40 && params[:query].length > 0
       if !params[:remix_character]
         playlist_json = PlaylistFacade.new(params).create_playlists
       else
@@ -12,8 +12,11 @@ class PlaylistsController < ApplicationController
       end
       session[:playlist] = playlist_json
       redirect_to playlist_path(current_playlist.id)
-    else
+    elsif params[:query].length > 40
       flash[:error] = 'Sorry, please enter a valid genre that is less than 40 characters.'
+      redirect_to characters_path
+    else
+      flash[:error] = 'Genre cannot be empty.'
       redirect_to characters_path
     end
   end
