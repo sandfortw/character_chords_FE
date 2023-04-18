@@ -35,22 +35,35 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"6494a8eeda047d484ed0cfd9f5a60598"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - cd585e9a-7ffe-4c33-bb1b-0315fe563dbd
+      - b30a6115-5aa8-4fed-bfef-55414ac87c94
       X-Runtime:
-      - '0.036349'
+      - '0.008465'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=3.83, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=5.08
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.67, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=1.74
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":"https://media.istockphoto.com/id/1202688372/photo/error-programming-social-networking-seo-search-and-service-delivery-concept-chart-with.jpg?s=1024x1024\u0026w=is\u0026k=20\u0026c=I0Oued_6FvH_MoQo98ccgZ4WRc6r-OdQTBZYjv9J0gY=","title":"Debugging
+        Test"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg","title":"Want
+        To Know Which Famous Lawyer You''re Most Like? Take This Quiz And Achieve
+        Ultimate Enlightenment!"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg","title":"Discover
+        Your True Nature With This Fun DnD Alignment Quiz"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png","title":"May
+        The Force Be With You: Discover Your Inner Star Wars Character With This Quiz"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png","title":"Are
+        You A Hero, Villain, Or An Extra? Take This Harry Potter Character Quiz And
+        Find Out Where You Stand In The Wizarding World!"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg","title":"Sauron
+        or Samwise, take this LOTR character alignment to find where you stand in
+        the fight for Middle Earth!"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":"https://cdn-media-1.freecodecamp.org/images/1*2TWW_kmC28W_rfXJqT6oPg.jpeg","title":"Techies
+        Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz"}}]}'
+  recorded_at: Tue, 18 Apr 2023 04:34:16 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -86,20 +99,33 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"6494a8eeda047d484ed0cfd9f5a60598"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ab169ef4-0318-41df-beca-ffe825c80434
+      - 457162d8-7357-4ba7-af0e-6878bfbe4c49
       X-Runtime:
-      - '0.041180'
+      - '0.022251'
       Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=1.30, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=26.27
+      - start_processing.action_controller;dur=0.08, sql.active_record;dur=2.13, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=4.40
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":"https://media.istockphoto.com/id/1202688372/photo/error-programming-social-networking-seo-search-and-service-delivery-concept-chart-with.jpg?s=1024x1024\u0026w=is\u0026k=20\u0026c=I0Oued_6FvH_MoQo98ccgZ4WRc6r-OdQTBZYjv9J0gY=","title":"Debugging
+        Test"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg","title":"Want
+        To Know Which Famous Lawyer You''re Most Like? Take This Quiz And Achieve
+        Ultimate Enlightenment!"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg","title":"Discover
+        Your True Nature With This Fun DnD Alignment Quiz"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png","title":"May
+        The Force Be With You: Discover Your Inner Star Wars Character With This Quiz"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png","title":"Are
+        You A Hero, Villain, Or An Extra? Take This Harry Potter Character Quiz And
+        Find Out Where You Stand In The Wizarding World!"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg","title":"Sauron
+        or Samwise, take this LOTR character alignment to find where you stand in
+        the fight for Middle Earth!"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":"https://cdn-media-1.freecodecamp.org/images/1*2TWW_kmC28W_rfXJqT6oPg.jpeg","title":"Techies
+        Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz"}}]}'
+  recorded_at: Tue, 18 Apr 2023 04:34:16 GMT
 recorded_with: VCR 6.1.0
