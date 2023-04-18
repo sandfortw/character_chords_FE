@@ -26,6 +26,10 @@ jobs:
       SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
       SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
       CC_API_URL: ${{ secrets.CC_API_URL }}
+      AWS_ACCESS_KEY: ${{ secrets.AWS_ACCESS_KEY }}
+      AWS_CODE: ${{ secrets.AWS_CODE }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+
 
     steps:
       - name: Checkout code
