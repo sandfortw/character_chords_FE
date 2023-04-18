@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe CharacterFacade do
   let(:params) { { answers: { "'1good_evil'" => '0', "'12chaotic_lawful'" => '4' } } }
-  let(:quiz_id) { '1' }
+  let(:quiz_id) { '2' }
   let(:facade) { CharacterFacade.new(params, quiz_id) }
   let(:character_hash) { facade.character }
   describe '#character' do

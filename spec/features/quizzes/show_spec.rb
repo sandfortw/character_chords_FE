@@ -9,7 +9,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
     end
 
     it ' The title of the quiz is show ' do
-      expect(page).to have_content('ALIGNMENT QUIZ')
+      expect(page).to have_content('LAWYER QUIZ')
     end
 
     context 'When each question is answered and you click submit ' do
@@ -31,7 +31,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
 
         click_button 'Get your results'
         expect(current_path).to eq(characters_path)
-        expect(page).to have_content('You are Chaotic Evil')
+        expect(page).to have_content('Your alignment type is Chaotic Evil')
       end
     end
 

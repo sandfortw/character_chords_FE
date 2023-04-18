@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/find_character?good_evil=0.0&lawful_chaotic=1.0
+    uri: http://localhost:4000/chordsapi/v1/themes/2/characters/find_character?good_evil=0.0&lawful_chaotic=1.0
     body:
       encoding: US-ASCII
       string: ''
@@ -35,21 +35,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"fe5242053eec4d7a4e33ffaab7a54c9e"
+      - W/"5f5451232d06707372816b9a922be637"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 67ce8ac9-4098-4d7d-91b5-6cfb41f5e0fc
+      - 5761fe25-7e02-42c4-b54c-28606944b945
       X-Runtime:
-      - '0.022542'
+      - '0.018209'
       Server-Timing:
-      - start_processing.action_controller;dur=0.20, sql.active_record;dur=3.19, instantiation.active_record;dur=0.18,
-        process_action.action_controller;dur=6.15
+      - start_processing.action_controller;dur=0.15, sql.active_record;dur=3.91, instantiation.active_record;dur=0.25,
+        process_action.action_controller;dur=7.74
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Roy_Cohn.jpg/463px-Roy_Cohn.jpg"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Roy
-        Cohn","quiz":"lawyer","alignment":"Lawful Evil","character_id":7}}}'
-  recorded_at: Sat, 15 Apr 2023 16:01:01 GMT
+      string: '{"links":{"image":"LawyerCharacters/RoyCohn.webp"},"data":{"type":"character","theme_id":2,"attributes":{"name":"Roy
+        Cohn","quiz":"lawyer","alignment":"Lawful Evil","character_id":16,"description":"You
+        are Roy Cohn, a ruthless, cunning and manipulative individual who will stop
+        at nothing to achieve your goals. You follow the letter of the law but will
+        bend it to your own advantage. You are a master of deception and an expert
+        at finding loopholes in any situation. You will never accept defeat, no matter
+        how dire the consequences"}}}'
+  recorded_at: Tue, 18 Apr 2023 20:08:56 GMT
 recorded_with: VCR 6.1.0
