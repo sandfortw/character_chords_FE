@@ -41,7 +41,7 @@ RSpec.describe 'Playlist Show Page', type: :feature do
       end
       it 'should have a link to open with spotify' do
         login_with_oauth
-        expect_any_instance_of(ApplicationController).to receive(:current_character).and_return(Character.new(@character_data.deep_symbolize_keys))
+        expect_any_instance_of(ApplicationController).to receive(:current_character).at_least(:once).and_return(Character.new(@character_data.deep_symbolize_keys))
         expect_any_instance_of(ApplicationController).to receive(:current_playlist).and_return(Playlist.new(@playlist_json))
         allow_any_instance_of(CharacterFacade).to receive(:all_characters_for_theme_id).and_return([Character.new(@character_data.deep_symbolize_keys)])
         visit '/playlists/1'

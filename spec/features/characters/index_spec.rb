@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-7
+require 'rails_helper'
+require 'spec_helper'
+
 RSpec.describe 'Character Index', type: :feature do
   describe 'character page', :vcr do
     before(:each) do
