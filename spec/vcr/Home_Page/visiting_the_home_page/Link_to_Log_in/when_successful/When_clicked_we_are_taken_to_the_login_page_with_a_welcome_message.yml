@@ -35,22 +35,25 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"811ed73e8ac2c7774bd23bdda24ead26"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 04f6ed8b-76c2-4175-8bd8-3c23bbfe7e67
+      - 4ef5128a-7e38-4428-b772-e5981b1a90d0
       X-Runtime:
-      - '0.015020'
+      - '0.009092'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.55, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=9.55
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=0.92, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=2.44
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":null,"s3_key":"DebugTheme.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":null,"s3_key":"LawyerTheme.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":null,"s3_key":"AlignmentTheme.png"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":null,"s3_key":"StarWarsTheme.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":null,"s3_key":"HarryPotterTheme.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":null,"s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"s3_key":"CoderTheme.jpeg"}}]}'
+  recorded_at: Tue, 18 Apr 2023 18:44:25 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -86,20 +89,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"811ed73e8ac2c7774bd23bdda24ead26"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 73434495-42d6-4caa-bab9-037451d777d1
+      - 0b966da2-13a0-4344-b082-1f8fa5c64340
       X-Runtime:
-      - '0.050230'
+      - '0.008871'
       Server-Timing:
-      - start_processing.action_controller;dur=0.05, sql.active_record;dur=2.51, instantiation.active_record;dur=0.08,
-        process_action.action_controller;dur=44.45
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=0.88, instantiation.active_record;dur=0.06,
+        process_action.action_controller;dur=2.11
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":null,"s3_key":"DebugTheme.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":null,"s3_key":"LawyerTheme.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":null,"s3_key":"AlignmentTheme.png"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":null,"s3_key":"StarWarsTheme.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":null,"s3_key":"HarryPotterTheme.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":null,"s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"s3_key":"CoderTheme.jpeg"}}]}'
+  recorded_at: Tue, 18 Apr 2023 18:44:25 GMT
 recorded_with: VCR 6.1.0

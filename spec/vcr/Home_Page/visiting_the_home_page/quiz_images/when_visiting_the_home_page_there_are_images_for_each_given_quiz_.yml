@@ -35,20 +35,23 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"811ed73e8ac2c7774bd23bdda24ead26"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8c71c110-cbb9-45e3-bff4-b0591f389310
+      - 283a7be3-dee0-4407-8495-a694e9b7c635
       X-Runtime:
-      - '0.008739'
+      - '0.010221'
       Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.85, instantiation.active_record;dur=0.03,
-        process_action.action_controller;dur=1.80
+      - start_processing.action_controller;dur=0.12, sql.active_record;dur=1.18, instantiation.active_record;dur=0.07,
+        process_action.action_controller;dur=2.61
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":null,"s3_key":"DebugTheme.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":null,"s3_key":"LawyerTheme.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":null,"s3_key":"AlignmentTheme.png"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":null,"s3_key":"StarWarsTheme.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":null,"s3_key":"HarryPotterTheme.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":null,"s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"s3_key":"CoderTheme.jpeg"}}]}'
+  recorded_at: Tue, 18 Apr 2023 18:44:26 GMT
 recorded_with: VCR 6.1.0

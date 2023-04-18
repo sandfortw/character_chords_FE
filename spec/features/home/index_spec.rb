@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe 'Home Page', type: :feature do
   before do
@@ -51,7 +52,7 @@ RSpec.describe 'Home Page', type: :feature do
       it 'when clicked, the user is redirected to the quiz show page' do
         expect(page).to have_link('what kind of lawyer are you?')
         click_link('what kind of lawyer are you?')
-        expect(current_path).to eq(quiz_path(1))
+        expect(current_path).to eq(quiz_path(2))
       end
     end
 

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/find_character?good_evil=0.0&lawful_chaotic=1.0
+    uri: http://localhost:4000/chordsapi/v1/themes/2/characters/find_character?good_evil=0.0&lawful_chaotic=1.0
     body:
       encoding: US-ASCII
       string: ''
@@ -35,22 +35,26 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"66f77fbc29615b2894c86cce727c7683"
+      - W/"5f5451232d06707372816b9a922be637"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 53a71919-8432-4634-bec3-6f5ba17db8f4
+      - 59a6d53c-e3f2-4c07-a45b-1fa821d0c750
       X-Runtime:
-      - '0.136448'
+      - '0.127263'
       Server-Timing:
-      - sql.active_record;dur=56.28, start_processing.action_controller;dur=0.10,
-        instantiation.active_record;dur=7.19, process_action.action_controller;dur=52.33
+      - sql.active_record;dur=41.47, start_processing.action_controller;dur=0.14,
+        instantiation.active_record;dur=13.17, process_action.action_controller;dur=55.60
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
-        Evil","quiz":"debugger","alignment":"Lawful Evil","character_id":7,"description":"This
-        is a description of the character"}}}'
-  recorded_at: Sun, 16 Apr 2023 18:43:39 GMT
+      string: '{"links":{"image":"LawyerCharacters/RoyCohn.webp"},"data":{"type":"character","theme_id":2,"attributes":{"name":"Roy
+        Cohn","quiz":"lawyer","alignment":"Lawful Evil","character_id":16,"description":"You
+        are Roy Cohn, a ruthless, cunning and manipulative individual who will stop
+        at nothing to achieve your goals. You follow the letter of the law but will
+        bend it to your own advantage. You are a master of deception and an expert
+        at finding loopholes in any situation. You will never accept defeat, no matter
+        how dire the consequences"}}}'
+  recorded_at: Tue, 18 Apr 2023 18:44:12 GMT
 recorded_with: VCR 6.1.0

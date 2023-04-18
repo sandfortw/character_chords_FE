@@ -37,29 +37,1226 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"a14cb35e0665b15be1bb01394ed2aab7"
+      - W/"e3170a67ac4d83640d2e0590a348c070"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 489a2dfc-7b18-4522-876e-d6915d5d3114
+      - e755f6d3-c984-489d-ab65-dda95aea9493
       X-Runtime:
-      - '8.467029'
+      - '5.092487'
       Server-Timing:
-      - start_processing.action_controller;dur=0.17, sql.active_record;dur=59.01,
-        instantiation.active_record;dur=37.22, process_action.action_controller;dur=8446.19
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=21.20,
+        instantiation.active_record;dur=0.39, process_action.action_controller;dur=5081.79
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"playlist","genre":"90s
-        rap","id":18,"attributes":{"character_name":"Lawful Good","quiz_theme":"debugger","character_alignment":"Lawful
-        Good","song_titles":["\"California Love\" by 2Pac","\"Gin and Juice\" by Snoop
-        Dogg","\"Nuthin'' But A G Thang\" by Dr. Dre","\"Can''t Nobody Hold Me Down\"
-        by Puff Daddy feat. Mase","\"It Was A Good Day\" by Ice Cube","\"Regulate\"
-        by Warren G feat. Nate Dogg","\"Shook Ones Pt. II\" by Mobb Deep","\"Protect
-        Ya Neck\" by Wu-Tang Clan","\"U.N.I.T.Y.\" by Queen Latifah","\"Ruff Ryders''
-        Anthem\" by DMX"]}}}'
-  recorded_at: Mon, 17 Apr 2023 17:34:49 GMT
+      string: '{"links":{"image":null},"data":{"type":"playlist","genre":"90s rap","id":4,"attributes":{"character_name":"Lawful
+        Good","quiz_theme":"Debugger Test!!","character_alignment":"Lawful Good","song_titles":["Debugging
+        All Day","Gangsta''s Paradise","Can''t Hold Us","Jump","The Humpty Dance","Regulate","I
+        Want It That Way","Mama Said Knock You Out","U Can''t Touch This","Rhythm
+        Is a Dancer"]}}}'
+  recorded_at: Tue, 18 Apr 2023 18:44:17 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Debugging%20All%20Day&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:17 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226bQBB971dYPLgPucBytyUrsuJEapSkSt2olaoKLeyCN1kuWZakVuR/77JQA05xSNT6yewMM4c5Zw48fxiNFM5gcJ8ro+noWVyKgxXDYXmprDjP8qmqwowc51nKSbg+DtJYfQRqjiELVicPBWbr2QL7RRSRJDqYU3qwgOsxX2d4JguPY8juMZ/dLsdpGObinzamJCZ8BpTDqh/hOJb9f9QIxBmkfhE3mJozL2JpkUl4Vc7hbkLZuyfOOMn5TisZwb84ZgmkXsFo3m0r4/XTd6aSZjjpjKUqr1pfTtEdSc358urGPT2Hy2JO7VOlVXBz2O49ZNw18r7anXoEyWpDUhMYV6NafPRhctcNNnOUzbvBghEZq3FOq5zpa8++Gf1s8bF36gNnXnKs2hcWvXQZvAwsGzln1vn3eyePWm1bTQeNu6ya95VtFatnPSAxhhH+m/JWmEQrXgZsU9sZMe3gFCgDlAiIqiymQt92bGAjTfx83TGQ7ljAmpg61LTAMgGApmtg1+oS90QQX9XtWvPpA2Vo7wcFsKa/EZRoNwCUbb4bk+la4M2D6pEvyb2MwjX0qdwTzgrcim536ywRKueQJJi1FcEwxTDHHoK8ytM1zT3SJkcA9KV5GcMByUmayBsQXLczecrFKjVuDrR2sNcUX2xymTDdv1Hbfeqz1H+y2sPs9M27PdRKBxvpHhvdY6Lvs9CWAhVE8sBLitgXwir5bgIFg1yoxKteqzoQ0tqKQVCTURIQvqvZhjOCdigTUmeBBHtzZV/rOrA1y7ZfqmEP68M4l+pVtSs/8j/j/Pbi+tPXxfzbTRGjh/OX7YbQXe1DX8ltqZrrV9Nyj6YBlH4TQprjdqTPDBp9LAuEcEKbtVWyNCsoZITLwRhmE2D4keAnb9fcsq25xZlxVGephqGFRuhgLTRd5Nt4gjDW/TAw7cB1fN+Hoe2EvmWcBATNTFPYsjgzDaSZDgIT0zBMfeJObEe8RlzUoJPDa0nMaiJ/dC1Tmjt2RS3D032EbhWtyM/ClpKVROjpP36Igt0P0eq87FhvS8VCWkgtJwWl9bG0WkmYAcTJ5sPmNwAAAP//AwCH6n3TSgsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:18 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Gangstas%20Paradise&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:18 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRWW0/bMBR+36+o8sAeBiRO3CStVCExJDYuE4OCOqYpchy3NctttkMpiP8+1wlN0i4lXJanxOfknM/fOeezHz50OppgCP/mWqffeZCfcmHKyHjxqU2FSHlf11FKd3maCDqe7+Ik0m+BzglieLr3JyNsPjhE8YQLxD+dIYYCysmWmKdkoAJvRYj9JmJwebGVjMdcvhlbIY2oGABtO89HBYlU/p8FArmGQj+LSkzlmjdhSZYqeLnP9qrDIneDnQnKxUoqZSF3grAYhV7GQl5Pq+zF7musJCmJa7Tk4XVrbsLYGk2ve/ZsMjsf3dxeAGeoVQI+bldzt6G7QN4UuxaPBipaG9cYRTlVn5MkpEndWPKokteNGaPKVuDs5z795/b+2PlVqcdG1ltyvqixbuwf/fhG08P5KZvBeHJ8cDS6H11X0laStqJ7EZU3ha0EK7hu4RihCflX500JnUzFwmBDY4XisIZTosRBLCHqKpiOfNuxgR0Y8vFNx8IWCCzsOgayAh+NHb9rAdfGuF64GQ3EtEhX4acJlGW8HhQghvlCUDJdC1A2fDUm6HbBi4lqaF/KvTREc+SHak4Ey0jFupytQh0/8s6TPFYbg5GQIE68AIncHfR63R0Adgynyc1LGcGU0yRWPwRoXvUUiZATVYo6gFVjozauDfTCob95sJZj1aSs7zLh7VT1xSPeVlFb6+kGNd2gpa9T0tpsvCPL5smUk7NzMfmcwOGXq+PLk+/7J87bWW6Iu87y845Llk92r3bfxvHm3VaGXZNTi704i3zC1EyVhowhISfRy28wJjTsnrW0krs0pJgq0RqjkJOKpSgZDVYqJmWFYYX28mK4DwwohdR010duQ9HblVxJhA4Ovo7O8PDgfnjjXp9+EdbZgXDT9XRtqp2LTlPIZaii1M+6cS9MMArXydsgvK1kV0uTNAsRo0JR5LqlgZFbSmbe6pGSLo+UKLV2Ci8dwC7EtoVsG5sOwg7sjl0HBjYGwDLl8dLDthmYLtnDNBhAKN99H0ErMKATgB60LGj23J7tyMPbDUp0isZKt5ml5anFlUv5x2p/K3N/U2mXza2py3ilqbVYdtZ/vP6D1et/vr7IWFw18iokmerqOAvDYlmdbAqpoa4Jjx8e/wIAAP//AwAUMaV6wQwAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:18 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Cant%20Hold%20Us&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:18 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRYbXPaOBD+3l/h4QO9mybxK8Yww3Rabto0DZcmIU06NzeMLMlYF7+ospxAO/z3s2UX2wRjhxI+Ye16d/Xsrvaxfr6SpA5nAN5HHWko/UwekwWXYSd97Lic02goy4CSk4iGnDjLExj68oMqRxgw6L79HmO2HI1BwN+chh56cxN1+ZLikbDZ9QG7x3x0c90NHSdK/ildj/iEj9TOUeaKcOwL1//kzpM14NmxX4RTrM3mLIypiCzTOdpUSH3XyBknEd9wJSR4wTELgDeLmRdV3Qp5vvEKICHFQQWRzLzcew/ffZ7aVFPgQ5+Pe1+/f/kQjjslg6ujsu82SOeR19mu2CNIWGujGgA/g2qSZMrDfsiw1JWuliCQzvEjiaraBbAimqowZkTI8sCHmc6wCYzV0cslQj9z/x7/cK8n00U0uD3/eHa2uL34dphE1Njelog2qlsS8fvYN+3/JbE3/OWU0qu5q7Dwv/PFwrpawgt6GOxrbG/Dvo3qGvtD1n3T/lfSv6WDaSfyLXFPDzu5b364O710p/HUuJx8WjjnymB+Z5VTXjhtBXlqNaozWzKW491C0QdzvO0IdjGZuzwVmIayAbFXiTOJEqIgCVEWxmRgm31TNZGS/Gytrw8soGgOdnRg2SqyFKA4qmlgWE3cI0Hczd3VtkQRlK7sH5SKFe2ZQSXuWgRlGnvHZFg99dlA1ZQviWbUA0tge6JPOItxSbrur6mLpVNc7aAOwx4GEZ4hwDMtTVG1Y1U5VgZ1ajPKMCQRCQPxAgLLsiYPedJIBZ9Re2VhLTd40sepwnB3P627qY5ZHKSx27GKZ3d2W0bRmk88h03sOFP3YxKVHjkg7M0zdD/YG0lBa/bQwB32QHr3nl8K6caJuSfSjRSgNVdoYAp7IL17zy+GNFaC20eNGe/Dy+vPXy61H/RG1Q+A9Ha7W5BuVCyQBkvpL+Dx5Kz/PaR37rk0zjqIRHAWxL6NmRgfhSBmgCdDZ5Z9rGo9Sze0tRQvqEcgEWPZAV6ES5I8cQRt5C0ZnAyKaD9OJpalaslc1tSn02VH6tslXkxDWbcJsl168Q1/Ne4Dar37FFt3wVN3bXKezdc6k2tTvw6xJrVo5oUQeE/B20EtiiIZg+A1l9K7B+kmkv5wMOAnUlE5fxaOaEhjDzDCBWCWXggYfiD4cbZJoeiaQvlUP8615IE1sKGtmo6lYQM60HawjRwLOgpCAxXY2DKhZSD1LSRoZBga0mwbGDpSjD5SB4aeFE5iwuwnZNVCRXQC1FLtFdW1LnihUryxWe1CPNyV6HWpd8QtTKnEO0FSZy9z5aNuXvlk66mznFVnCQhjUd5B7Hn5smBz6dpATdnn6tXqfwAAAP//AwDx8kdBrxIAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:18 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Jump&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:18 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKxWXU/bMBR936+I+lBtEiVx4qRJpQqNjWkaYiCgbGiaIsd2qCFfdRxYhfjvc5zQpIWUgOhT63N778255574/oOmDQRH+CYfaBPtXv6UB3NOw/LnYC5Elk90HWVsN89SwcLlLk5j/RboOUUcz/cWBeXL6Y8izoZimdGpyjWMEb+hYjo7G6ZhmMtvxjBiMRNTMNipSjBBY1XyT11UnqEoKOKmjebMv+JpkamOqpidzYCydgfOBcvFRimF0H+C8gRFfsGjfL2swusHXiMizWiyxkSVXjdxcpSd5scXC3FyFC7Gl+zbgXM4aCV82GnX7sNw3XlX7rV8jKhsfUITFFdUXaBE+44imqzjDZWq/jpYcKawutVJFTN56fEftL+tkWwlvift5Zh16/Rg9ptc28cnh/Pi6zk/F1/2Z0arbKtoL8bLrHlX2laymu4egTG6os+Jb07Z1VyUgAONDYqjtT5ll5gkskVdJdNR4Iwd4BBDfgJzbAUQQOxYYQAtO3BM07RcDGxK1gd3x4iY1+Va/HQ1ZRlvbwpQw3xlU7Jcj6Yc+OaeoGuDVxPVIV+W+1mEliiI1J4IXtAWulov4LlQ+3hKY5RLuVPyqa0LTiOKcuoTJJrokQFGBuwK8zNOMctZmqg/ELRsR4pUyIVqnNxrY53m+GSdy4DJ9rVaLVWXtb7Lfvez1VcveF9L7W2o2+10i5m+zUpbShwQlmM/KeKA8jIRaICCIyF14ldvWBMC21vpQU4nixhmaqNCFOW0hdRzY2RjbFLzHKtuZ2e/9gGAhuW4zyhiy+T7zV0JWB//tE4+B4vw/PrsYAYoCUxx6V4/Lddn5NVKdKVcparn/WJY7kcpRtFT8ra4QqOR8p6kjTTTALb26AxN8izNighxJhRJrtEAnN4yeudvOl62crw4s0Z1lO46gWlbxPaoK23PMSC2McEBsqA0RIyQZxljDMbhHmZkCqFJzCBA0CIGHBPgQcuCpud6zli+W9zGHKtbYktvZoM8ilyFNP/YVLiCJ9uGu5L3QF0XW7IeJFJb73snBZt30uq8LFJTXxGfFkrKSRFF9bEyW9WcoV5cDx8e/gMAAP//AwBGMPGBSQsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:19 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=The%20Humpty%20Dance&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:19 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226bQBB9z1cgHvySC2AIGEtWpDqt4jSqIjlR1VQVWnYHe5vl0mVJbEX+964XZLAdHBK1fjI7w8xh5szZeTnSNF1whB9zXRtqL/JRHsw5ROtHfS5Elg8NA2X0LM9SQaPlGU5j48kyckAczy/+FMCXo7s5HF8VcSaWx5cowdATywxGKm4vRvwRxOh+2kujKJf/zB6jMRUjSz8p01EBsUr/swIgzxALi7iGVJ8FM54WmUJX+pzsOqxzt9i5oLnYSaUssBDAE8SCgrN8O62yVx+/VZQ0g2SrKmV4w/ud4nQ6LsYiGy/GE3cS3g6WoDcCrk6aubtUu0LeFnsrHiUqWhfXBMVlqS7pjArEtPuEAF9XOCHbnnVRFZJtY8GpslWgh6XP8K1CrLRfjeYcbEHHBqwbbrhX3/mNN7/8sojw4MHyrif+9eSmkbaRtFPt11HztrCNYFXhOzjGaAav0XAOdDYXa4PrmDslZls4JUpMEgnRUMEMFLqea7nElL+w79nnAzsyIYwij2Dou9HA9wfnlr3T1WdKxLxK16hPGyjb/DgoC8z+O0HJdB1Auc6HMTky+7sL1UJfmgcZQ0sUMjUnghfQsG4GbQoL7VbKIkgZatg5MEA5BASJ0s/yffPUtE/7bptbkHHANKdpol4gaNn0FKkc56BWdstpGlsVcm+S1w7DwxO1mac2ff0no91NW9892111tbOqdtXUA4r6MT1t0FEnNMdBUsQhcNX82lBwJCRlgvLCtX3L9e2NFRYZo5iqsYoQy6FhqTpIyU4DJfE5Vmjvp3efLFMOre15+9w4wIFuDFBcNswfn8d29m1qFpOvTw/heeGwWV7sp+vS/HI62kJuQlWdf9MtD1iKEdsv3gFpqNkiVyitXKE0tULVgbM0KxjiVCy35U6XAvBE4TnYlbxsI3lxZp9WXoYDgAhywcS+E7me52CC7QiFGMLQxH3iOVEUIZNcYEpGjtMn/TBEjk1MxyOW79i20/cHvuvJy2VQE7lcHl/l2obgyqV+Y5fdyjw81NgNtXW1OTbS6Ink1f9bVa3dVbU8XyesbsKyCWmhKJ0UjFXHSn8VUFPdYquj1V8AAAD//wMAzN/uKGwLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:19 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Regulate&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:19 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKxW207jMBB95yuiPvAEJI7TXCpVaFdAEdou9wV2tYqcxGktcsNxCgUh7dfsh+2XrOuEJmlJGy59ajzjM+MzM8d+2pCkDqPIvU07Uk964p98YUyxP/vsjBlL0p4so4TspEnMiD/dceNQngA5xYi64927DNNp/wyPsgAxvMmmCe4LvM0Q0VvM+pfnm7Hvp/yfshmQkLA+6GzlYQjDoQj7qwjM11DgZGGZSrlmj2icJSKr3Gdr0WEWu8FOGUnZQihhwQ8M0wgFdkaDtB5W2ItD18iIExzV2MjhZfWr9vPwUTvduzq6uD45OBkddxO836kAPm9VY7dhuci8CbuGRzyB1sY1QmFO1RWiFEfSoG4umRTh68aMEmErMu3lPr11p3+WflcqspL3lqzPqiyrP4aDCSTR2beToTY4Hl770LjLKmErQVsRPkNNm2ArYC9sr3cM0Qi/1ntjTEZjNjPomrJAcVDLk2fpehFPURZgMnJ0Qwe6p/CfoxrQ1x3L0VWMAFQsDXrQAI5u8cPWUO+Jx8ZFuAo/TUlB5f1JAayob0yKh2uRlK69OyfN7II3E9XQviS1kwBNkROIOWE0wxXrfLpeZPHfn7/SQDrIoltpn6Jqc1AcYJRi2+NeYguwLG1b0bcVo8nNTih2SUriSGzw0LTqyWLGp6pUdGBWjY0KuTTUM4fe6uGaj1aTvn7KlLfT1jePeVtdba2qKzV1haK+T09rE/KJPINjpDjDwFO+wKx7fHHjDx+T7vjjPDfgLvO83nHO83c+DNJePBp9jOjVR67MfccjqWtHWehgKkarNGQUMT6Qdv6cUTXT1PW5FT8kAXEJW1SKsmzEW6gaFxjqimQvz0/OoKUpAOr68uCtKHy7sguhkI3oZnLJbk+HD2BiKufqwaGaWkfL4dpUPJeeJsg5VFHutW6pHcQuEirvoyDFVUuTBC8LcAmYxAlfoYQJYoyySlxVJwTf24tXSjK/UsIEbhdesgt1ABzDNDVXw9iAhuJDpKCuqquq46sWwl0fQgB2XeL1NU31VMdB/MJRNMMD/OaBmmqZlm7wy9v0yuwEea+22LyvhUu5Y7Gphbm3qqDzju6I53glTCfi/fT5736w+O7P12eBihdGTn6ciRaOsiAolsVlJhJUxOvgeeP5PwAAAP//AwDwuj78sQwAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:20 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=I%20Want%20It%20That%20Way&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:20 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226cMBB971cgHvKSpGBguay0irqVUm3bNK22UW+qkMEma8VcapskKMq/1xi6wKZsSNTu03pmmDmcOTP47oWm6YLB+Irr2ly7k0dp2DCc1Ed9I0TB54YBC/KSF7kgSfUyzlPjGhgcQxZvTn6VmFWL1eEXmInDlTj8vIFCHqoDURV4oTIfpJBdYbG4WB/kScLlP/OAkpSIBdCPmoJE4FQB+NFCkDZIozLtQHW28JLlZaHwNTFHuwF17RE/E4SLnVLKg28FZhmkYckoH5ZV/vb1B7TkBc4GvDTpjRlbf12/uvrueh+/vV1fFxfF1Tnz9F7C+6N+7Sl8t8jHcg/yEaSyTQnNYNpQtaw1IBjGQlvmFR9GdYQqFENnyYjytYDnTcz8MRLutZ+9xuylfyL5dbONWbW+TYPN7fID5yb48vq99+Z99alXtld0Eu91Vj6WtpfsD+mPB6bwEv9NghtMLjeidriOuUMxHeCUKGOUSYiGSmbAyPVc4CJT/iLLsy3gmrFpRfHMTUBgocRMnMB3o2HjbggSm7Zcj58xULb5fFAAm9YTQclyE0C5zrMxOf4MPJmoEfkSHhYUVjCiak4EK3HPux2yM0IpzjIyXEoMUww5DhEUTRgIguDYnB0DfywsLBiOCSd5ph5AsOpHilzISerWOrD6ztHl+GCQ64D5/oHajtPYav0nkz1trT55tKeu1MkLdco63bNMn7dKe0rUEeFxmJVphJlqfOcoGRRSLmHznbWAbZvu1otvC0pioiYqgZTjnqftHkE7zZOaZ7FCe7F+u5KSBaYLnIe62NP/ad1XOjYcb7lczcDpu9Ob8zO6Il/d1K/gw3JTGt9MxljKbaq264+G8ZDmMaQPyduzFTqlrLT67qSthFbfneShG2W9yIuSQkaEosi3OwfD1wTfhLv7rtjuu7Swj9sow8E4tgEKPCdBrmXB2PNnPkwSaZkFiWUCDyHfw85JTNDCcSxkRRF0bGQ6HgKBY9uOFfiB68kvi486dIrGntqszvNH4iqke2JX38o939farbh1dWXsiVrPpLL+5y0V7N5SG3tdsv0QNm3ISyXrrKS0Nav9qzrmWtJy/+L+NwAAAP//AwCLf87LaAsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:20 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Mama%20Said%20Knock%20You%20Out&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:20 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW207bQBB95yssP+QlgK/xJVKEKqBSAzQgQBVUlbX2ruNtfOt6TYhQ/r3rtRtfqINBbZ7infHM8Zkzx345EASREuCtMlGYCi/skh0EBPnFpRhQmmZTSQIpPs7ShGJ/c+wlkfSkSBkCxAtOfuWIbGZXIALjW4Dh+CJOvNX4IcnHi5yO6CZFM15+FAGyQnR2fztKfD9j/+RRiCNMZ4p4WHbFFEUcxfcKBzsDoZtHNbL6zFmSJE85yDLnsJtQ9O6JE4oz2mnFI+iZIhKD0MlJmLXb8njFQYubJEVxi5yyvKRcW1987+vFmqxurifP8295ABanYqPg9rDZewjpFfK+2q16GPJqQ1JjEJVUXV4Kp4vFpTBvx2sqef92MCeYxyqo0zJn+tbjb4UfjZHsJX4g7cWYJTM1V15GYDK3zi5uvlwlef7TcxttG00HMV5UzfrKNopVdA9IjMAS/U18AcLLgBYBQ5c7FIctnAylB2MGUeLFJOAapqEYUGY/VzU1BCaGL+s28DUPmro5sSceMFW9Pbg1hjSo2jX46QOlyR8HpSBZfSco1m4AKEP/MCbdmijvJqpHvjhz0hBsgBvyPaEkR43obr0KmxQKmxS4TQrMJgVmk011EBQikCEHAlreo9i2fCRbR6rZl+akBHk4w0nMb4Bg08ykCWVrVVu8ojeDvR75aquLhOn+7drtVp/D/pM1H+au797zoc462Ff3u+oeT/2YozYEKUKceU6cRy4ifOR1ICeAMqE45YtWtWzD1nZR9JyG2MO0K+F6bBh2psaUTzwO9v72bK7axWLJ1mtB7Bn8sLFzAUvGqfm4vAti4wHEk6u7R/jp/Pzz+nW7IRMvV6Kv5K5UNe430zInTDzA7ccHYYaakT5vGO4MYpqkeQgIppu27Yls+Z8wWjtd60t31hel2lGVJUHXNn1Lhr6mWBAZSAG2DizDkmVoq7oJkCZrAGrWiYfhTNdVqLou0DUo6yZUbF3TdNVmojHZS8aCNTrOZUNxVh35I3OeUt/R1TgPT/fNdydwkX83NoQtxkxe//17Vel+r5bnRd/qxVjOIsm5wOM8DKtjbsHF2cRQ2Mn2YPsbAAD//wMAF24xfHcLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:20 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=U%20Cant%20Touch%20This&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:21 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW207bQBB971dYeQgPXHy/RYoQhVYI1BYVIqRWlbXeXccr1hfWa2iK8u9dr93YDnUwqM1TsjOeOTlz5nif3inKhDMA74qJMlOexE9xEDMcVT8nMed5MVNVkJOjIs84iVZHMEvUB10tMGAwPr4vMVvNF/unIOX7N1kJ4/2bmBRTvsrxXBaeJoDdYT5fXE+zKCrEN21KSUL4XJ8c1P0Ix4ns/71BIM4ADcukxdSeBUuWlbmEV+ccbCdUvQfijJOCb7WSEfyTY5YCGpSMFv22Mt78+x4rWY7THi11edVgIc396CLTnW9XN/DyjNPk8nbSKbg+6PYeQ3eDfKh2rx5BstqY1BQkNVWfTpVzkCSY9eMtlbJ/P1gyImMN1FmdM3vp76+VH52R7CR+JO3VmFWL6bcYXqy4/fFLvKSrIvd/xZ87bTtNRzFeVS2GynaKNXSPSEzAEv9NfDEmy5hXAcfStiimPZwCJUSpgKjKYioIHdfRHaSJT2i4ZmRjOwQhhJHj2DjyoK8boe5r/cE9EsTjpl2HnyFQpvZ2UDrWjFeCEu1GgHKsN2OyPFt/NVED8iVFkFOwAiGVe8JZiTvRzXpdUQwK3KyYcpale1w5LxlX9j70DIphmRggwOsHdd/XDjXj0NCG0oKcYUgKkqXyAQRW3UyecbFbrcPrZjc4aJTPVrtKmO1esc2CDdnsP9n1cRb76mUfa6+jzXW3te4w1rfZakeVE0QKGKRlEoqW1cjbQMkAF0IJ6retYbums1ltMZ2cEkjkdkWAFrgTaeZG0NbYhP4ZlGgX16cnhi+2y/Ct54rYMflxc5cKVvX3rh0vv95j98SKHjE2l+ZtUj5vN2bk9U4MldyUaub9YloR0AwC+py8HQ7RamShiAuU8AR5g1KqG1RbOs/ykgJGuKTItdoAww8EPwbb3pdvvC/JzcMmS3UjaHteGELPCcXkkQMwjnzfNBFACFsIQc80TNM5hgTNLctARhgCy0Sa5SLdt0zTMnzPd1zxlvFQi07S2FGb0Ub+SFymtE9s61uGZ7tGuxH3RF4cO6KepEJZ//Gqqm9fVevzqmOzOPUUslKqOi0pbY6l8cpXh2OIk/W79W8AAAD//wMAQZox4WwLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:21 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Rhythm%20Is%20a%20Dancer&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:21 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRWXU/bMBR951dkfege+EjiuGlTqUJFsIltfBeQNk2REzvELF+1HaBD/Pe5TmjSspSAtqoPre/tvafnnHvjxw1N6wiG/F+8ow21R/lVHoSMBPOvnVCIjA91HWV0h2epoMFsx09j/c7UOUHMD3enOWGz0Xk4E2G8ecg30eY+SnzCumKWkZGq3I0R+0XE6PKimwYBl5+MbkRjKkZmZ6toSAWJFYAfJQR5hiIvjytQ1Zl7w9I8U/iKnK3VhHnvhjgTlIuVVipCHgRhCYrcnEV8ua2Kl39/iZY0I8kSL0V5HXxiX89Ob78QmF0dfT+5iY2Di5OHTq3g01a9dxu+S+RNtZfqUayqtUlNUFxQdXE8Pv2wHKtoVL2XgzmjKlbCHBY5w9f++pP2sybHWtJbUj6XWAcTdjyB07g/3T88n1xeJc7t3jWsta01bcX2vCpvKlsr9kz164kxuiF/M15I6E0o5gEbGisUR0s4JUofJxKirorpyLP7tmljQ7480LcC4HkAWrYBDdvGvuHZwLNtZC4Ld0+xCMt2NX6aQFnG+0GZxABvBCXbtQBlw3djgoOe+WaiGuxLuZtFaIa8SM2JYDmpRRejNQmJdoRwjJKPXDsnImdJ3RmMRARx4mIkinzTccC2Ycp3U5qbMeJTTtNE/QCjWT1TpEKOVLXVTVgPNu7GFxM9Txiun6zFXDVt1n8y4u226ptnvO1Gbb1Pm7fpml36vk1aM2IHU+67SR57hCm5q0DOkJAmcYuHq2UBAJxFlDxkEfWpGqgARZzUIqVmFK9IJi3PfIV2/2BiDhxgGLZhvHTDGtXbaa7cq5uH17+DqcW/Efz5zAo8EI6P9sYv27WRu5iHppKLUqXWr6ZxN0p9FL0kb81SqPxRXJi0Q66NteLCVJXO0iyPEKNCUdSv5JRDf0fJvbu67rLFuosza7vM0n1s9nsQ2kEfwF7PxhgOkIGkA3qBlC0IICCe5QTBrk/xCEKA5VJE0MIG7GPTgZYFgTNw7L58sAxwhU7RWHObXUWeLa5Sql+s+luFh+ukXZi7o+6JNVN3Eums/3k1NVevpsX5vGX5HCxkSHNl6ySPovJYbd1Csfkj7Gnj6Q8AAAD//wMAyrEROl0LAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:21 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Debugging%20All%20Day&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:22 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226bQBB971dYPLgPucBytyUrsuJEapSkSt2olaoKLeyCN1kuWZakVuR/77JQA05xSNT6yewMM4c5Zw48fxiNFM5gcJ8ro+noWVyKgxXDYXmprDjP8qmqwowc51nKSbg+DtJYfQRqjiELVicPBWbr2QL7RRSRJDqYU3qwgOsxX2d4JguPY8juMZ/dLsdpGObinzamJCZ8BpTDqh/hOJb9f9QIxBmkfhE3mJozL2JpkUl4Vc7hbkLZuyfOOMn5TisZwb84ZgmkXsFo3m0r4/XTd6aSZjjpjKUqr1pfTtEdSc358urGPT2Hy2JO7VOlVXBz2O49ZNw18r7anXoEyWpDUhMYV6NafPRhctcNNnOUzbvBghEZq3FOq5zpa8++Gf1s8bF36gNnXnKs2hcWvXQZvAwsGzln1vn3eyePWm1bTQeNu6ya95VtFatnPSAxhhH+m/JWmEQrXgZsU9sZMe3gFCgDlAiIqiymQt92bGAjTfx83TGQ7ljAmpg61LTAMgGApmtg1+oS90QQX9XtWvPpA2Vo7wcFsKa/EZRoNwCUbb4bk+la4M2D6pEvyb2MwjX0qdwTzgrcim536ywRKueQJJi1FcEwxTDHHoK8ytM1zT3SJkcA9KV5GcMByUmayBsQXLczecrFKjVuDrR2sNcUX2xymTDdv1Hbfeqz1H+y2sPs9M27PdRKBxvpHhvdY6Lvs9CWAhVE8sBLitgXwir5bgIFg1yoxKteqzoQ0tqKQVCTURIQvqvZhjOCdigTUmeBBHtzZV/rOrA1y7ZfqmEP68M4l+pVtSs/8j/j/Pbi+tPXxfzbTRGjh/OX7YbQXe1DX8ltqZrrV9Nyj6YBlH4TQprjdqTPDBp9LAuEcEKbtVWyNCsoZITLwRhmE2D4keAnb9fcsq25xZlxVGephqGFRuhgLTRd5Nt4gjDW/TAw7cB1fN+Hoe2EvmWcBATNTFPYsjgzDaSZDgIT0zBMfeJObEe8RlzUoJPDa0nMaiJ/dC1Tmjt2RS3D032EbhWtyM/ClpKVROjpP36Igt0P0eq87FhvS8VCWkgtJwWl9bG0WkmYAcTJ5sPmNwAAAP//AwCH6n3TSgsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:22 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Gangstas%20Paradise&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:22 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRWW0/bMBR+36+o8sAeBiRO3CStVCExJDYuE4OCOqYpchy3NctttkMpiP8+1wlN0i4lXJanxOfknM/fOeezHz50OppgCP/mWqffeZCfcmHKyHjxqU2FSHlf11FKd3maCDqe7+Ik0m+BzglieLr3JyNsPjhE8YQLxD+dIYYCysmWmKdkoAJvRYj9JmJwebGVjMdcvhlbIY2oGABtO89HBYlU/p8FArmGQj+LSkzlmjdhSZYqeLnP9qrDIneDnQnKxUoqZSF3grAYhV7GQl5Pq+zF7musJCmJa7Tk4XVrbsLYGk2ve/ZsMjsf3dxeAGeoVQI+bldzt6G7QN4UuxaPBipaG9cYRTlVn5MkpEndWPKokteNGaPKVuDs5z795/b+2PlVqcdG1ltyvqixbuwf/fhG08P5KZvBeHJ8cDS6H11X0laStqJ7EZU3ha0EK7hu4RihCflX500JnUzFwmBDY4XisIZTosRBLCHqKpiOfNuxgR0Y8vFNx8IWCCzsOgayAh+NHb9rAdfGuF64GQ3EtEhX4acJlGW8HhQghvlCUDJdC1A2fDUm6HbBi4lqaF/KvTREc+SHak4Ey0jFupytQh0/8s6TPFYbg5GQIE68AIncHfR63R0Adgynyc1LGcGU0yRWPwRoXvUUiZATVYo6gFVjozauDfTCob95sJZj1aSs7zLh7VT1xSPeVlFb6+kGNd2gpa9T0tpsvCPL5smUk7NzMfmcwOGXq+PLk+/7J87bWW6Iu87y845Llk92r3bfxvHm3VaGXZNTi704i3zC1EyVhowhISfRy28wJjTsnrW0krs0pJgq0RqjkJOKpSgZDVYqJmWFYYX28mK4DwwohdR010duQ9HblVxJhA4Ovo7O8PDgfnjjXp9+EdbZgXDT9XRtqp2LTlPIZaii1M+6cS9MMArXydsgvK1kV0uTNAsRo0JR5LqlgZFbSmbe6pGSLo+UKLV2Ci8dwC7EtoVsG5sOwg7sjl0HBjYGwDLl8dLDthmYLtnDNBhAKN99H0ErMKATgB60LGj23J7tyMPbDUp0isZKt5ml5anFlUv5x2p/K3N/U2mXza2py3ilqbVYdtZ/vP6D1et/vr7IWFw18iokmerqOAvDYlmdbAqpoa4Jjx8e/wIAAP//AwAUMaV6wQwAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:22 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Cant%20Hold%20Us&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:22 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRYbXPaOBD+3l/h4QO9mybxK8Yww3Rabto0DZcmIU06NzeMLMlYF7+ospxAO/z3s2UX2wRjhxI+Ye16d/Xsrvaxfr6SpA5nAN5HHWko/UwekwWXYSd97Lic02goy4CSk4iGnDjLExj68oMqRxgw6L79HmO2HI1BwN+chh56cxN1+ZLikbDZ9QG7x3x0c90NHSdK/ildj/iEj9TOUeaKcOwL1//kzpM14NmxX4RTrM3mLIypiCzTOdpUSH3XyBknEd9wJSR4wTELgDeLmRdV3Qp5vvEKICHFQQWRzLzcew/ffZ7aVFPgQ5+Pe1+/f/kQjjslg6ujsu82SOeR19mu2CNIWGujGgA/g2qSZMrDfsiw1JWuliCQzvEjiaraBbAimqowZkTI8sCHmc6wCYzV0cslQj9z/x7/cK8n00U0uD3/eHa2uL34dphE1Njelog2qlsS8fvYN+3/JbE3/OWU0qu5q7Dwv/PFwrpawgt6GOxrbG/Dvo3qGvtD1n3T/lfSv6WDaSfyLXFPDzu5b364O710p/HUuJx8WjjnymB+Z5VTXjhtBXlqNaozWzKW491C0QdzvO0IdjGZuzwVmIayAbFXiTOJEqIgCVEWxmRgm31TNZGS/Gytrw8soGgOdnRg2SqyFKA4qmlgWE3cI0Hczd3VtkQRlK7sH5SKFe2ZQSXuWgRlGnvHZFg99dlA1ZQviWbUA0tge6JPOItxSbrur6mLpVNc7aAOwx4GEZ4hwDMtTVG1Y1U5VgZ1ajPKMCQRCQPxAgLLsiYPedJIBZ9Re2VhLTd40sepwnB3P627qY5ZHKSx27GKZ3d2W0bRmk88h03sOFP3YxKVHjkg7M0zdD/YG0lBa/bQwB32QHr3nl8K6caJuSfSjRSgNVdoYAp7IL17zy+GNFaC20eNGe/Dy+vPXy61H/RG1Q+A9Ha7W5BuVCyQBkvpL+Dx5Kz/PaR37rk0zjqIRHAWxL6NmRgfhSBmgCdDZ5Z9rGo9Sze0tRQvqEcgEWPZAV6ES5I8cQRt5C0ZnAyKaD9OJpalaslc1tSn02VH6tslXkxDWbcJsl168Q1/Ne4Dar37FFt3wVN3bXKezdc6k2tTvw6xJrVo5oUQeE/B20EtiiIZg+A1l9K7B+kmkv5wMOAnUlE5fxaOaEhjDzDCBWCWXggYfiD4cbZJoeiaQvlUP8615IE1sKGtmo6lYQM60HawjRwLOgpCAxXY2DKhZSD1LSRoZBga0mwbGDpSjD5SB4aeFE5iwuwnZNVCRXQC1FLtFdW1LnihUryxWe1CPNyV6HWpd8QtTKnEO0FSZy9z5aNuXvlk66mznFVnCQhjUd5B7Hn5smBz6dpATdnn6tXqfwAAAP//AwDx8kdBrxIAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:22 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Jump&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:23 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKxWXU/bMBR936+I+lBtEiVx4qRJpQqNjWkaYiCgbGiaIsd2qCFfdRxYhfjvc5zQpIWUgOhT63N778255574/oOmDQRH+CYfaBPtXv6UB3NOw/LnYC5Elk90HWVsN89SwcLlLk5j/RboOUUcz/cWBeXL6Y8izoZimdGpyjWMEb+hYjo7G6ZhmMtvxjBiMRNTMNipSjBBY1XyT11UnqEoKOKmjebMv+JpkamOqpidzYCydgfOBcvFRimF0H+C8gRFfsGjfL2swusHXiMizWiyxkSVXjdxcpSd5scXC3FyFC7Gl+zbgXM4aCV82GnX7sNw3XlX7rV8jKhsfUITFFdUXaBE+44imqzjDZWq/jpYcKawutVJFTN56fEftL+tkWwlvift5Zh16/Rg9ptc28cnh/Pi6zk/F1/2Z0arbKtoL8bLrHlX2laymu4egTG6os+Jb07Z1VyUgAONDYqjtT5ll5gkskVdJdNR4Iwd4BBDfgJzbAUQQOxYYQAtO3BM07RcDGxK1gd3x4iY1+Va/HQ1ZRlvbwpQw3xlU7Jcj6Yc+OaeoGuDVxPVIV+W+1mEliiI1J4IXtAWulov4LlQ+3hKY5RLuVPyqa0LTiOKcuoTJJrokQFGBuwK8zNOMctZmqg/ELRsR4pUyIVqnNxrY53m+GSdy4DJ9rVaLVWXtb7Lfvez1VcveF9L7W2o2+10i5m+zUpbShwQlmM/KeKA8jIRaICCIyF14ldvWBMC21vpQU4nixhmaqNCFOW0hdRzY2RjbFLzHKtuZ2e/9gGAhuW4zyhiy+T7zV0JWB//tE4+B4vw/PrsYAYoCUxx6V4/Lddn5NVKdKVcparn/WJY7kcpRtFT8ra4QqOR8p6kjTTTALb26AxN8izNighxJhRJrtEAnN4yeudvOl62crw4s0Z1lO46gWlbxPaoK23PMSC2McEBsqA0RIyQZxljDMbhHmZkCqFJzCBA0CIGHBPgQcuCpud6zli+W9zGHKtbYktvZoM8ilyFNP/YVLiCJ9uGu5L3QF0XW7IeJFJb73snBZt30uq8LFJTXxGfFkrKSRFF9bEyW9WcoV5cDx8e/gMAAP//AwBGMPGBSQsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:23 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=The%20Humpty%20Dance&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:23 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226bQBB9z1cgHvySC2AIGEtWpDqt4jSqIjlR1VQVWnYHe5vl0mVJbEX+964XZLAdHBK1fjI7w8xh5szZeTnSNF1whB9zXRtqL/JRHsw5ROtHfS5Elg8NA2X0LM9SQaPlGU5j48kyckAczy/+FMCXo7s5HF8VcSaWx5cowdATywxGKm4vRvwRxOh+2kujKJf/zB6jMRUjSz8p01EBsUr/swIgzxALi7iGVJ8FM54WmUJX+pzsOqxzt9i5oLnYSaUssBDAE8SCgrN8O62yVx+/VZQ0g2SrKmV4w/ud4nQ6LsYiGy/GE3cS3g6WoDcCrk6aubtUu0LeFnsrHiUqWhfXBMVlqS7pjArEtPuEAF9XOCHbnnVRFZJtY8GpslWgh6XP8K1CrLRfjeYcbEHHBqwbbrhX3/mNN7/8sojw4MHyrif+9eSmkbaRtFPt11HztrCNYFXhOzjGaAav0XAOdDYXa4PrmDslZls4JUpMEgnRUMEMFLqea7nElL+w79nnAzsyIYwij2Dou9HA9wfnlr3T1WdKxLxK16hPGyjb/DgoC8z+O0HJdB1Auc6HMTky+7sL1UJfmgcZQ0sUMjUnghfQsG4GbQoL7VbKIkgZatg5MEA5BASJ0s/yffPUtE/7bptbkHHANKdpol4gaNn0FKkc56BWdstpGlsVcm+S1w7DwxO1mac2ff0no91NW9892111tbOqdtXUA4r6MT1t0FEnNMdBUsQhcNX82lBwJCRlgvLCtX3L9e2NFRYZo5iqsYoQy6FhqTpIyU4DJfE5Vmjvp3efLFMOre15+9w4wIFuDFBcNswfn8d29m1qFpOvTw/heeGwWV7sp+vS/HI62kJuQlWdf9MtD1iKEdsv3gFpqNkiVyitXKE0tULVgbM0KxjiVCy35U6XAvBE4TnYlbxsI3lxZp9WXoYDgAhywcS+E7me52CC7QiFGMLQxH3iOVEUIZNcYEpGjtMn/TBEjk1MxyOW79i20/cHvuvJy2VQE7lcHl/l2obgyqV+Y5fdyjw81NgNtXW1OTbS6Ink1f9bVa3dVbU8XyesbsKyCWmhKJ0UjFXHSn8VUFPdYquj1V8AAAD//wMAzN/uKGwLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:23 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Regulate&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:23 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKxW207jMBB95yuiPvAEJI7TXCpVaFdAEdou9wV2tYqcxGktcsNxCgUh7dfsh+2XrOuEJmlJGy59ajzjM+MzM8d+2pCkDqPIvU07Uk964p98YUyxP/vsjBlL0p4so4TspEnMiD/dceNQngA5xYi64927DNNp/wyPsgAxvMmmCe4LvM0Q0VvM+pfnm7Hvp/yfshmQkLA+6GzlYQjDoQj7qwjM11DgZGGZSrlmj2icJSKr3Gdr0WEWu8FOGUnZQihhwQ8M0wgFdkaDtB5W2ItD18iIExzV2MjhZfWr9vPwUTvduzq6uD45OBkddxO836kAPm9VY7dhuci8CbuGRzyB1sY1QmFO1RWiFEfSoG4umRTh68aMEmErMu3lPr11p3+WflcqspL3lqzPqiyrP4aDCSTR2beToTY4Hl770LjLKmErQVsRPkNNm2ArYC9sr3cM0Qi/1ntjTEZjNjPomrJAcVDLk2fpehFPURZgMnJ0Qwe6p/CfoxrQ1x3L0VWMAFQsDXrQAI5u8cPWUO+Jx8ZFuAo/TUlB5f1JAayob0yKh2uRlK69OyfN7II3E9XQviS1kwBNkROIOWE0wxXrfLpeZPHfn7/SQDrIoltpn6Jqc1AcYJRi2+NeYguwLG1b0bcVo8nNTih2SUriSGzw0LTqyWLGp6pUdGBWjY0KuTTUM4fe6uGaj1aTvn7KlLfT1jePeVtdba2qKzV1haK+T09rE/KJPINjpDjDwFO+wKx7fHHjDx+T7vjjPDfgLvO83nHO83c+DNJePBp9jOjVR67MfccjqWtHWehgKkarNGQUMT6Qdv6cUTXT1PW5FT8kAXEJW1SKsmzEW6gaFxjqimQvz0/OoKUpAOr68uCtKHy7sguhkI3oZnLJbk+HD2BiKufqwaGaWkfL4dpUPJeeJsg5VFHutW6pHcQuEirvoyDFVUuTBC8LcAmYxAlfoYQJYoyySlxVJwTf24tXSjK/UsIEbhdesgt1ABzDNDVXw9iAhuJDpKCuqquq46sWwl0fQgB2XeL1NU31VMdB/MJRNMMD/OaBmmqZlm7wy9v0yuwEea+22LyvhUu5Y7Gphbm3qqDzju6I53glTCfi/fT5736w+O7P12eBihdGTn6ciRaOsiAolsVlJhJUxOvgeeP5PwAAAP//AwDwuj78sQwAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:23 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=I%20Want%20It%20That%20Way&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:23 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW226cMBB971cgHvKSpGBguay0irqVUm3bNK22UW+qkMEma8VcapskKMq/1xi6wKZsSNTu03pmmDmcOTP47oWm6YLB+Irr2ly7k0dp2DCc1Ed9I0TB54YBC/KSF7kgSfUyzlPjGhgcQxZvTn6VmFWL1eEXmInDlTj8vIFCHqoDURV4oTIfpJBdYbG4WB/kScLlP/OAkpSIBdCPmoJE4FQB+NFCkDZIozLtQHW28JLlZaHwNTFHuwF17RE/E4SLnVLKg28FZhmkYckoH5ZV/vb1B7TkBc4GvDTpjRlbf12/uvrueh+/vV1fFxfF1Tnz9F7C+6N+7Sl8t8jHcg/yEaSyTQnNYNpQtaw1IBjGQlvmFR9GdYQqFENnyYjytYDnTcz8MRLutZ+9xuylfyL5dbONWbW+TYPN7fID5yb48vq99+Z99alXtld0Eu91Vj6WtpfsD+mPB6bwEv9NghtMLjeidriOuUMxHeCUKGOUSYiGSmbAyPVc4CJT/iLLsy3gmrFpRfHMTUBgocRMnMB3o2HjbggSm7Zcj58xULb5fFAAm9YTQclyE0C5zrMxOf4MPJmoEfkSHhYUVjCiak4EK3HPux2yM0IpzjIyXEoMUww5DhEUTRgIguDYnB0DfywsLBiOCSd5ph5AsOpHilzISerWOrD6ztHl+GCQ64D5/oHajtPYav0nkz1trT55tKeu1MkLdco63bNMn7dKe0rUEeFxmJVphJlqfOcoGRRSLmHznbWAbZvu1otvC0pioiYqgZTjnqftHkE7zZOaZ7FCe7F+u5KSBaYLnIe62NP/ad1XOjYcb7lczcDpu9Ob8zO6Il/d1K/gw3JTGt9MxljKbaq264+G8ZDmMaQPyduzFTqlrLT67qSthFbfneShG2W9yIuSQkaEosi3OwfD1wTfhLv7rtjuu7Swj9sow8E4tgEKPCdBrmXB2PNnPkwSaZkFiWUCDyHfw85JTNDCcSxkRRF0bGQ6HgKBY9uOFfiB68kvi486dIrGntqszvNH4iqke2JX38o939farbh1dWXsiVrPpLL+5y0V7N5SG3tdsv0QNm3ISyXrrKS0Nav9qzrmWtJy/+L+NwAAAP//AwCLf87LaAsAAA==
+  recorded_at: Tue, 18 Apr 2023 18:44:24 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Mama%20Said%20Knock%20You%20Out&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:24 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW207bQBB95yssP+QlgK/xJVKEKqBSAzQgQBVUlbX2ruNtfOt6TYhQ/r3rtRtfqINBbZ7infHM8Zkzx345EASREuCtMlGYCi/skh0EBPnFpRhQmmZTSQIpPs7ShGJ/c+wlkfSkSBkCxAtOfuWIbGZXIALjW4Dh+CJOvNX4IcnHi5yO6CZFM15+FAGyQnR2fztKfD9j/+RRiCNMZ4p4WHbFFEUcxfcKBzsDoZtHNbL6zFmSJE85yDLnsJtQ9O6JE4oz2mnFI+iZIhKD0MlJmLXb8njFQYubJEVxi5yyvKRcW1987+vFmqxurifP8295ABanYqPg9rDZewjpFfK+2q16GPJqQ1JjEJVUXV4Kp4vFpTBvx2sqef92MCeYxyqo0zJn+tbjb4UfjZHsJX4g7cWYJTM1V15GYDK3zi5uvlwlef7TcxttG00HMV5UzfrKNopVdA9IjMAS/U18AcLLgBYBQ5c7FIctnAylB2MGUeLFJOAapqEYUGY/VzU1BCaGL+s28DUPmro5sSceMFW9Pbg1hjSo2jX46QOlyR8HpSBZfSco1m4AKEP/MCbdmijvJqpHvjhz0hBsgBvyPaEkR43obr0KmxQKmxS4TQrMJgVmk011EBQikCEHAlreo9i2fCRbR6rZl+akBHk4w0nMb4Bg08ykCWVrVVu8ojeDvR75aquLhOn+7drtVp/D/pM1H+au797zoc462Ff3u+oeT/2YozYEKUKceU6cRy4ifOR1ICeAMqE45YtWtWzD1nZR9JyG2MO0K+F6bBh2psaUTzwO9v72bK7axWLJ1mtB7Bn8sLFzAUvGqfm4vAti4wHEk6u7R/jp/Pzz+nW7IRMvV6Kv5K5UNe430zInTDzA7ccHYYaakT5vGO4MYpqkeQgIppu27Yls+Z8wWjtd60t31hel2lGVJUHXNn1Lhr6mWBAZSAG2DizDkmVoq7oJkCZrAGrWiYfhTNdVqLou0DUo6yZUbF3TdNVmojHZS8aCNTrOZUNxVh35I3OeUt/R1TgPT/fNdydwkX83NoQtxkxe//17Vel+r5bnRd/qxVjOIsm5wOM8DKtjbsHF2cRQ2Mn2YPsbAAD//wMAF24xfHcLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:24 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=U%20Cant%20Touch%20This&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:24 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRW207bQBB971dYeQgPXHy/RYoQhVYI1BYVIqRWlbXeXccr1hfWa2iK8u9dr93YDnUwqM1TsjOeOTlz5nif3inKhDMA74qJMlOexE9xEDMcVT8nMed5MVNVkJOjIs84iVZHMEvUB10tMGAwPr4vMVvNF/unIOX7N1kJ4/2bmBRTvsrxXBaeJoDdYT5fXE+zKCrEN21KSUL4XJ8c1P0Ix4ns/71BIM4ADcukxdSeBUuWlbmEV+ccbCdUvQfijJOCb7WSEfyTY5YCGpSMFv22Mt78+x4rWY7THi11edVgIc396CLTnW9XN/DyjNPk8nbSKbg+6PYeQ3eDfKh2rx5BstqY1BQkNVWfTpVzkCSY9eMtlbJ/P1gyImMN1FmdM3vp76+VH52R7CR+JO3VmFWL6bcYXqy4/fFLvKSrIvd/xZ87bTtNRzFeVS2GynaKNXSPSEzAEv9NfDEmy5hXAcfStiimPZwCJUSpgKjKYioIHdfRHaSJT2i4ZmRjOwQhhJHj2DjyoK8boe5r/cE9EsTjpl2HnyFQpvZ2UDrWjFeCEu1GgHKsN2OyPFt/NVED8iVFkFOwAiGVe8JZiTvRzXpdUQwK3KyYcpale1w5LxlX9j70DIphmRggwOsHdd/XDjXj0NCG0oKcYUgKkqXyAQRW3UyecbFbrcPrZjc4aJTPVrtKmO1esc2CDdnsP9n1cRb76mUfa6+jzXW3te4w1rfZakeVE0QKGKRlEoqW1cjbQMkAF0IJ6retYbums1ltMZ2cEkjkdkWAFrgTaeZG0NbYhP4ZlGgX16cnhi+2y/Ct54rYMflxc5cKVvX3rh0vv95j98SKHjE2l+ZtUj5vN2bk9U4MldyUaub9YloR0AwC+py8HQ7RamShiAuU8AR5g1KqG1RbOs/ykgJGuKTItdoAww8EPwbb3pdvvC/JzcMmS3UjaHteGELPCcXkkQMwjnzfNBFACFsIQc80TNM5hgTNLctARhgCy0Sa5SLdt0zTMnzPd1zxlvFQi07S2FGb0Ub+SFymtE9s61uGZ7tGuxH3RF4cO6KepEJZ//Gqqm9fVevzqmOzOPUUslKqOi0pbY6l8cpXh2OIk/W79W8AAAD//wMAQZox4WwLAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:25 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Rhythm%20Is%20a%20Dancer&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQAfTOGZmAR4hjTFly9zw7OUNkvRy5-csKVKNTl5Kelmmom2E_CpIcD6Dk-Mn3-CDiBb3bAOYbR-PRPvfwx0E5itUTlb6Wo6xf2CmeybEIkh0NrAAv9g
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=7200
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 18 Apr 2023 18:44:25 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAALRWXU/bMBR951dkfege+EjiuGlTqUJFsIltfBeQNk2REzvELF+1HaBD/Pe5TmjSspSAtqoPre/tvafnnHvjxw1N6wiG/F+8ow21R/lVHoSMBPOvnVCIjA91HWV0h2epoMFsx09j/c7UOUHMD3enOWGz0Xk4E2G8ecg30eY+SnzCumKWkZGq3I0R+0XE6PKimwYBl5+MbkRjKkZmZ6toSAWJFYAfJQR5hiIvjytQ1Zl7w9I8U/iKnK3VhHnvhjgTlIuVVipCHgRhCYrcnEV8ua2Kl39/iZY0I8kSL0V5HXxiX89Ob78QmF0dfT+5iY2Di5OHTq3g01a9dxu+S+RNtZfqUayqtUlNUFxQdXE8Pv2wHKtoVL2XgzmjKlbCHBY5w9f++pP2sybHWtJbUj6XWAcTdjyB07g/3T88n1xeJc7t3jWsta01bcX2vCpvKlsr9kz164kxuiF/M15I6E0o5gEbGisUR0s4JUofJxKirorpyLP7tmljQ7480LcC4HkAWrYBDdvGvuHZwLNtZC4Ld0+xCMt2NX6aQFnG+0GZxABvBCXbtQBlw3djgoOe+WaiGuxLuZtFaIa8SM2JYDmpRRejNQmJdoRwjJKPXDsnImdJ3RmMRARx4mIkinzTccC2Ycp3U5qbMeJTTtNE/QCjWT1TpEKOVLXVTVgPNu7GFxM9Txiun6zFXDVt1n8y4u226ptnvO1Gbb1Pm7fpml36vk1aM2IHU+67SR57hCm5q0DOkJAmcYuHq2UBAJxFlDxkEfWpGqgARZzUIqVmFK9IJi3PfIV2/2BiDhxgGLZhvHTDGtXbaa7cq5uH17+DqcW/Efz5zAo8EI6P9sYv27WRu5iHppKLUqXWr6ZxN0p9FL0kb81SqPxRXJi0Q66NteLCVJXO0iyPEKNCUdSv5JRDf0fJvbu67rLFuosza7vM0n1s9nsQ2kEfwF7PxhgOkIGkA3qBlC0IICCe5QTBrk/xCEKA5VJE0MIG7GPTgZYFgTNw7L58sAxwhU7RWHObXUWeLa5Sql+s+luFh+ukXZi7o+6JNVN3Eums/3k1NVevpsX5vGX5HCxkSHNl6ySPovJYbd1Csfkj7Gnj6Q8AAAD//wMAyrEROl0LAAA=
+  recorded_at: Tue, 18 Apr 2023 18:44:25 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/1/characters
@@ -95,1238 +1292,38 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"58ad5cd66a76e9cfdbec29562426ebb9"
+      - W/"1278fd36401836c5723b2e50be1ab338"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 80350565-6800-4dcc-824d-54138e959ff3
+      - e4fa54bd-f8b1-4913-b9f4-91df5a8f81cb
       X-Runtime:
-      - '0.017178'
+      - '0.025793'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=3.86, instantiation.active_record;dur=0.57,
-        process_action.action_controller;dur=9.63
+      - start_processing.action_controller;dur=0.20, sql.active_record;dur=7.25, instantiation.active_record;dur=0.57,
+        process_action.action_controller;dur=13.12
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '[{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
-        Good","quiz":"debugger","alignment":"Lawful Good","character_id":1,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
-        Good","quiz":"debugger","alignment":"Neutral Good","character_id":2,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
-        Good","quiz":"debugger","alignment":"Chaotic Good","character_id":3,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
-        Neutral","quiz":"debugger","alignment":"Lawful Neutral","character_id":4,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"True
-        Neutral","quiz":"debugger","alignment":"True Neutral","character_id":5,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
-        Neutral","quiz":"debugger","alignment":"Chaotic Neutral","character_id":6,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
-        Evil","quiz":"debugger","alignment":"Lawful Evil","character_id":7,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
-        Evil","quiz":"debugger","alignment":"Neutral Evil","character_id":8,"description":"This
-        is a description of the character"}}},{"links":{"image":"https://upload.wikimedia.org/wikipedia/en/f/f7/RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
-        Evil","quiz":"debugger","alignment":"Chaotic Evil","character_id":9,"description":"This
+      string: '[{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Good","quiz":"Debugger Test!!","alignment":"Lawful Good","character_id":1,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
+        Good","quiz":"Debugger Test!!","alignment":"Neutral Good","character_id":2,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Good","quiz":"Debugger Test!!","alignment":"Chaotic Good","character_id":3,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Neutral","quiz":"Debugger Test!!","alignment":"Lawful Neutral","character_id":4,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"True
+        Neutral","quiz":"Debugger Test!!","alignment":"True Neutral","character_id":5,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Neutral","quiz":"Debugger Test!!","alignment":"Chaotic Neutral","character_id":6,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Lawful
+        Evil","quiz":"Debugger Test!!","alignment":"Lawful Evil","character_id":7,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Neutral
+        Evil","quiz":"Debugger Test!!","alignment":"Neutral Evil","character_id":8,"description":"This
+        is a description of the character"}}},{"links":{"image":"RickRoll.png"},"data":{"type":"character","theme_id":1,"attributes":{"name":"Chaotic
+        Evil","quiz":"Debugger Test!!","alignment":"Chaotic Evil","character_id":9,"description":"This
         is a description of the character"}}}]'
-  recorded_at: Mon, 17 Apr 2023 17:34:49 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=California%20Love%20by%20Pac&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:47 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALRW227UMBB95yuiPFSgUuLck5VWSG25FkFpVYSEUOTEzq7BueA4y6ao/47jhFy2zZJWsE8bz+TM0ZmZ4/x6pCgqZzD6XqjKQvklHsXBmuG4flTXnOfFQtNgTp4VecZJXD2LskTb6FqBIYvWz3+UmFXLE0hJnLGUwMN32QYfhtXhOYwOeJXjpUQ/SCD7jvny6vIgi+NC/AMHlCSEL3X1aVOUcJxIEl9aGuIM0rBMemL9WbBiWZlLjgVJVxS3KIOMuvhUAuOk4DvFZARvOWYppEHJaDEuLOOtCCNxshynI3UaeM2i199eAbh9aUfX6erk6tUWr8NjdQB483RYe47qLfMp7BEeQRJtTmoKk0arC5yQrXIBEcmU07fjpE7QhsQ4WDLSiN3wXTQ5i79pcKN8HfRlr/ozta97r5k023z7ePru/enxD/C6AKHxERF9UHZQdJbsNWoxBTsAazWfkZjAFb5rAteYrNa8DjgW2JGYjngKlhFKBUVNgmkwdFxHdxAQv9BwTeSDyLLMEIEI+ZFuuC7wEfTjceN+EsTXbbmBPlOkTPBwUjoGxj1JiXIzSDnWgzlZnq3fW6iJ8SVFkFNYwZDKPeGsxINot2O9WSq1WSqPPzCyImLsaaWcYyZCCUbKcaUYwkOfKF/epIWASnDKIVU+YVaQLP2qHCmXt3yNYYphgQMEeVPKALp9BPwjYE2lBTnDEakh5QsIVsNMnomaQX8/6MNYZwfSpAeRW15QJyz272S3kVPm/E/MYZ4x39sd5prybEueYch77PhhZjyYZRWRIgrSMgkxG7VdRSWDXAxL0FzVhq0D2+yieJtTEhG+O/197wjaaZ1YGhZJsleXJxfnhm7ornfHVOzp/rzeyyHWrLNre/PZPctP3rhnn6tVWr1wXpzeLjen7c1aTEF2UH96/re0IqBZBKVzxZAWeBiZspV/bCo9mzzLSwoZ4VJVw+gDDG8I/hnsemzeeWySm0dtlmZEcWzoHo48x3ah53umbppebPuWcFhgGqZtOya2wfOIoKVlGcgIQ2iZCFgu0n3LNC3D93zHFbeZh3p2Uvk757NbCpnSv7G7ETK82DcN3Tqo8jt1UEZNxTD+789jfffzuDmvy7YXcNOKrJTbkJaUtsfSsyVdIC/Pm0c3vwEAAP//AwCdhbLD5gsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:53:47 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Gin%20and%20Juice%20by%20Snoop%20Dogg&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:48 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWTW/bOBC991cQPgRbOKkk6sOWAaNI0SRNit12600vxUKgRMpmQ0ksSTURivz3UpRgyXblKsFifRAszmjm4c2b4fx4AcBECZTcyQlYgB/6VR9sBEnr18lGKS4XloU4fSV5oWhavUqKzPruWJIgkWxefyuJqJZXNJ+iHE9vSpqQaVxNV3lR8OnbYr0+URUnS5PiJEPijqjl7eqkSFOp/9knjGZULZ3JaZOZKpIZJF9aLPoMsbjMOnTdWbQWRckN0MbndN+hzj1gF4pKtZfKWMiDIiJHLCoFk7tpjb3lYYefgpN8h6AmvAWZTC6Lq8uvq4d7fr0+P4c3DxefJr2Aj6f93GOIb5EPxd6JR7GJNsY1R1lD1TvKwbuCg7c3EtzmuiB417Hj1ADZNZaCGluLedH4LH7HwyP4t1eboxUYyX9db8u174R3UX0t4Mfrq+zm0z8Q/c38Xtpe0lHU11HlUNhesJb3EY4ZWpNfqXBD6HqjakPg2XsUsx2cGmWCcw3RMsEsFAezwAmwrX8xnLm2A90YBijBQWpD6MdpjIgHg93C3VOsNm26Hj9DoFz7+aAcYsMngtLpRoAKvGdj8ua+82SiBuRLZcQZqlDMTJ8oUZKe9aDP/kRSyx28IUhJcAauc6m/yEiuEAOfiZC0yGVfMoIwgiSJMFJNIGjb4ZkNz2xnyC3igiS0jmQ+wKjqe6pCp4q6S8B3+8bBCXrQ6rXD4njLbRtuaP7+J70/bvY+ufnHzt3RU3fkzD0ycZ83b3tynWAqkygvs5iIOpDTGUqBlFZM1NzHEM5huBWGLhNnNKGm7VLEJOlZ2gJSvFc/3RgiMWhvV+d+YIeOH8D5oTSOSGCcAIyUreCj+/4SokvvQn0oA+fz9Wr1Vz47TDem9k1zDIXchmoL/1s3GbEiQeyQvCOjoxOLXrbAeY6BWbbAH0iCDGGiI2VFKUFcAbN8gXr5qszzZZeaF7xkSFBlKITduSDfKbmP9mcm387MjLtnrZeVOq4bxg4OZ0HqQuLEfmw7eO4ls9RNiOfP4hSnIfRfJxQvPQ9iGMfIc7HtzbATeq7rwXAeBjN9O807pTd7aE+MXqe3bQsYn+6Tff0b8+JY6bfin5jVsyf6Sa6V97+svc7+2tuc17nba7UpiK5nfZaXjLXHZlYbbsw1/fji8ScAAAD//wMAiRgGY8ILAAA=
-  recorded_at: Mon, 17 Apr 2023 20:53:48 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Nuthin%20But%20A%20G%20Thang%20by%20Dr.%20Dre&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:48 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxW227bOBB971cQeki3cBJdLckGjMJp0FyQtts4l+0WC4ESaYsIdQlJOTWK/PvSlGpJzspRgkUDGIg4o5mDM3OO+PMNAJpgMLrjGhiDn/JRHsQMz9ePWixEzse6DnNyyPNMkPnqMMoSfWnqHEMWxe/vC8xWk8+FiEk6OCrEYDo4GVzFMF0MwtXgmB3KH94TqxxPVJu9BLI7LCbXs71sPufyP2OPkoSIiantl92JwIlC873CI88gDYukRlifBQuWFbkCW+bsbyese3fEmSBcbLVSEfxDYJZCGhSM8nZbFa+4aHGU5ThtkVSW143jo+zmcpobw9Ovyexh8ee3m4tPqdYo+Ljf7N2H/Ap5V+1WPYJUtT6pKUxKqi7IfUEQmBaIZO2Umk0FoR0sGFGxCu24zBk/x8Aj+KcxlZ3c92R+PWndXuLbv1bnl8uZdXJ7VyyvltwKTxttG017kb6uyrvKNopVjPdITOAC/9f+xZgsYrEOuI6xRTFt4ZQoI5RKiLoqpsPQ9VzTRYb8Cy3PdlzDRyPXdX1szCG2MXSQEw7t9uAeCBJx1a7BTxco23g9KBMb1gtByXY9QLnOqzE5/tB8MVEd60t4kFO4giFVOhGswI3oRmFfKAKzKM4yCi5hDs5SLjMTnApIObjJ6CFodtYYphhyHCAoyvctw7QOjOGBbXSlBTnDEeEkS9ULCK6amSKTnYLa+U2nGey0zCcKXyeMdytto7Muw/1fJN/PbF+s+b5G29tmnzXZHRb7OoNt7KeGCI+CtEhCzNTU60DBoJC7EpSfXsvxbGsjcjmgnJKIKJ3N5YbiRqQaHUFbk5NKYJFCez07/3BqWobhWubTpdgx/H6jV0use8O/xe0X8s0+uzqD0fH9hW9cSx6ftOsz9VIWXSU3paqRP5vGA5pFkD4lb4dX1GtS3q2AvFuBKXh78hao2xX4Y8rBJ4gw+AiTrODgaAXkbUtetlpeAj5kS8ze1WDyLC8oZEQoUq16AaRbLAl+CLZ9M9/4ZpLbB1WWjmxpkB4cDe1hCOeWfLTgyHcx9ke2h7HpjlwTe/PwfUTQxHEsZIUhdGxkOB4yR45tO9bIH7me/EL5qEaniG/s57CO/BKFSqnf2FaECo93LcNGDpq6dzZkoKVyF3/bvdfcvveW5+v+lfDKmcjhrs/SgtLqWHm3+jD6tjx5fPP4LwAAAP//AwCXUwEmxwsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:53:48 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Cant%20Nobody%20Hold%20Me%20Down%20by%20Puff%20Daddy%20feat.%20Mase&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:48 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMRWUW+jRhB+v1+x8kPayrmwCwsYS9bp2rSKek1U9ZQqbVWhhV3sVRbYsktSdMp/77JwBjvFR6JKtfxgzwwzn2a++ZhPbwBY6Iqk92oB1uCT+WsMu4pl7d/FTmup1o5DJL9QstQ8ay7SMncekKMYqdLdu79qVjWb70ihlzdlUtJmeVUKurxmy8vysVgmzfLnOsuWl4QaV8aIvlheE8XOdCPZxhY+y0l1z/Tm9uNZmWXK/IJngudcb9DivMPDNcstvj96hMZGRFLnA+bBFm+rspYWfhdzfhzQ1p7wV5orfVTKetjfmlUFEXFdCXVY1vr77hx0rZSsOGhbl95BHyKEhI9lQG90k0di69093ixGCZ/Ox7XnjKNHPpX7IB+nNtuc0ILkXasufwRmbqYHCtwWZh70MG5oqcVx6Kwrbn095HUXs/5SG57An6PRnBzAzPa343YwcVH4kF4n9yEXt9voA/n18vefRmVHRWd1vs2qptKOkvVtnxGYky37NxLuGN/udOsIMDxqsTjAaVCmtDAQHZvMIUkQBiig0HwSN/RYhALfD4KU+iiKoO8GNITMZ4eDe+RU7/pyo/5MgfLg60EhBt0XgjLlZoAK8Ksx4ZWPXtyoCfpyFUtBGpIIuye6qtnIu1+zKy7BVSnBt0Yp1ZgTFRPM6GZMie4iXQijtxCZ71RYLCuWcsXLwj5ASTOO1KU2yzRIP4Le2Dspkc+WuQ1Yn16q/UpNCex/st3zxPXF6z1XWGfL6jxRPSGprxPUER8XlKs0Luo8YVWbyB0cdUW0YUzcvW891wvDPS/MlKTgKbd7lRGh2MjTz4/To/EZ5lepRXv78b0fwFXkrQLvOTNOMGDe/C2VHXwX/uBv736r329/Mdsm3YfvvTv5vNyc0XfLMZVyn+qzrn8pTMWiTIl43rwT2jBwxZxYX2nQ3VigvbHANQPtjQW+JgrkhDKTNS9rBZIGtDcXsDcXsDdXSzP2zYBFlrIWpOLa9hQO9oo9cPYYH6uk3KtkLr23fZSzWmUBTlxME6OVGVxB6GeMYZxmMAnSkGUIZYi4q3cppxuMXeomCcEehTikKMKeh91oFQWheR+tBup35+iInTgYXJ93wsYMjxwvhHWvT3Fhvw0Le2taBewNhaHi/3j9ouPrt7OPBtWNyYy6tRW1EL3ZSrrdZ+wby9Obp38AAAD//wMA9sC+Ot8LAAA=
-  recorded_at: Mon, 17 Apr 2023 20:53:48 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=It%20Was%20A%20Good%20Day%20by%20Ice%20Cube&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:48 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWbXObOBD+3l+h8Yd8cV1AYLA94+k4fcnL5Zqmia83ublhBBKxakBEEm1IJ//9hGAM2MVxezfnT0a77D48u8+uvr8AYCA5CtdiAGbgu3pUBytOovJxsJIyEzPDQBl9JTImaVS8CllifLUMQRAPV6/vc8KL+ZkcfkZiuBieMIaHb1ExDIrhWUiGb/KAHMkiI3Od5ChBfE3kfHl9xKJIqH/mUUwTKufW4GWVm0qSaCx/1WjUGYqDPGnwNWf+HWd5pqEqWBmNkaQsrUO13EoEe724pEJupdUW8iAJT1Hs5zwWXQjaXrPSYYtlJO3QVYU3zIsiuvp8fuOmf6Lo4uPt/QOZXkaDVsCnl+3ch5ShRt4XuxOPYh3tENcUJRVhfyBOWS7Aomao47WhtULRNeacalsNeFb5zJ4j4Qn83SrMXvoPJL/sAMPlE+9LBq+K3z48uvRmHa3Ds+V9K20r6UG8l1FFX9hWsJr0AxwTdEd+1IIrQu9WsjS4jrlFcdzBqVCGOFUQDR3MQIHruZaLTfULoGeHbkQsNDGj8cSBDjZt0/aCEDrdwn2jWK7qdC1++kDZ5q+DsogJfxKUSncAKNf5ZUzOZGz9NFE97UuFn8WoQEGsdSJ5TlrWjchOOEGSCAlOaQZOWQZYBOSKgKkpZmABbjgNcknazcJJTJAgPlbv6RDQtKyRBUfmtM/NzzgJqSgnX/kCRkXbUzKpVNZsgnantXSuB3HLsiPy0mG2X2wbqfWN3f9E9dXIHb+59dhycU+tT6eX1upyvDh3T07/hezrcdsTd1f3zztuuuBa5pgycKJX2g/Z356yfTN2/1e3WnSAqQj9NE8CwstAVmPIud6SfrWMoWuNG52rAmUxDamWWoRiQVqWunQUb1VOiYGHGu3y+v0xNF3Pgaa32xR7in9Y6XUTG/bj4+3y4tPN9O3V+QO/Y8eP0H1n76Y7pOqVLPpCbkLVJX/WTfgxC1G8S96ecdG0yZkE6q4FECjvWkDdtcAIXLM8xaPF6IKuCVgI8DvCBLxHSbm5j4sZUFcxUF7FGhAZy/JY7XZZdOuuhsRXSr752xMz20zMJLNHtZcRBWNI1LichG7gTrCJwgAFZjg1XRd6HvEmOLChDaPXIcVzx4EYBgFybGw6Hramjm07cDqZup7aTRPcgNN8t9qyGUaNGLRP88q2ErR5tq8JNjIY6Btoi4ZBqnrwf7r/Wtv33+q8zF5/dFUSVcnyLM3juD7WE1tvRGirk6cXT/8AAAD//wMAAvtT0c0LAAA=
-  recorded_at: Mon, 17 Apr 2023 20:53:49 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Regulate%20by%20Warren%20G%20feat.%20Nate%20Dogg&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:49 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWbW/bNhD+3l9B+EOwwUn0/mIDRtFurYEM6IJubbYVhUCJJ5sNJaoUlVQo8t9HUaolO5GjBMP8yeId7x7c3fPwvr9AaCYFTq7LGVqi7+pTHWwFpM3nbCtlUS4NAxf0vCy4pGl9nvDMuLGMErBIti+/ViDq1XvYVAxLmMf1/AoLAfl8PU8By/P5u+b4V77ZnMi6gJXOdZJhcQ1y9eGPE56mpfpnnjCaUbmyZqctBCoh05A+daDUGWZxlfUw+7NoI3hVaMStz+mhQ5N7xC4kLeVBKm2BbxJEjllUCVbup9X2riB7heIF5HuVasMbzjsRvnmVXfjxwqtJbfNw692Q2SDg3ekw95QOdMjHYu/Fo0RHm+Ka46wt1T+cZ+g3LDC/hn2Xvpoawr6xElTbOrTL1mf5WAXu0OdBV47WfmLlm04bwYLRi/e3b9ZXH5wvX8vL7cWr9d/Xg7SDpJOK3kQtx8IOgnUVn+CY4Q08NH9boJutbAy+ax6UmO3hVCgTkiuIhg5m4NgPfMsnpvrFduDYeOGbAbYgXriOg30cEp8k+KCrt5TIbZduUJ8xUI75fFAWmPYTQal0E0D57rMxuaFnPblQI+NLy6hguMYx0zyRooKB9UGGoUtFlPoUfeTsHNmBNxwRAQxwCRFRWqov2qblnpmLM8sac4sKAQktKc/1BYLroafkUnGr133LGxpHtfIetRuH5XGK7Qg2prT/CdenqeyTyT5VYSfr66PqekRbn6esg8GcEVomUV5lMQjd9d5QCSzVrETtm2t7nmcudlb4VjCaUE2wFLMSBpaudZQcdE5RQCQa7fr1Oriy3MDyXP/+UBxp/rTW6yE2bPyLG9I/7S9+Vv9l5m/DMs2uLu+nm9L1lhZjIXehupY/6lZGjCeY3S/eEZHox+THZoV++qETH0E0tP4Zffpd0A1VtWM1ugSRcpEBQa9r1G5gaI3eNhsYajYw1Gxgn3tUBS9UWEGlrq7Znwu4oXAbHQpnsRPOrHDOOi8j9K0gsWIPm8ROIXTSFJPQdVKIwUkT7IWBTcwUOy8TSlauaxM7jrHrENMNiNUorGsvwoUfqCcq7FnS7qMPzumOHNqlv3HIDG1eHhuKHS1mevEcpJnlaib/3+3XOtx+2/NBa9rG8EpTJK8Y6461kOvn0W+ex7sXd/8CAAD//wMAF0AEDNILAAA=
-  recorded_at: Mon, 17 Apr 2023 20:53:49 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Shook%20Ones%20Pt.%20II%20by%20Mobb%20Deep&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:49 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWXU/bMBR951dEfehLgTjfSaUKTYC0ThuwARPbNEVO7FCPfM12YAHx3+c4WZOUpQQ0rU+t7829p/ece+KHHUWZcArDGzZR5sqD+CkOVhRH1c/JivOczVUV5mSf5RknUbkfZol6q6kMQxquDn4WmJaL81WW3cxOU8xmZ3x/tlzOgnL2IQuC2RHG+ZSXOV7ILtME0hvMF5fn0yyKmPgGpjFJCF9ok926OeE4kWC+NXDEGYyDImkBtmf+Nc2KXGKtc3Y3E6reA3HKCeMbrWQE/+KYpjD2CxqzflsZb0bRG1GW47Q3o7q8ap/q9+8AXyLnGjjl/Vt+BUqYTzoFH3e7vcfMvkE+VLtXjyBZbUxqCpN6VBVzSsVcP96OUvbvBwtKZKyBOq9z5s/9/Ufle4eSrYMfOfaKZlULD98E2u2JW1wyFB2X8efk4j3rtO00HTXxqiobKtsp1ox7RGICr/HfxLfC5HrFq4Btgo0Rxz2cAmWIUgFRlcVUGNiOrdkIiE+gOwbUdWBEENiWHWKEDRC5jhd4Tp+4O4L4qmnXmc8QKAO8HpSGgf5CUKLdCFC2+WpMpmtpLx7UgHwJ8/MYljCI5Z5wWuBOdL1eFyusLNMIJlnRkwTFMYYM+wjyOlHzPGsPmHu6NZTm5xSHhJEslQ8gWHYzecbFLrX2rtnd4KAxPlnlKmG+faXWCzVkq/9kt8dZ6ouXe6ydjjbT7Va6xUhfZ6MdFU4QYaGfFkmAqaS8DRQUciEUv367GrplgbUeBDt5TELCN3Xb0kbQBmtC7jSUYC/PPx1qngk03bOeCmIL8eNolwJWDePr1Y/3hzlZnqQu/rg8+nJ8dnH0tN0YxuuVGCq5LtXQ/Wwa8+MshNJzIhgz3I0MGUIrEXl5UqrL064ibk/KctmWzrO8iCElXI7IcdsAxbcE3/mbVpevrS7Jjb0mS4W2pSPTwy7wDEt3sQONyHIiV9idoXua4YQhAg4KDkKCFqapIz0IoGkgYDpIEGsYpu65nu2Il4qLWnRyjF2xWW3oj8RlTvvIpr5leL6N27W4J/Ki2BH1JBXS+l/3VG3znlqfV+2bF2LNSeXp4iwt4rg5li5cnVnAFSePO4+/AQAA//8DAERh2g92CwAA
-  recorded_at: Mon, 17 Apr 2023 20:53:49 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Protect%20Ya%20Neck%20by%20WuTang%20Clan&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:49 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALyYW3OiShCA3/dXTPmQs1sxkZsoqUptGXVdT9aYmyabrS1rYAaZiECGIcpu5b8fBCN4AU2Ixyel2+6er6eb6fn7CYACo1AbuQVwAv4GP4MHBsX67GfBYMxxT0ol6JBj17EZ0f1jzR6XnvmSiyHVjK9PHqb+6SW1GdbY4U94eIG10aHqH955t9AaHtZNaB0w38GnoZeDMaQjzE57Nwe2rrvBN+7AJGPCTvlCMXJOGB6HwfyahxM8g6bqjeMA42eDIbU9J4w10imuKsx8p8gpIy5bcRVK8JRhakFz4FHTXXYbyucolhDZDraWGEXmS6LUvKycN53u473WEW7rkPHtm1EhYfClmPS9C/t55Gm2l+wRFFrbRdWC4wjVnXc0Sx6YJW9ZJaYZhrAs9CgJZfNoTyKdk20EXsDvRFYy2e9IfpbpksiuUHk8OWN9f1q3m7ZksFatn3CbcLoT9JlVN81swtgr8e2KYzjEm/afgcnQYDOBLHEriM2lOIMoNWQFIZZCYyWoyhWZlxEXfFShIpYVjocQKlUOibjCS6rO8XyF15YTNyGIGXN3CT5pQYnc+4PiMSe8MajA3Q5BydK7Y5KqZf7NoFK2L3EHjgl9qJphnTDq4YR0UWFNK9jl4NbA4LXWPosyqBtwrGLqfgG/mlMHWggj0ESEEdv6ndw4FJsYuniAIIvM8YoiHvH8EaekqQ0cijXiBpbCPyDoJzWZzYKKi98DfDkpTO2gawU/UzjJLrxF2aX13w/pALv13je3gF377s5dd2vPzei47+u3SxX0gawlUp/UO9aTe/EgQ/Z8TWqNIbPys06xu856u+KC9fVDLR/i7MXuDXF/3LyboKqvdOo/Jnj6rYOcCfsAxJvtbkC8VXGBuIOZYSPQybuZs9e8N9LdM7VLRw1piNuP3R+0Xb8QJ90PIL3Z7gbSWxUXpNuW6wRnb2iARnD0zkk7c937oi34V7qsVo0pNB7gbRl9N+/gGZ+fdordddrbFePWAfFoYufc1NkL3hdmrsVVuEmv1ztz2Pip1Tyv1Xr9aX7MKXbXMW9XXGDuHbVslA9y9nL3BbnMXdj9C19p9XizThv9Kmk5vpcfcorddcjbFReQu+Y/oEEo88EZdBmkOYFnL31fwOVvDc6zHv+0rox7UZVxR9M6/+L8wFPsrgPfrrgA3jJsl+lQw+CcmCY08vHOXvneeFuufF/ruhPpjLMavbb9XOv2PuDVmGJ3A++tijHvvOe87MUmJr8CIq42sLzZ+BYOULHAo3A2wA2iSy1B4TlZXkjx1DGJRtjqrBgnjKCVfAUjJtWiJnlzXecVkSvLArc+XmWkfLeEh+Ngib8ZPvKc6pPWn0unLbTp/c23prXubpdcRwNmmsmFqXmit6q5A9PWYDjn69B0cVKSNoTHm2N+Zwl+QjC7swSfdQzZMQhmgyKIT69FsHy+KoL5CaAIwndUEax10SJYrXNwAIKt+CUO3bEdz4SUsDAFshILKH4meDJYvb5wFtcXY0c8mmuVtDLCCMKKIAlVXdErShVJCh985cqCgHRJq2K9qmH9q0bQqSQJSFBVKImIkyqIVyRRlASlqsgVoSJW4+Yf3QcnNzMXi15LKNSJ/7JaP6H4JGvvLIqnEN7/JoqmYAVb9/+6fuZXr5+j5zP381VHObG9sIYszzTnj8M7kwhPeEH18unlPwAAAP//AwDN9C8OThcAAA==
-  recorded_at: Mon, 17 Apr 2023 20:53:49 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=U.N.I.T.Y.%20by%20Queen%20Latifah&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:50 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWW3ObOhB+769geMhLGiNxNZ7xdJI8dNpJekvdNu10GAEi6ERcIkRiTif//QhBjbCL4/acOX4yu8vux7f7rfTjmabpnKHottK1hfZDPApDynDSPuop52W1MAxUkllVFpwkzSwqMuMeGhVGLEpf3NWYNcvV7M3s1ezj7Hp2HDbH72uM8+MLJMJResSbEi9liaMMsVvMl6uroyJJKvEPHFGSEb6E+vOuMuE4k0i+9ViEDdGwzgZ0gy24YUVdSqACVEmoqFjkfSolrEWwN4pxUvGtstKD1xyzHNGgZrQaQ5D+npMRV0WJ8xFZXXoDXDTJ+8+vP7r5F5RcvPt6t8b+20RXEj4+V2sf0oQe+VTuUT4Sy2yHhOYo6wj7hBgp6ko77RkaRW1o7VCMnTUj0tcDXnQxi6dIeNS+K43ZS/+B5LcTYIDPlx889u7+7u/V14a/vWev3pyn10pZpehBvLdZq6m0SrKfpD8dmKEb/KsRTDG5SXnrcG2wRTEd4RQoozgXEA2ZzECh67nQjYH4haZnxaEz9z2EfWTD2IxcK/bsxI3AuHEPJOZpX07hZwqUBf4cFMTA/E1QotwBoFz7jzHZcwf+NlET40uqoKSoQSGVOuGsxop3I7KXREy39rLg2hli1UILG60zXaJbrJ1hNBKezjDFqMJBjHj3vglMeALcEwinwoKS4YhU7dprX4hRo0bygguJDYcAdFXnRuRyCyueHYW3AYv9StvobGrn/ieS7/atk3kP56v0Oj1LvVPr1Lq+XLOQ/wvN97t2Iu+u6J8O3IyAPDG1/sTUf0n/9o6d2rD7P1sZUD0mVRTkdRZiJts+OGomz8igO4pNB8yH1SM6VFISESm0BNEKK56+dyTeap2QAosk2tXV5Tn0HdtxTGd3KvZ0/7Deyyk2zDXC1IdCOZ8unNdr9teXK353ulvukLZ3uphKuUnV9/zJsCqgRYToLnl7lsUwJ8M9a0hZFmVNxTnNJTVDn4Tm7wl+CLa3X7nZfllpnfRRBghdGLvJPPQ8jIATAs+zkQkSCFzHi+a+6ZvQndvJi4jES9s2YzMMkW3FwPZi6NuWZZv+3Hc9cc7M4wGcZE8ZMnvw/JxsGTK8sT3W0r3Y19HNTOvyMqnMsp6LgfpfLrJw+yLb2ZWOdP0Ql6nWlteU9ma5fSVmxxOWx2eP/wAAAP//AwCoDPJPlAsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:53:50 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Ruff%20Ryders%20Anthem%20by%20DMX&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDlkb7O3_23IwyvhtYddAkLgtnKKaVBhRB7EK5bY6EkrwIxBIjG5Gi9vn8j5uKFKPexR_I9EzwdzJx4vMCOB6kApTBjf3TeYAS4ZH4gFAU9TbapuWZL
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:53:49 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxW227bOBB971cIesh2kaYiJVkXA0aRdpHe7DZ1k22aRSFQIhUR1S0kFUcp8u+VKFWSXctxu4vNU8wZzxyfOXPIb48URRUMBV+5qkyVb9XH6iBiJKw/qpEQOZ9qGsrpU55ngobl0yBLtBuocYJYED27LggrZ8siDA+XJSaMHx6nIiLJoV8e/rW4OBBlTmaywUGC2FciZucfD7Iw5NV/4CCmCRUzqD5p+lJBEonjnxZJdYZiv0h6bP2Zd8WyIpcwK0g5jZGgWdqWGqTVCHZmMUG52GgrI+RWEJai2CtYzNchyHjLyBpTWU7SNaqa8hqYl+GHT2/OrPQChfPTy+tb4r4P1UHB+yfD3vuMoEU+VnutHsWy2j6pKUoawv5GjGYFV45bhtayOlobFOvBglEZawFPm5zpQyTcK18Gg9lJ/57k1wrQ4DKaByvjbr76fP1uefLhkt89f/9y0HbQdC/e66p8rOygWEv6HokJuiLbJBgRehWJOmCZYIPieA1nhTLAaQVRk8U05Fu2BS0Mqj9ftw0fIBDoDrAt1w6C0A0N0zUs018f3IpiEbXtBvyMgTLA74OCBOi/CKpqtwcoy/xtTKYzgb9M1Ih8KffyGJXIj+WeCFaQQbRbsrMsV07oDVEeLwpOA+WEZYlynGLldcpzyghWnpfKWUSURVY7l3JKA1Ew8udQPozEBHHiYSSaojqA5hHUj4A7lubljASU115YfwGjcpgpMlHtXX8vQGMY7DZfWvMg8tPa1wnT3evXLd+YEf8nPtCYMHy1Wkzu4heT63efojdiAUB5cfdvjKA14JG6W5zgwcROF9XlqW4lfdNux8x2948daFXFlAdeWiQ+YXLYfaBg8rr0mltZh6Ztd0qo5pLHNKBiU939wCjemFe1FCyQYM8/LufQdQCwDfNnKewY+X4Dl9LV4Gf7RY4nbxNxflm+PA6TW//idEu7fWbdLMNYya7Uj0E/lMa9OAuQdKYQxZwMI2O20Yujfm8pzXvrD6V5cPW18ywv4urqFpIjaPYBRm4oWXmbjph3jpjkxlGbpTkE+S6eWKGOLWviOtiBZui6PiEQEDQJdAxD2wqdZwHFM9PUse77yDQwMG0MXdMwTN11XMuu7h4H9+gkj1vV1klcpvTf2NS3DE93zbYTtyofmIM2alpJ63942sLNp21zXndub8xmGtXzqj5Lizhuj6X1SsRA3nb3j+6/AwAA//8DAIfuzdGlCwAA
-  recorded_at: Mon, 17 Apr 2023 20:53:50 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=California%20Love%20by%20Pac&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:29 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALRW227UMBB95yuiPFSgUuLck5VWSG25FkFpVYSEUOTEzq7BueA4y6ao/47jhFy2zZJWsE8bz+TM0ZmZ4/x6pCgqZzD6XqjKQvklHsXBmuG4flTXnOfFQtNgTp4VecZJXD2LskTb6FqBIYvWz3+UmFXLE0hJnLGUwMN32QYfhtXhOYwOeJXjpUQ/SCD7jvny6vIgi+NC/AMHlCSEL3X1aVOUcJxIEl9aGuIM0rBMemL9WbBiWZlLjgVJVxS3KIOMuvhUAuOk4DvFZARvOWYppEHJaDEuLOOtCCNxshynI3UaeM2i199eAbh9aUfX6erk6tUWr8NjdQB483RYe47qLfMp7BEeQRJtTmoKk0arC5yQrXIBEcmU07fjpE7QhsQ4WDLSiN3wXTQ5i79pcKN8HfRlr/ozta97r5k023z7ePru/enxD/C6AKHxERF9UHZQdJbsNWoxBTsAazWfkZjAFb5rAteYrNa8DjgW2JGYjngKlhFKBUVNgmkwdFxHdxAQv9BwTeSDyLLMEIEI+ZFuuC7wEfTjceN+EsTXbbmBPlOkTPBwUjoGxj1JiXIzSDnWgzlZnq3fW6iJ8SVFkFNYwZDKPeGsxINot2O9WSq1WSqPPzCyImLsaaWcYyZCCUbKcaUYwkOfKF/epIWASnDKIVU+YVaQLP2qHCmXt3yNYYphgQMEeVPKALp9BPwjYE2lBTnDEakh5QsIVsNMnomaQX8/6MNYZwfSpAeRW15QJyz272S3kVPm/E/MYZ4x39sd5prybEueYch77PhhZjyYZRWRIgrSMgkxG7VdRSWDXAxL0FzVhq0D2+yieJtTEhG+O/197wjaaZ1YGhZJsleXJxfnhm7ornfHVOzp/rzeyyHWrLNre/PZPctP3rhnn6tVWr1wXpzeLjen7c1aTEF2UH96/re0IqBZBKVzxZAWeBiZspV/bCo9mzzLSwoZ4VJVw+gDDG8I/hnsemzeeWySm0dtlmZEcWzoHo48x3ah53umbppebPuWcFhgGqZtOya2wfOIoKVlGcgIQ2iZCFgu0n3LNC3D93zHFbeZh3p2Uvk757NbCpnSv7G7ETK82DcN3Tqo8jt1UEZNxTD+789jfffzuDmvy7YXcNOKrJTbkJaUtsfSsyVdIC/Pm0c3vwEAAP//AwCdhbLD5gsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:56:29 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Gin%20and%20Juice%20by%20Snoop%20Dogg&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:29 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWTW/bOBC991cQPgRbOKkk6sOWAaNI0SRNit12600vxUKgRMpmQ0ksSTURivz3UpRgyXblKsFifRAszmjm4c2b4fx4AcBECZTcyQlYgB/6VR9sBEnr18lGKS4XloU4fSV5oWhavUqKzPruWJIgkWxefyuJqJZXNJ+iHE9vSpqQaVxNV3lR8OnbYr0+URUnS5PiJEPijqjl7eqkSFOp/9knjGZULZ3JaZOZKpIZJF9aLPoMsbjMOnTdWbQWRckN0MbndN+hzj1gF4pKtZfKWMiDIiJHLCoFk7tpjb3lYYefgpN8h6AmvAWZTC6Lq8uvq4d7fr0+P4c3DxefJr2Aj6f93GOIb5EPxd6JR7GJNsY1R1lD1TvKwbuCg7c3EtzmuiB417Hj1ADZNZaCGluLedH4LH7HwyP4t1eboxUYyX9db8u174R3UX0t4Mfrq+zm0z8Q/c38Xtpe0lHU11HlUNhesJb3EY4ZWpNfqXBD6HqjakPg2XsUsx2cGmWCcw3RMsEsFAezwAmwrX8xnLm2A90YBijBQWpD6MdpjIgHg93C3VOsNm26Hj9DoFz7+aAcYsMngtLpRoAKvGdj8ua+82SiBuRLZcQZqlDMTJ8oUZKe9aDP/kRSyx28IUhJcAauc6m/yEiuEAOfiZC0yGVfMoIwgiSJMFJNIGjb4ZkNz2xnyC3igiS0jmQ+wKjqe6pCp4q6S8B3+8bBCXrQ6rXD4njLbRtuaP7+J70/bvY+ufnHzt3RU3fkzD0ycZ83b3tynWAqkygvs5iIOpDTGUqBlFZM1NzHEM5huBWGLhNnNKGm7VLEJOlZ2gJSvFc/3RgiMWhvV+d+YIeOH8D5oTSOSGCcAIyUreCj+/4SokvvQn0oA+fz9Wr1Vz47TDem9k1zDIXchmoL/1s3GbEiQeyQvCOjoxOLXrbAeY6BWbbAH0iCDGGiI2VFKUFcAbN8gXr5qszzZZeaF7xkSFBlKITduSDfKbmP9mcm387MjLtnrZeVOq4bxg4OZ0HqQuLEfmw7eO4ls9RNiOfP4hSnIfRfJxQvPQ9iGMfIc7HtzbATeq7rwXAeBjN9O807pTd7aE+MXqe3bQsYn+6Tff0b8+JY6bfin5jVsyf6Sa6V97+svc7+2tuc17nba7UpiK5nfZaXjLXHZlYbbsw1/fji8ScAAAD//wMAiRgGY8ILAAA=
-  recorded_at: Mon, 17 Apr 2023 20:56:29 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Nuthin%20But%20A%20G%20Thang%20by%20Dr.%20Dre&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:29 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxW227bOBB971cQeki3cBJdLckGjMJp0FyQtts4l+0WC4ESaYsIdQlJOTWK/PvSlGpJzspRgkUDGIg4o5mDM3OO+PMNAJpgMLrjGhiDn/JRHsQMz9ePWixEzse6DnNyyPNMkPnqMMoSfWnqHEMWxe/vC8xWk8+FiEk6OCrEYDo4GVzFMF0MwtXgmB3KH94TqxxPVJu9BLI7LCbXs71sPufyP2OPkoSIiantl92JwIlC873CI88gDYukRlifBQuWFbkCW+bsbyese3fEmSBcbLVSEfxDYJZCGhSM8nZbFa+4aHGU5ThtkVSW143jo+zmcpobw9Ovyexh8ee3m4tPqdYo+Ljf7N2H/Ap5V+1WPYJUtT6pKUxKqi7IfUEQmBaIZO2Umk0FoR0sGFGxCu24zBk/x8Aj+KcxlZ3c92R+PWndXuLbv1bnl8uZdXJ7VyyvltwKTxttG017kb6uyrvKNopVjPdITOAC/9f+xZgsYrEOuI6xRTFt4ZQoI5RKiLoqpsPQ9VzTRYb8Cy3PdlzDRyPXdX1szCG2MXSQEw7t9uAeCBJx1a7BTxco23g9KBMb1gtByXY9QLnOqzE5/tB8MVEd60t4kFO4giFVOhGswI3oRmFfKAKzKM4yCi5hDs5SLjMTnApIObjJ6CFodtYYphhyHCAoyvctw7QOjOGBbXSlBTnDEeEkS9ULCK6amSKTnYLa+U2nGey0zCcKXyeMdytto7Muw/1fJN/PbF+s+b5G29tmnzXZHRb7OoNt7KeGCI+CtEhCzNTU60DBoJC7EpSfXsvxbGsjcjmgnJKIKJ3N5YbiRqQaHUFbk5NKYJFCez07/3BqWobhWubTpdgx/H6jV0use8O/xe0X8s0+uzqD0fH9hW9cSx6ftOsz9VIWXSU3paqRP5vGA5pFkD4lb4dX1GtS3q2AvFuBKXh78hao2xX4Y8rBJ4gw+AiTrODgaAXkbUtetlpeAj5kS8ze1WDyLC8oZEQoUq16AaRbLAl+CLZ9M9/4ZpLbB1WWjmxpkB4cDe1hCOeWfLTgyHcx9ke2h7HpjlwTe/PwfUTQxHEsZIUhdGxkOB4yR45tO9bIH7me/EL5qEaniG/s57CO/BKFSqnf2FaECo93LcNGDpq6dzZkoKVyF3/bvdfcvveW5+v+lfDKmcjhrs/SgtLqWHm3+jD6tjx5fPP4LwAAAP//AwCXUwEmxwsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:56:29 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Cant%20Nobody%20Hold%20Me%20Down%20by%20Puff%20Daddy%20feat.%20Mase&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:29 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAAMRWUW+jRhB+v1+x8kPayrmwCwsYS9bp2rSKek1U9ZQqbVWhhV3sVRbYsktSdMp/77JwBjvFR6JKtfxgzwwzn2a++ZhPbwBY6Iqk92oB1uCT+WsMu4pl7d/FTmup1o5DJL9QstQ8ay7SMncekKMYqdLdu79qVjWb70ihlzdlUtJmeVUKurxmy8vysVgmzfLnOsuWl4QaV8aIvlheE8XOdCPZxhY+y0l1z/Tm9uNZmWXK/IJngudcb9DivMPDNcstvj96hMZGRFLnA+bBFm+rspYWfhdzfhzQ1p7wV5orfVTKetjfmlUFEXFdCXVY1vr77hx0rZSsOGhbl95BHyKEhI9lQG90k0di69093ixGCZ/Ox7XnjKNHPpX7IB+nNtuc0ILkXasufwRmbqYHCtwWZh70MG5oqcVx6Kwrbn095HUXs/5SG57An6PRnBzAzPa343YwcVH4kF4n9yEXt9voA/n18vefRmVHRWd1vs2qptKOkvVtnxGYky37NxLuGN/udOsIMDxqsTjAaVCmtDAQHZvMIUkQBiig0HwSN/RYhALfD4KU+iiKoO8GNITMZ4eDe+RU7/pyo/5MgfLg60EhBt0XgjLlZoAK8Ksx4ZWPXtyoCfpyFUtBGpIIuye6qtnIu1+zKy7BVSnBt0Yp1ZgTFRPM6GZMie4iXQijtxCZ71RYLCuWcsXLwj5ASTOO1KU2yzRIP4Le2Dspkc+WuQ1Yn16q/UpNCex/st3zxPXF6z1XWGfL6jxRPSGprxPUER8XlKs0Luo8YVWbyB0cdUW0YUzcvW891wvDPS/MlKTgKbd7lRGh2MjTz4/To/EZ5lepRXv78b0fwFXkrQLvOTNOMGDe/C2VHXwX/uBv736r329/Mdsm3YfvvTv5vNyc0XfLMZVyn+qzrn8pTMWiTIl43rwT2jBwxZxYX2nQ3VigvbHANQPtjQW+JgrkhDKTNS9rBZIGtDcXsDcXsDdXSzP2zYBFlrIWpOLa9hQO9oo9cPYYH6uk3KtkLr23fZSzWmUBTlxME6OVGVxB6GeMYZxmMAnSkGUIZYi4q3cppxuMXeomCcEehTikKMKeh91oFQWheR+tBup35+iInTgYXJ93wsYMjxwvhHWvT3Fhvw0Le2taBewNhaHi/3j9ouPrt7OPBtWNyYy6tRW1EL3ZSrrdZ+wby9Obp38AAAD//wMA9sC+Ot8LAAA=
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=It%20Was%20A%20Good%20Day%20by%20Ice%20Cube&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:29 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWbXObOBD+3l+h8Yd8cV1AYLA94+k4fcnL5Zqmia83ublhBBKxakBEEm1IJ//9hGAM2MVxezfnT0a77D48u8+uvr8AYCA5CtdiAGbgu3pUBytOovJxsJIyEzPDQBl9JTImaVS8CllifLUMQRAPV6/vc8KL+ZkcfkZiuBieMIaHb1ExDIrhWUiGb/KAHMkiI3Od5ChBfE3kfHl9xKJIqH/mUUwTKufW4GWVm0qSaCx/1WjUGYqDPGnwNWf+HWd5pqEqWBmNkaQsrUO13EoEe724pEJupdUW8iAJT1Hs5zwWXQjaXrPSYYtlJO3QVYU3zIsiuvp8fuOmf6Lo4uPt/QOZXkaDVsCnl+3ch5ShRt4XuxOPYh3tENcUJRVhfyBOWS7Aomao47WhtULRNeacalsNeFb5zJ4j4Qn83SrMXvoPJL/sAMPlE+9LBq+K3z48uvRmHa3Ds+V9K20r6UG8l1FFX9hWsJr0AxwTdEd+1IIrQu9WsjS4jrlFcdzBqVCGOFUQDR3MQIHruZaLTfULoGeHbkQsNDGj8cSBDjZt0/aCEDrdwn2jWK7qdC1++kDZ5q+DsogJfxKUSncAKNf5ZUzOZGz9NFE97UuFn8WoQEGsdSJ5TlrWjchOOEGSCAlOaQZOWQZYBOSKgKkpZmABbjgNcknazcJJTJAgPlbv6RDQtKyRBUfmtM/NzzgJqSgnX/kCRkXbUzKpVNZsgnantXSuB3HLsiPy0mG2X2wbqfWN3f9E9dXIHb+59dhycU+tT6eX1upyvDh3T07/hezrcdsTd1f3zztuuuBa5pgycKJX2g/Z356yfTN2/1e3WnSAqQj9NE8CwstAVmPIud6SfrWMoWuNG52rAmUxDamWWoRiQVqWunQUb1VOiYGHGu3y+v0xNF3Pgaa32xR7in9Y6XUTG/bj4+3y4tPN9O3V+QO/Y8eP0H1n76Y7pOqVLPpCbkLVJX/WTfgxC1G8S96ecdG0yZkE6q4FECjvWkDdtcAIXLM8xaPF6IKuCVgI8DvCBLxHSbm5j4sZUFcxUF7FGhAZy/JY7XZZdOuuhsRXSr752xMz20zMJLNHtZcRBWNI1LichG7gTrCJwgAFZjg1XRd6HvEmOLChDaPXIcVzx4EYBgFybGw6Hramjm07cDqZup7aTRPcgNN8t9qyGUaNGLRP88q2ErR5tq8JNjIY6Btoi4ZBqnrwf7r/Wtv33+q8zF5/dFUSVcnyLM3juD7WE1tvRGirk6cXT/8AAAD//wMAAvtT0c0LAAA=
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Regulate%20by%20Warren%20G%20feat.%20Nate%20Dogg&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:30 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWbW/bNhD+3l9B+EOwwUn0/mIDRtFurYEM6IJubbYVhUCJJ5sNJaoUlVQo8t9HUaolO5GjBMP8yeId7x7c3fPwvr9AaCYFTq7LGVqi7+pTHWwFpM3nbCtlUS4NAxf0vCy4pGl9nvDMuLGMErBIti+/ViDq1XvYVAxLmMf1/AoLAfl8PU8By/P5u+b4V77ZnMi6gJXOdZJhcQ1y9eGPE56mpfpnnjCaUbmyZqctBCoh05A+daDUGWZxlfUw+7NoI3hVaMStz+mhQ5N7xC4kLeVBKm2BbxJEjllUCVbup9X2riB7heIF5HuVasMbzjsRvnmVXfjxwqtJbfNw692Q2SDg3ekw95QOdMjHYu/Fo0RHm+Ka46wt1T+cZ+g3LDC/hn2Xvpoawr6xElTbOrTL1mf5WAXu0OdBV47WfmLlm04bwYLRi/e3b9ZXH5wvX8vL7cWr9d/Xg7SDpJOK3kQtx8IOgnUVn+CY4Q08NH9boJutbAy+ax6UmO3hVCgTkiuIhg5m4NgPfMsnpvrFduDYeOGbAbYgXriOg30cEp8k+KCrt5TIbZduUJ8xUI75fFAWmPYTQal0E0D57rMxuaFnPblQI+NLy6hguMYx0zyRooKB9UGGoUtFlPoUfeTsHNmBNxwRAQxwCRFRWqov2qblnpmLM8sac4sKAQktKc/1BYLroafkUnGr133LGxpHtfIetRuH5XGK7Qg2prT/CdenqeyTyT5VYSfr66PqekRbn6esg8GcEVomUV5lMQjd9d5QCSzVrETtm2t7nmcudlb4VjCaUE2wFLMSBpaudZQcdE5RQCQa7fr1Oriy3MDyXP/+UBxp/rTW6yE2bPyLG9I/7S9+Vv9l5m/DMs2uLu+nm9L1lhZjIXehupY/6lZGjCeY3S/eEZHox+THZoV++qETH0E0tP4Zffpd0A1VtWM1ugSRcpEBQa9r1G5gaI3eNhsYajYw1Gxgn3tUBS9UWEGlrq7Znwu4oXAbHQpnsRPOrHDOOi8j9K0gsWIPm8ROIXTSFJPQdVKIwUkT7IWBTcwUOy8TSlauaxM7jrHrENMNiNUorGsvwoUfqCcq7FnS7qMPzumOHNqlv3HIDG1eHhuKHS1mevEcpJnlaib/3+3XOtx+2/NBa9rG8EpTJK8Y6461kOvn0W+ex7sXd/8CAAD//wMAF0AEDNILAAA=
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Shook%20Ones%20Pt.%20II%20by%20Mobb%20Deep&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:30 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWXU/bMBR951dEfehLgTjfSaUKTYC0ThuwARPbNEVO7FCPfM12YAHx3+c4WZOUpQQ0rU+t7829p/ece+KHHUWZcArDGzZR5sqD+CkOVhRH1c/JivOczVUV5mSf5RknUbkfZol6q6kMQxquDn4WmJaL81WW3cxOU8xmZ3x/tlzOgnL2IQuC2RHG+ZSXOV7ILtME0hvMF5fn0yyKmPgGpjFJCF9ok926OeE4kWC+NXDEGYyDImkBtmf+Nc2KXGKtc3Y3E6reA3HKCeMbrWQE/+KYpjD2CxqzflsZb0bRG1GW47Q3o7q8ap/q9+8AXyLnGjjl/Vt+BUqYTzoFH3e7vcfMvkE+VLtXjyBZbUxqCpN6VBVzSsVcP96OUvbvBwtKZKyBOq9z5s/9/Ufle4eSrYMfOfaKZlULD98E2u2JW1wyFB2X8efk4j3rtO00HTXxqiobKtsp1ox7RGICr/HfxLfC5HrFq4Btgo0Rxz2cAmWIUgFRlcVUGNiOrdkIiE+gOwbUdWBEENiWHWKEDRC5jhd4Tp+4O4L4qmnXmc8QKAO8HpSGgf5CUKLdCFC2+WpMpmtpLx7UgHwJ8/MYljCI5Z5wWuBOdL1eFyusLNMIJlnRkwTFMYYM+wjyOlHzPGsPmHu6NZTm5xSHhJEslQ8gWHYzecbFLrX2rtnd4KAxPlnlKmG+faXWCzVkq/9kt8dZ6ouXe6ydjjbT7Va6xUhfZ6MdFU4QYaGfFkmAqaS8DRQUciEUv367GrplgbUeBDt5TELCN3Xb0kbQBmtC7jSUYC/PPx1qngk03bOeCmIL8eNolwJWDePr1Y/3hzlZnqQu/rg8+nJ8dnH0tN0YxuuVGCq5LtXQ/Wwa8+MshNJzIhgz3I0MGUIrEXl5UqrL064ibk/KctmWzrO8iCElXI7IcdsAxbcE3/mbVpevrS7Jjb0mS4W2pSPTwy7wDEt3sQONyHIiV9idoXua4YQhAg4KDkKCFqapIz0IoGkgYDpIEGsYpu65nu2Il4qLWnRyjF2xWW3oj8RlTvvIpr5leL6N27W4J/Ki2BH1JBXS+l/3VG3znlqfV+2bF2LNSeXp4iwt4rg5li5cnVnAFSePO4+/AQAA//8DAERh2g92CwAA
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Protect%20Ya%20Neck%20by%20WuTang%20Clan&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:30 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALyYW3OiShCA3/dXTPmQs1sxkZsoqUptGXVdT9aYmyabrS1rYAaZiECGIcpu5b8fBCN4AU2Ixyel2+6er6eb6fn7CYACo1AbuQVwAv4GP4MHBsX67GfBYMxxT0ol6JBj17EZ0f1jzR6XnvmSiyHVjK9PHqb+6SW1GdbY4U94eIG10aHqH955t9AaHtZNaB0w38GnoZeDMaQjzE57Nwe2rrvBN+7AJGPCTvlCMXJOGB6HwfyahxM8g6bqjeMA42eDIbU9J4w10imuKsx8p8gpIy5bcRVK8JRhakFz4FHTXXYbyucolhDZDraWGEXmS6LUvKycN53u473WEW7rkPHtm1EhYfClmPS9C/t55Gm2l+wRFFrbRdWC4wjVnXc0Sx6YJW9ZJaYZhrAs9CgJZfNoTyKdk20EXsDvRFYy2e9IfpbpksiuUHk8OWN9f1q3m7ZksFatn3CbcLoT9JlVN81swtgr8e2KYzjEm/afgcnQYDOBLHEriM2lOIMoNWQFIZZCYyWoyhWZlxEXfFShIpYVjocQKlUOibjCS6rO8XyF15YTNyGIGXN3CT5pQYnc+4PiMSe8MajA3Q5BydK7Y5KqZf7NoFK2L3EHjgl9qJphnTDq4YR0UWFNK9jl4NbA4LXWPosyqBtwrGLqfgG/mlMHWggj0ESEEdv6ndw4FJsYuniAIIvM8YoiHvH8EaekqQ0cijXiBpbCPyDoJzWZzYKKi98DfDkpTO2gawU/UzjJLrxF2aX13w/pALv13je3gF377s5dd2vPzei47+u3SxX0gawlUp/UO9aTe/EgQ/Z8TWqNIbPys06xu856u+KC9fVDLR/i7MXuDXF/3LyboKqvdOo/Jnj6rYOcCfsAxJvtbkC8VXGBuIOZYSPQybuZs9e8N9LdM7VLRw1piNuP3R+0Xb8QJ90PIL3Z7gbSWxUXpNuW6wRnb2iARnD0zkk7c937oi34V7qsVo0pNB7gbRl9N+/gGZ+fdordddrbFePWAfFoYufc1NkL3hdmrsVVuEmv1ztz2Pip1Tyv1Xr9aX7MKXbXMW9XXGDuHbVslA9y9nL3BbnMXdj9C19p9XizThv9Kmk5vpcfcorddcjbFReQu+Y/oEEo88EZdBmkOYFnL31fwOVvDc6zHv+0rox7UZVxR9M6/+L8wFPsrgPfrrgA3jJsl+lQw+CcmCY08vHOXvneeFuufF/ruhPpjLMavbb9XOv2PuDVmGJ3A++tijHvvOe87MUmJr8CIq42sLzZ+BYOULHAo3A2wA2iSy1B4TlZXkjx1DGJRtjqrBgnjKCVfAUjJtWiJnlzXecVkSvLArc+XmWkfLeEh+Ngib8ZPvKc6pPWn0unLbTp/c23prXubpdcRwNmmsmFqXmit6q5A9PWYDjn69B0cVKSNoTHm2N+Zwl+QjC7swSfdQzZMQhmgyKIT69FsHy+KoL5CaAIwndUEax10SJYrXNwAIKt+CUO3bEdz4SUsDAFshILKH4meDJYvb5wFtcXY0c8mmuVtDLCCMKKIAlVXdErShVJCh985cqCgHRJq2K9qmH9q0bQqSQJSFBVKImIkyqIVyRRlASlqsgVoSJW4+Yf3QcnNzMXi15LKNSJ/7JaP6H4JGvvLIqnEN7/JoqmYAVb9/+6fuZXr5+j5zP381VHObG9sIYszzTnj8M7kwhPeEH18unlPwAAAP//AwDN9C8OThcAAA==
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=U.N.I.T.Y.%20by%20Queen%20Latifah&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:30 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxWW3ObOhB+769geMhLGiNxNZ7xdJI8dNpJekvdNu10GAEi6ERcIkRiTif//QhBjbCL4/acOX4yu8vux7f7rfTjmabpnKHottK1hfZDPApDynDSPuop52W1MAxUkllVFpwkzSwqMuMeGhVGLEpf3NWYNcvV7M3s1ezj7Hp2HDbH72uM8+MLJMJResSbEi9liaMMsVvMl6uroyJJKvEPHFGSEb6E+vOuMuE4k0i+9ViEDdGwzgZ0gy24YUVdSqACVEmoqFjkfSolrEWwN4pxUvGtstKD1xyzHNGgZrQaQ5D+npMRV0WJ8xFZXXoDXDTJ+8+vP7r5F5RcvPt6t8b+20RXEj4+V2sf0oQe+VTuUT4Sy2yHhOYo6wj7hBgp6ko77RkaRW1o7VCMnTUj0tcDXnQxi6dIeNS+K43ZS/+B5LcTYIDPlx889u7+7u/V14a/vWev3pyn10pZpehBvLdZq6m0SrKfpD8dmKEb/KsRTDG5SXnrcG2wRTEd4RQoozgXEA2ZzECh67nQjYH4haZnxaEz9z2EfWTD2IxcK/bsxI3AuHEPJOZpX07hZwqUBf4cFMTA/E1QotwBoFz7jzHZcwf+NlET40uqoKSoQSGVOuGsxop3I7KXREy39rLg2hli1UILG60zXaJbrJ1hNBKezjDFqMJBjHj3vglMeALcEwinwoKS4YhU7dprX4hRo0bygguJDYcAdFXnRuRyCyueHYW3AYv9StvobGrn/ieS7/atk3kP56v0Oj1LvVPr1Lq+XLOQ/wvN97t2Iu+u6J8O3IyAPDG1/sTUf0n/9o6d2rD7P1sZUD0mVRTkdRZiJts+OGomz8igO4pNB8yH1SM6VFISESm0BNEKK56+dyTeap2QAosk2tXV5Tn0HdtxTGd3KvZ0/7Deyyk2zDXC1IdCOZ8unNdr9teXK353ulvukLZ3uphKuUnV9/zJsCqgRYToLnl7lsUwJ8M9a0hZFmVNxTnNJTVDn4Tm7wl+CLa3X7nZfllpnfRRBghdGLvJPPQ8jIATAs+zkQkSCFzHi+a+6ZvQndvJi4jES9s2YzMMkW3FwPZi6NuWZZv+3Hc9cc7M4wGcZE8ZMnvw/JxsGTK8sT3W0r3Y19HNTOvyMqnMsp6LgfpfLrJw+yLb2ZWOdP0Ql6nWlteU9ma5fSVmxxOWx2eP/wAAAP//AwCoDPJPlAsAAA==
-  recorded_at: Mon, 17 Apr 2023 20:56:30 GMT
-- request:
-    method: get
-    uri: https://api.spotify.com/v1/search?limit=1&market=US&offset=0&q=Ruff%20Ryders%20Anthem%20by%20DMX&type=track
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - "*/*"
-      Accept-Encoding:
-      - gzip, deflate
-      User-Agent:
-      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
-      Authorization:
-      - Bearer BQDy2moiBdERMNGfHrcqN3QQs2zfArnfBP2sWBLVvT6Dnacem3iMd0BtTVyMfgEqlcD61uM83npEo5hqQcbb5YZ3PTnmRKqoFcXGPvQUCfG_tiHCUKjJ
-      Host:
-      - api.spotify.com
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json; charset=utf-8
-      Cache-Control:
-      - public, max-age=7200
-      X-Robots-Tag:
-      - noindex, nofollow
-      Access-Control-Allow-Origin:
-      - "*"
-      Access-Control-Allow-Headers:
-      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
-        X-Cloud-Trace-Context, client-token, content-access-token
-      Access-Control-Allow-Methods:
-      - GET, POST, OPTIONS, PUT, DELETE, PATCH
-      Access-Control-Allow-Credentials:
-      - 'true'
-      Access-Control-Max-Age:
-      - '604800'
-      Content-Encoding:
-      - gzip
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      Date:
-      - Mon, 17 Apr 2023 20:56:30 GMT
-      Server:
-      - envoy
-      Via:
-      - HTTP/2 edgeproxy, 1.1 google
-      Alt-Svc:
-      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        H4sIAAAAAAAAALxW227bOBB971cIesh2kaYiJVkXA0aRdpHe7DZ1k22aRSFQIhUR1S0kFUcp8u+VKFWSXctxu4vNU8wZzxyfOXPIb48URRUMBV+5qkyVb9XH6iBiJKw/qpEQOZ9qGsrpU55ngobl0yBLtBuocYJYED27LggrZ8siDA+XJSaMHx6nIiLJoV8e/rW4OBBlTmaywUGC2FciZucfD7Iw5NV/4CCmCRUzqD5p+lJBEonjnxZJdYZiv0h6bP2Zd8WyIpcwK0g5jZGgWdqWGqTVCHZmMUG52GgrI+RWEJai2CtYzNchyHjLyBpTWU7SNaqa8hqYl+GHT2/OrPQChfPTy+tb4r4P1UHB+yfD3vuMoEU+VnutHsWy2j6pKUoawv5GjGYFV45bhtayOlobFOvBglEZawFPm5zpQyTcK18Gg9lJ/57k1wrQ4DKaByvjbr76fP1uefLhkt89f/9y0HbQdC/e66p8rOygWEv6HokJuiLbJBgRehWJOmCZYIPieA1nhTLAaQVRk8U05Fu2BS0Mqj9ftw0fIBDoDrAt1w6C0A0N0zUs018f3IpiEbXtBvyMgTLA74OCBOi/CKpqtwcoy/xtTKYzgb9M1Ih8KffyGJXIj+WeCFaQQbRbsrMsV07oDVEeLwpOA+WEZYlynGLldcpzyghWnpfKWUSURVY7l3JKA1Ew8udQPozEBHHiYSSaojqA5hHUj4A7lubljASU115YfwGjcpgpMlHtXX8vQGMY7DZfWvMg8tPa1wnT3evXLd+YEf8nPtCYMHy1Wkzu4heT63efojdiAUB5cfdvjKA14JG6W5zgwcROF9XlqW4lfdNux8x2948daFXFlAdeWiQ+YXLYfaBg8rr0mltZh6Ztd0qo5pLHNKBiU939wCjemFe1FCyQYM8/LufQdQCwDfNnKewY+X4Dl9LV4Gf7RY4nbxNxflm+PA6TW//idEu7fWbdLMNYya7Uj0E/lMa9OAuQdKYQxZwMI2O20Yujfm8pzXvrD6V5cPW18ywv4urqFpIjaPYBRm4oWXmbjph3jpjkxlGbpTkE+S6eWKGOLWviOtiBZui6PiEQEDQJdAxD2wqdZwHFM9PUse77yDQwMG0MXdMwTN11XMuu7h4H9+gkj1vV1klcpvTf2NS3DE93zbYTtyofmIM2alpJ63942sLNp21zXndub8xmGtXzqj5Lizhuj6X1SsRA3nb3j+6/AwAA//8DAIfuzdGlCwAA
-  recorded_at: Mon, 17 Apr 2023 20:56:31 GMT
+  recorded_at: Tue, 18 Apr 2023 18:44:25 GMT
 recorded_with: VCR 6.1.0
