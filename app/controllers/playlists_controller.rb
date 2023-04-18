@@ -2,7 +2,7 @@
 
 class PlaylistsController < ApplicationController
   def create
-    if params[:query].length < 40
+    if params[:query].length < 40 && params[:query].length > 0
       if !params[:remix_character]
         playlist_json = PlaylistFacade.new(params).create_playlists
       else
