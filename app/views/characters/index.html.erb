@@ -1,7 +1,6 @@
 <h1> You are <%= @character.name %> </h1>
 <h2> Your alignment type is <%=@character.alignment%> </h2>
 <p><%= @character.description %> </p>
-<%binding.pry%>
 <%=image_tag s3_presigned_url('characterchordsbucket23', @character.s3key)%>
 
 <%= form_with url: playlists_path, method: :post do |form| %>
