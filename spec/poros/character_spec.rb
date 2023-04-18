@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe Character do
   let(:character_data) do
-    { links: { image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Roy_Cohn.jpg/463px-Roy_Cohn.jpg' },
+    { links: { image: 'mock_s3key' },
       data: { type: 'character', theme_id: 1,
               attributes: { name: 'Roy Cohn', quiz: 'lawyer', alignment: 'Lawful Evil', description: 'A description' } } }
   end
@@ -12,7 +12,7 @@ RSpec.describe Character do
 
   describe 'attr_readers' do
     it 'should have attributes' do
-      expect(character.image_url).to eq('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Roy_Cohn.jpg/463px-Roy_Cohn.jpg')
+      expect(character.s3key).to eq('mock_s3key')
       expect(character.quiz_id).to eq(1)
       expect(character.quiz).to eq('lawyer')
       expect(character.name).to eq('Roy Cohn')

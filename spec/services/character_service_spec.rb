@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe CharacterService do
   let(:service) { CharacterService.new }
-  let(:hash) { { good_score: 0.0, lawful_score: 1.0, quiz_id: '1' } }
+  let(:hash) { { good_score: 0.0, lawful_score: 1.0, quiz_id: '2' } }
   describe '#get_character(hash)' do
     it 'should return a hash with attributes', :vcr do
       json = service.get_character(hash)

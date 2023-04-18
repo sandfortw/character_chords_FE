@@ -14,7 +14,7 @@ RSpec.describe QuizService do
       expect(json[:data].first[:type]).to eq('theme')
       expect(json[:data].first[:attributes]).to be_a(Hash)
       expect(json[:data].first[:attributes][:name]).to be_a(String)
-      expect(json[:data].first[:attributes][:image]).to be_a(String)
+      expect(json[:data].first[:attributes][:s3_key]).to be_a(String)
     end
   end
 end

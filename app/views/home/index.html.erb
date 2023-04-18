@@ -1,12 +1,11 @@
 
-
 <div class="container">
   <h2 class="text-4xl font-bold mb-8 text-center">Character Chords</h2>
   <p class="text-lg mb-8 text-center">Choose a Quiz!</p>
   <div class="quiz-container">
     <% @quizzes.each do |quiz|%>
       <div class="quiz">
-        <%= image_tag quiz.image_link, class: 'quiz-image', alt: "#{quiz.theme} quiz image" %>
+        <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image', alt: "#{quiz.title} quiz image" %>
         <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link'%>
       </div>
     <%end%>
