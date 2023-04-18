@@ -6,8 +6,8 @@
   <div class="quiz-container">
     <% @quizzes.each do |quiz|%>
       <div class="quiz">
-        <%= image_tag quiz.image_link, class: 'quiz-image', alt: "#{quiz.title} quiz image" %>
-        <%= link_to "What kind of #{quiz.title} are you?", quiz_path(quiz.id), class: 'quiz-link'%>
+        <%= image_tag quiz.image_link, class: 'quiz-image', alt: "#{quiz.theme} quiz image" %>
+        <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link'%>
       </div>
     <%end%>
   </div>

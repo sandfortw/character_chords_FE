@@ -35,25 +35,38 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"9cef2b4545f41b4141dc2deb7dcb6dee"
+      - W/"6494a8eeda047d484ed0cfd9f5a60598"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2b667fe3-0a89-42de-8cce-39d4346da44a
+      - f4bfdb08-fb7e-4d80-8f89-d2adc84e5c0e
       X-Runtime:
-      - '0.015613'
+      - '0.016082'
       Server-Timing:
-      - start_processing.action_controller;dur=0.15, sql.active_record;dur=1.00, instantiation.active_record;dur=0.06,
-        process_action.action_controller;dur=2.45
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.13, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=6.42
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg"}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":"https://media.istockphoto.com/id/1202688372/photo/error-programming-social-networking-seo-search-and-service-delivery-concept-chart-with.jpg?s=1024x1024\u0026w=is\u0026k=20\u0026c=I0Oued_6FvH_MoQo98ccgZ4WRc6r-OdQTBZYjv9J0gY=","title":"Debugging
+        Test"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":"https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg","title":"Want
+        To Know Which Famous Lawyer You''re Most Like? Take This Quiz And Achieve
+        Ultimate Enlightenment!"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":"https://images.pexels.com/photos/137049/pexels-photo-137049.jpeg","title":"Discover
+        Your True Nature With This Fun DnD Alignment Quiz"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Star_wars2.svg/225px-Star_wars2.svg.png","title":"May
+        The Force Be With You: Discover Your Inner Star Wars Character With This Quiz"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Harry_Potter_wordmark.svg/1280px-Harry_Potter_wordmark.svg.png","title":"Are
+        You A Hero, Villain, Or An Extra? Take This Harry Potter Character Quiz And
+        Find Out Where You Stand In The Wizarding World!"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":"https://upload.wikimedia.org/wikipedia/en/8/8a/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring_%282001%29.jpg","title":"Sauron
+        or Samwise, take this LOTR character alignment to find where you stand in
+        the fight for Middle Earth!"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":"https://cdn-media-1.freecodecamp.org/images/1*2TWW_kmC28W_rfXJqT6oPg.jpeg","title":"Techies
+        Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz"}}]}'
+  recorded_at: Tue, 18 Apr 2023 04:34:17 GMT
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes/1/questions
+    uri: http://localhost:4000/chordsapi/v1/themes/2/questions
     body:
       encoding: US-ASCII
       string: ''
@@ -86,16 +99,16 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"187698d7b5638ec0a726d1f469ebb6ad"
+      - W/"c41262d48ac05a218090b4d10873f934"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d31bc2da-efcf-43d9-bb04-d833b5970830
+      - 1dcd2a54-567f-4199-be3b-f783b9cc9869
       X-Runtime:
-      - '0.023906'
+      - '0.752840'
       Server-Timing:
-      - start_processing.action_controller;dur=0.15, sql.active_record;dur=7.13, instantiation.active_record;dur=0.85,
-        process_action.action_controller;dur=12.42
+      - start_processing.action_controller;dur=1.42, sql.active_record;dur=526.34,
+        instantiation.active_record;dur=50.12, process_action.action_controller;dur=653.78
       Transfer-Encoding:
       - chunked
     body:
@@ -138,15 +151,15 @@ http_interactions:
         in court. How do you respond?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Report
         the attorney to the appropriate authorities immediately.","value":1},"B":{"text":"Confront
         the attorney privately and give them a chance to correct their actions.","value":2},"C":{"text":"Stay
-        silent but distance yourself from the attorney professionally.","value":3},"D":{"text":"IKeep
-        quiet, as you believe that everyone deserves a zealous defense.","value":4},"E":{"text":"Use
+        silent but distance yourself from the attorney professionally.","value":3},"D":{"text":"I
+        Keep quiet, as you believe that everyone deserves a zealous defense.","value":4},"E":{"text":"Use
         the information to blackmail the attorney for personal gain.","value":5}}}},{"type":"question","id":6,"attributes":{"name":"Your
         firm is representing a client who is known for their philanthropy, but you
-        discover they are involved in illegal activities. How do you handle the situation?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"IAdvise
-        the client to end their illegal activities and make amends.","value":1},"B":{"text":"Continue
+        discover they are involved in illegal activities. How do you handle the situation?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"I
+        Advise the client to end their illegal activities and make amends.","value":1},"B":{"text":"Continue
         representing the client but encourage them to change their ways.","value":2},"C":{"text":"Ignore
-        the illegal activities and focus on the client''s philanthropic efforts.","value":3},"D":{"text":"
-        Use the client''s illegal activities to your advantage in negotiations.","value":4},"E":{"text":"IEncourage
+        the illegal activities and focus on the client''s philanthropic efforts.","value":3},"D":{"text":"Use
+        the client''s illegal activities to your advantage in negotiations.","value":4},"E":{"text":"IEncourage
         the client to expand their illegal activities for mutual benefit.","value":5}}}},{"type":"question","id":7,"attributes":{"name":"A
         new law is passed that you believe is unjust. How do you handle cases that
         involve this law?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Uphold
@@ -190,5 +203,5 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Sat, 15 Apr 2023 16:01:00 GMT
+  recorded_at: Tue, 18 Apr 2023 04:36:44 GMT
 recorded_with: VCR 6.1.0
