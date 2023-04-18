@@ -9,10 +9,20 @@ class ApplicationController < ActionController::Base
   end
 
   def current_character
-    @_current_character ||= Character.new(session[:character].deep_symbolize_keys) if session[:character]
+    if session[:character] && session[:character].class == Hash
+      @_current_character ||= Character.new(session[:character].deep_symbolize_keys) 
+    else
+      @_current_character ||= session[:character]
+    end
+  end
+
+  def current_characters
+    @_current_characters ||= CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id if current_character
   end
 
   def current_playlist
     @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys) if session[:playlist]
   end
+
+
 end

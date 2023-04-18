@@ -6,8 +6,8 @@ class PlaylistsController < ApplicationController
       if !params[:remix_character]
         playlist_json = PlaylistFacade.new(params).create_playlists
       else
-        remixed = JSON.parse(params[:remix_character], symbolize_names: true)
-        remixed[:query] = params['query']
+        session[:character] = current_characters.find { |c| c.character_id.to_s == params[:remix_character] }
+        remixed =  paramatize(current_character, params['query'])
         playlist_json = PlaylistFacade.new(remixed).create_playlists
       end
       session[:playlist] = playlist_json
@@ -23,8 +23,7 @@ class PlaylistsController < ApplicationController
 
   def show
     @playlist = current_playlist
-    all_characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
-    @characters = special_sort(all_characters, current_character)                     
+    @characters = special_sort(current_characters, current_character)                        
   end
 
   def open_with_spotify
@@ -44,5 +43,9 @@ class PlaylistsController < ApplicationController
     all_characters.delete_if do |character|
       character.character_id == current_character.character_id.to_i
     end.sort_by { |c| c.name}.unshift(current_character)
+  end
+
+  def paramatize(current_char, query)
+    {character_id_id: current_char.character_id, :character_name=>current_char.name, :alignment=>current_char.alignment, :theme_id=>current_char.theme_id, :query=>query}
   end
 end

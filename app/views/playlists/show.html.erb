@@ -20,14 +20,7 @@
   <%= form.text_field :query, value: @playlist.genre  %>
   <select id="character_select" name="remix_character">
   <% @characters.each do |character| %>
-      <% character_data = {
-            character_id_id: character.character_id,
-            character_name: character.name,
-            alignment: character.alignment,
-            theme_id: character.theme_id
-          }.to_json
-      %>
-    <option value="<%=character_data %>"><%= character.name %></option>
+    <option value="<%=character.character_id%>"><%= character.name %></option>
   <% end %>
   </select>
  
