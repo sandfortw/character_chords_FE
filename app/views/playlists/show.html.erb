@@ -6,7 +6,7 @@
     </div>
   <% end %></ol>
   <% if current_user%>
-    <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false } %>
+    <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false }, target: "_blank"  %>
   <% end %>
 
 <h2>Don't like what you see? Remix your playlist</h2>
