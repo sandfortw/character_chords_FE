@@ -11,7 +11,7 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="min-h-screen flex flex-col">
     <nav class="toolbar">
       <ul>
         <li><%= link_to "Home", home_clear_path%></li>
@@ -22,7 +22,7 @@
         <% end %>
       </ul>
     </nav>
-    
+
     <% flash.each do |type, msg| %>
       <center>
         <div>
@@ -30,8 +30,18 @@
         </div>
       </center>
     <% end %>
-    
-    <p><%= yield %></p>
-  </body>
 
+    <div class="flex-grow">
+      <p><%= yield %></p>
+    </div>
+
+    <div class="flex-shrink-0 bg-gray-200 py-4">
+      <ul class="text-center">
+        <li>Author 1</li>
+        <li>Author 2</li>
+        <li>Author 3</li>
+      </ul>
+    </div>
+  </body>
 </html>
+
