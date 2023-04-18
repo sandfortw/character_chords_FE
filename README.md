@@ -1,4 +1,22 @@
-#Character Chords (Front End)
+# Character Chords (Front End)
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      border: 1.5px solid white;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  </style>
+
+  <div class="center">
+    <img src="https://user-images.githubusercontent.com/116698937/232895368-56ae3086-3675-4ee1-a599-1435c6530b1e.png" />
+  </div>
 
   Discover your perfect playlist with Character Chords, the app that combines the fun of taking a personality test with the joy of music exploration. Find new music that resonates with you, explore the fictional world of your favorite characters through music, and uncover real-life kindred spirits along the way. Let AI choose your next song for you based on your personality traits and musical preferences!
 
