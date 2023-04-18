@@ -41,9 +41,8 @@ class PlaylistsController < ApplicationController
   end
 
   def special_sort(all_characters, current_character)
-    require 'pry'; binding.pry
-    all_characters.delete_if { |c| c.character_id == current_character.character_id }
-                  .sort
-                  .unshift(current_character)
+    all_characters.delete_if do |character|
+      character.character_id == current_character.character_id.to_i
+    end.sort_by { |c| c.name}.unshift(current_character)
   end
 end
