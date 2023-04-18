@@ -1,4 +1,4 @@
-# Character Chords (Front End)
+#Character Chords (Front End)
 
   Discover your perfect playlist with Character Chords, the app that combines the fun of taking a personality test with the joy of music exploration. Find new music that resonates with you, explore the fictional world of your favorite characters through music, and uncover real-life kindred spirits along the way. Let AI choose your next song for you based on your personality traits and musical preferences!
 
@@ -99,4 +99,4 @@
       </a>
     </td>
   </tr>   
-</table>
+</table> 
