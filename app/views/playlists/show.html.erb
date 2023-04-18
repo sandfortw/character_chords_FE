@@ -1,12 +1,12 @@
-<h1>10 Recommended Songs</h1>
 <% if @playlist.songs.size == 10 %>
+<h1><%= "Your #{@playlist.character} + #{@playlist.genre}, AI generated playlist" %></h1>
   <ol><% @playlist.songs.each do |song|%>
     <div class="song">
       <li><%= "#{song.name}, by #{song.artists.first.name}"%></li>
     </div>
   <% end %></ol>
   <% if current_user%>
-    <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false } %>
+    <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary", data: { turbo: false }, target: "_blank"  %>
   <% end %>
 
 <h2>Don't like what you see? Remix your playlist</h2>

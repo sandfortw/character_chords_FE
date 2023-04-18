@@ -14,7 +14,7 @@
           <% answer_count = 4 %>
           <% question.answers.each do |answer| %>
             <p class="mb-1"><%= form.label answer.letter, "#{answer.letter}) #{answer.text}" %> </p>
-            <p class="mb-3"><%= form.radio_button "#{question.id.to_s}#{question.spectrum}", answer_count.to_s, name: "answers['#{question.id.to_s}#{question.spectrum}']"%></p>
+            <p class="mb-3"><%= form.radio_button "#{question.id}#{question.spectrum}", answer_count.to_s, name: "answers['#{question.id.to_s}#{question.spectrum}']", checked: (session[:quiz_answers] && session[:quiz_answers][params[:id]] && session[:quiz_answers][params[:id]]["'#{question.id}#{question.spectrum}'"] == answer_count.to_s) %></p>
             <% answer_count -= 1 %>
           <% end %>
         </div>

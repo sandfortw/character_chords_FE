@@ -52,7 +52,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
         end
 
         click_button 'Get your results'
-        expect(page).to have_content('All questions must be answered to recive your results')
+        expect(page).to have_content('All questions must be answered to receive your results')
       end
     end
   end
