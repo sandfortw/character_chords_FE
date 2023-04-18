@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8671ad04-e276-4c96-97c6-be1349406360
+      - 32e4b355-7cc2-4b3a-b9b2-4895be86837f
       X-Runtime:
-      - '0.017821'
+      - '0.072346'
       Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=6.39, instantiation.active_record;dur=0.44,
-        process_action.action_controller;dur=11.41
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=27.62,
+        instantiation.active_record;dur=6.59, process_action.action_controller;dur=65.15
       Transfer-Encoding:
       - chunked
     body:
@@ -139,7 +139,7 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Tue, 18 Apr 2023 18:44:49 GMT
+  recorded_at: Tue, 18 Apr 2023 20:08:52 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/2/characters/find_character?good_evil=0.0&lawful_chaotic=0.0
@@ -179,12 +179,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 8a75d3f9-55cc-4f9b-b617-607db432747f
+      - 4aff0c90-307a-4a27-8cfe-5634589d4879
       X-Runtime:
-      - '0.010455'
+      - '0.021839'
       Server-Timing:
-      - start_processing.action_controller;dur=0.12, sql.active_record;dur=2.30, instantiation.active_record;dur=0.12,
-        process_action.action_controller;dur=4.10
+      - start_processing.action_controller;dur=0.13, sql.active_record;dur=5.13, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=10.88
       Transfer-Encoding:
       - chunked
     body:
@@ -194,5 +194,5 @@ http_interactions:
         master of chaotic evil, where eyebrow-raising press conferences, baseless
         conspiracy theories, and Four Seasons Total Landscaping mix for a potent cocktail
         of public disorder."}}}'
-  recorded_at: Tue, 18 Apr 2023 18:44:49 GMT
+  recorded_at: Tue, 18 Apr 2023 20:08:52 GMT
 recorded_with: VCR 6.1.0
