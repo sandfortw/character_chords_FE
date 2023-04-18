@@ -23,7 +23,8 @@ class PlaylistsController < ApplicationController
 
   def show
     @playlist = current_playlist
-    @characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
+    all_characters = CharacterFacade.new(nil, current_character.theme_id).all_characters_for_theme_id
+    @characters = special_sort(all_characters, current_character)                     
   end
 
   def open_with_spotify
@@ -37,5 +38,12 @@ class PlaylistsController < ApplicationController
     spotify_playlist = current_user.create_playlist!("#{playlist.character}, #{playlist.genre} AI Playlist")
     spotify_playlist.add_tracks!(playlist.songs)
     spotify_playlist
+  end
+
+  def special_sort(all_characters, current_character)
+    require 'pry'; binding.pry
+    all_characters.delete_if { |c| c.character_id == current_character.character_id }
+                  .sort
+                  .unshift(current_character)
   end
 end
