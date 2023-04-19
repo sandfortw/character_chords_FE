@@ -113,3 +113,9 @@
   font-weight: bold;
   font-size: 18px;
 }
+
+.playlist-genre-form-input:focus {
+  border-color: green;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.3);
+}

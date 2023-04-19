@@ -1,7 +1,24 @@
-#Character Chords (Front End)
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      border: 1.5px solid white;
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+    }
+  </style>
 
+  <div class="center">
+    <img src="https://user-images.githubusercontent.com/116698937/232895368-56ae3086-3675-4ee1-a599-1435c6530b1e.png" />
+  </div>
+
+# Character Chords (Front End)
   Discover your perfect playlist with Character Chords, the app that combines the fun of taking a personality test with the joy of music exploration. Find new music that resonates with you, explore the fictional world of your favorite characters through music, and uncover real-life kindred spirits along the way. Let AI choose your next song for you based on your personality traits and musical preferences!
-
 ## Table of Contents
   - [Directory](#directory)
   - [Technical Details](#technical-details) 
@@ -68,34 +85,34 @@
   <tr>
     <td>
       <a href="https://github.com/hadyematar23"  rel="nofollow noreferrer">
-          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
         </a><br>
       <a href="https://www.linkedin.com/in/hady-emmanuel-matar/" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+    <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
         </a>
     </td>
         <td>
        <a href="https://github.com/hwryan12" rel="nofollow noreferrer">
-            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" rel="nofollow noreferrer">
-          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/JTaylor28" rel="nofollow noreferrer">
-          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/james-taylor-a02a7a199/" rel="nofollow noreferrer">
-          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/sandfortw" rel="nofollow noreferrer">
-            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/westonsandfort/" rel="nofollow noreferrer">
-          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
   </tr>   
