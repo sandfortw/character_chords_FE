@@ -31,6 +31,7 @@ class PlaylistsController < ApplicationController
 
   def remix_playlist(params)
     character = current_characters.find { |c| c.character_id.to_s == params[:remix_character] }
+    session[:character] = character
     remixed_query = paramatize(character, params[:query])
     create_and_redirect(PlaylistFacade.new(remixed_query))
   end
