@@ -36,14 +36,7 @@
     </label>
       <select id="character_select" name="remix_character" class="form-select mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
         <% @characters.each do |character| %>
-          <% character_data = {
-                character_id_id: character.character_id,
-                character_name: character.name,
-                alignment: character.alignment,
-                theme_id: character.theme_id
-              }.to_json
-          %>
-          <option value="<%=character_data %>"><%= character.name %></option>
+          <option value="<%=character.character_id%>"><%= character.name %></option>
         <% end %>
         <div class="w-full">
           <%= form.submit "Create Playlist", class: "bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" %>
