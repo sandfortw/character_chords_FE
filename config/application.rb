@@ -36,11 +36,7 @@ module CcFe
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-
-    #For Sidekiq
-    config.session_store :cookie_store, key: '_interslice_session'
-    config.middleware.use ActionDispatch::Cookies
-    config.middleware.use config.session_store, config.session_options
+    config.action_mailer.logger = ActiveSupport::Logger.new(STDOUT)
   end
 end
 
