@@ -13,3 +13,43 @@
  *= require_tree .
  *= require_self
  */
+ .nav-pop-text {
+  font-size: 1rem; /* Adjust the size according to your needs */
+  font-weight: bold;
+  color: #000000; /* Light text color */
+  padding: 0.5rem; /* Add some padding around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
+  padding: 0.5rem;
+  border-radius: 5px; /* Add some border-radius for a more polished look */
+}
+
+.footer-pop-text {
+  font-size: 2rem; /* Adjust the size according to your needs */
+  font-weight: bold;
+  color: #ffffff; /* Light text color */
+  padding: 0.5rem; /* Add some padding around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
+  padding: 0.5rem;
+  border-radius: 5px; /* Add some border-radius for a more polished look */
+}
+
+.custom-footer {
+  background-color: #444;
+  padding: .5rem 0;
+  width: 100%;
+}
+
+.padding-top {
+  padding-top: 5rem;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+.logo {
+  width: 55px;
+  height: auto;
+  max-width: 100%;
+  border-radius: 75%; /* assumes your logo is circular */
+}
