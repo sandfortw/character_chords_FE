@@ -81,14 +81,14 @@ RSpec.describe 'Playlist Show Page', type: :feature do
                                       with_options: ['Michael Cohen', 'Roy Cohn', 'Thurgood Marshall'])
         end
 
-        xit 'when you select the character and fill in the genre, it will regenerate a new playlist' do
+        it 'when you select the character and fill in the genre, it will regenerate a new playlist' do
           select 'Thurgood Marshall', from: 'character_select'
           expect(page).to have_select('character_select', selected: 'Thurgood Marshall')
 
           fill_in :query, with: 'rock'
           click_button('Create Playlist')
           expect(current_path).to match(%r{/playlists/\d+})
-          # expect(page).to have_css('div.song', count: 10)
+          expect(page).to have_css('div.song', count: 10)
           prohibited_songs = [
             'Money Longer by Lil Uzi Vert',
             "I Don't Like by Chief Keef",
