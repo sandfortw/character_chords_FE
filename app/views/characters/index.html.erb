@@ -1,14 +1,27 @@
-<h1> You are <%= @character.name %> </h1>
-<h2> Your alignment type is <%=@character.alignment%> </h2>
-<p><%= @character.description %> </p>
-<%=image_tag s3_presigned_url('characterchordsbucket23', @character.s3key)%>
 
-<%= form_with url: playlists_path, method: :post do |form| %>
-  <%= form.label :query, "Enter a genre of music to generate your playlist!" %>
-  <%= form.text_field :query, required: true %>
-  <%= form.hidden_field :character_name, value: @character.name %>
-  <%= form.hidden_field :alignment, value: @character.alignment %>
-  <%= form.hidden_field :theme_id, value: @character.theme_id %>
-  <%= form.hidden_field :character_id_id, value: @character.character_id %>
-  <%= form.submit "Create Playlist" %>
-<% end %>
+<head>
+  <link rel="stylesheet" href=app/assets/stylesheets/characters_page.css>
+</head>
+
+<div class="center">
+  <div class="character-container">
+    <h1 class="title">You are <%= @character.name %></h1>
+    <h2 class="subtitle"> Alignment: <%= @character.alignment %></h2>
+    <div class="character-info">
+      <%= image_tag s3_presigned_url('characterchordsbucket23', @character.s3key), class: "image" %>
+      <p class="description"><%= @character.description %></p>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <%= form_with url: playlists_path, method: :post do |form| %>
+      <%= form.label :query, "Enter a music genre for a personalized quiz-based playlist!", class: "form-label" %>
+      <%= form.text_field :query, required: true, maxlength: 40, class: "form-input" %>
+      <%= form.hidden_field :character_name, value: @character.name %>
+      <%= form.hidden_field :alignment, value: @character.alignment %>
+      <%= form.hidden_field :theme_id, value: @character.theme_id %>
+      <%= form.hidden_field :character_id_id, value: @character.character_id %>
+      <%= form.submit "Create Playlist", class: "form-button" %>
+    <% end %>
+  </div>
+</div>

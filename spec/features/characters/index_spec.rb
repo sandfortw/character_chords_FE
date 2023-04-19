@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
-7
+require 'rails_helper'
+require 'spec_helper'
+
 RSpec.describe 'Character Index', type: :feature do
   describe 'character page', :vcr do
     before(:each) do
@@ -21,7 +23,7 @@ RSpec.describe 'Character Index', type: :feature do
     end
 
     it 'the page will have a form asking you what type of music you want to have a playlist returned for' do
-      expect(page).to have_content('Enter a genre of music to generate your playlist!')
+      expect(page).to have_content("Enter a music genre for a personalized quiz-based playlist!")
       expect(page).to have_selector('form')
       expect(page).to have_field(:query)
     end
