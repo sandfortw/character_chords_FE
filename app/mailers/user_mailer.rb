@@ -1,9 +1,9 @@
 class UserMailer < ApplicationMailer
 
-  def playlist_email(email, playlist)
+  def playlist_email(email, playlist_url)
     @email = email
-    @playlist = playlist
+    @playlist_url = playlist_url
     mail( :to => @email,
-    :subject => 'TESTING SIDEKIQ' )
+    :subject => 'CharacterChords: Your new Spotify Playlist' )
   end
 end
