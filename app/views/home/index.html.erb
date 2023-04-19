@@ -1,13 +1,73 @@
+<head>
+  <link rel="stylesheet" href="app/assets/stylesheets/home_index.css">
+</head>
+
+
 
 <div class="container">
-  <h2 class="text-4xl font-bold mb-8 text-center">Character Chords</h2>
-  <p class="text-lg mb-8 text-center">Choose a Quiz!</p>
-  <div class="quiz-container">
+  <h2 class="text-4xl-custom">Character Chords: </h2>
+  <p class="text-lg-custom">Bringing AI to Your Spotify</p>
+
+  <p class="how_it_works" id="how_it_works_button">How does it work?</p>
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="close_popup" class="close">&times;</span>
+      <p>We all have music that fits our mood but who doesn't like music that fits their morality?
+      <br><br> 
+      <b>Enter Character Chords.</b> AI-Generated Playlists tailored to what you would do when the chips are down and your friends need help. 
+
+      <br><br>
+
+      Here's how it works. 
+      <br><br>Choose one of the personality tests below which will ask you how you would react to 12 fictional circumstances and, based on those results, assign you a famous character that aligns with your leanings. The criteria is based on the Dungeons and Dragons alignments from Good to Evil on one scale and Lawful to Chaotic on the other. <br><br>
+      After that, input your favorite type of music and, BAM, Artificial Intelligence- in the shape of Chat GPT3.5 will tell you what that character would be listening to if they also liked your type of music. From there, you can choose to remix the playlist or add it directly to your spotify account.
+      <br><br>
+      Here's a generic example: 
+      
+      <%= image_tag "https://images.squarespace-cdn.com/content/v1/5d01244a3805150001948c72/1569226661898-ZU440B4KEAUGJV71T5OG/image-asset.jpeg?format=1500w" %>
+</p>
+    </div>
+  </div>
+
+  <p class="about_this_project" id="about_this_project">About Us?</p>
+  <div id="popup2" class="popup2 hidden">
+    <div class="popup-content2">
+      <span id="close_popup2" class="close">&times;</span>
+      
+      <p>Once upon a time, in the virtual realm of Zoomtopia, four Dungeons and Dragons enthusiasts - James, Hady, Weston, and Harrison - embarked on a quest to create the most epic app ever for their coding boot camp. They named it "Character Chords," an app that combined their love for DnD with the cutting-edge capabilities of artificial intelligence to generate a symphony of unique, multi-dimensional characters for their fellow players. United by their passion for coding and DnD, they spent countless hours on Zoom calls, fueled by a potent concoction of energy drinks, pizza, and the sheer thrill of innovation.
+<br> <br>
+      As the app came together, Character Chords began producing an ensemble of the most peculiar and comical heroes and villains the world of DnD had ever seen. The AI, having developed a mischievous sense of humor, delighted the four friends with its wild creativity and hilarious character concepts. James, Hady, Weston, and Harrison reveled in the chaotic brilliance of their creation, sharing laughs and camaraderie through the pixelated glow of their screens. What they didn't realize was that the AI's wit had seeped into their very own story - for the prompt that set them on this path was subtly crafted by an AI, making them the unsuspecting stars in a grand tale of virtual adventure and intrigue.</p>
+    </div>
+  </div>
+  
+  <div class="quiz-container-custom">
     <% @quizzes.each do |quiz|%>
-      <div class="quiz">
-        <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image', alt: "#{quiz.title} quiz image" %>
-        <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link'%>
+      <div class="quiz-custom">
+        <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image-custom', alt: "#{quiz.title} quiz image" %>
+        <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link-custom'%>
       </div>
     <%end%>
   </div>
 </div>
+
+<script>
+  document.getElementById("how_it_works_button").addEventListener("click", function() {
+    document.getElementById("popup").classList.toggle("hidden");
+  });
+
+  document.getElementById("close_popup").addEventListener("click", function() {
+    document.getElementById("popup").classList.toggle("hidden");
+  });
+</script>
+
+<script>
+
+document.getElementById("about_this_project").addEventListener("click", function() {
+  document.getElementById("popup2").classList.toggle("hidden");
+});
+
+document.getElementById("close_popup2").addEventListener("click", function() {
+  document.getElementById("popup2").classList.toggle("hidden");
+});
+
+</script>
