@@ -59,7 +59,8 @@ RSpec.describe 'Home Page', type: :feature do
 
     describe 'quiz images' do
       it 'when visiting the home page, there are images for each given quiz ' do
-        expect(page).to have_css('img.quiz-image')
+        save_and_open_page
+        expect(page).to have_css("img[src^='https']")
       end
     end
   end
