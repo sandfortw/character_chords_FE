@@ -79,5 +79,7 @@ gem 'figaro'
 gem 'foreman'
 gem 'rspotify'
 gem 'rubocop'
+gem 'redis'
+gem 'sidekiq'
 
 gem 'tailwindcss-rails', '~> 2.0'

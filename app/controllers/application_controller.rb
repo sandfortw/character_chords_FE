@@ -24,5 +24,4 @@ class ApplicationController < ActionController::Base
     @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys, current_user.country) if session[:playlist]
   end
 
-
 end

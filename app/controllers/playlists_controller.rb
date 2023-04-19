@@ -16,6 +16,7 @@ class PlaylistsController < ApplicationController
 
   def open_with_spotify
     spotify_playlist = create_spotify_playlist(current_playlist)
+    PlaylistSenderJob.perform_async(current_user.email, spotify_playlist)
     redirect_to(spotify_playlist.external_urls['spotify'], allow_other_host: true)
   end
 
@@ -54,6 +55,7 @@ class PlaylistsController < ApplicationController
   def create_spotify_playlist(playlist)
     spotify_playlist = current_user.create_playlist!("#{playlist.character}, #{playlist.genre} AI Playlist")
     spotify_playlist.add_tracks!(playlist.songs)
+    session[:spotify_playlist] = spotify_playlist
     spotify_playlist
   end
 
