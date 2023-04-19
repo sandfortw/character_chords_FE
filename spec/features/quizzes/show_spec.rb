@@ -31,7 +31,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
 
         click_button 'Get your results'
         expect(current_path).to eq(characters_path)
-        expect(page).to have_content('Your alignment type is Chaotic Evil')
+        expect(page).to have_content('Alignment: Chaotic Evil')
       end
     end
 
