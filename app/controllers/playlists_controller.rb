@@ -16,7 +16,6 @@ class PlaylistsController < ApplicationController
 
   def open_with_spotify
     spotify_playlist = create_spotify_playlist(current_playlist)
-    require 'pry'; binding.pry
     PlaylistSenderJob.perform_async(current_user.email, spotify_playlist.external_urls['spotify']) if params[:email] == '1'
     redirect_to(spotify_playlist.external_urls['spotify'], allow_other_host: true)
   end
