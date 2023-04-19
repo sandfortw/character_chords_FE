@@ -16,7 +16,7 @@
   <div class="form-container">
     <%= form_with url: playlists_path, method: :post do |form| %>
       <%= form.label :query, "Enter a music genre for a personalized quiz-based playlist!", class: "form-label" %>
-      <%= form.text_field :query, required: true, class: "form-input" %>
+      <%= form.text_field :query, required: true, maxlength: 40, class: "form-input" %>
       <%= form.hidden_field :character_name, value: @character.name %>
       <%= form.hidden_field :alignment, value: @character.alignment %>
       <%= form.hidden_field :theme_id, value: @character.theme_id %>
