@@ -45,7 +45,7 @@ RSpec.describe 'Playlist Show Page', type: :feature do
         expect_any_instance_of(ApplicationController).to receive(:current_playlist).and_return(Playlist.new(@playlist_json, "US"))
         allow_any_instance_of(CharacterFacade).to receive(:all_characters_for_theme_id).and_return([Character.new(@character_data.deep_symbolize_keys)])
         visit '/playlists/1'
-        expect(page).to have_link('Open with Spotify')
+        expect(page).to have_button('Open with Spotify')
       end
 
       describe 'view on the page' do

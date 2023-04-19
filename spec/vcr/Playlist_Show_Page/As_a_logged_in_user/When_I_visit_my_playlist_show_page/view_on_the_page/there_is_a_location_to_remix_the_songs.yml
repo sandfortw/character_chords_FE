@@ -1263,4 +1263,64 @@ http_interactions:
       string: !binary |-
         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
   recorded_at: Wed, 19 Apr 2023 15:12:35 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/users/12345
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin22 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQB2ePkO6voQxdG8ajdcU4-r32ZwzuJlf2KldXwb2EzxJYa7PaohsBnj5UOAbm9xe8Dl6J48fPybW-SxxRipuwvzaxYSmO_NBV_GGNzC9XgqvDgiu5_6
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=14400
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Wed, 19 Apr 2023 23:28:58 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAFyPzQ6DIBCE730KwtlIbO2FV2kaQ+paSVYg/Nga47tXwBrbI9/szDDziRDaSmdQTI0SA1DCCa3Ol/pKi6jB24NVAptg0UVxXunKndFedlM67703jjOmDahyE8qHHlhwYFkOW11LCuw0on6BPYb1Frr4VAGxyMhrLzCyend+r/Y+YeRP3VilRscO/5ft/yI5iCek9hu5J+Ink3dHdz4KViayxfOo8G3J8gEAAP//AwD9sjGUNQEAAA==
+  recorded_at: Wed, 19 Apr 2023 23:28:58 GMT
 recorded_with: VCR 6.1.0
