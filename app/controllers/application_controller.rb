@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_playlist
-    @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys) if session[:playlist]
+    @_current_playlist ||= Playlist.new(session[:playlist].deep_symbolize_keys, current_user.country) if session[:playlist]
   end
 
 
