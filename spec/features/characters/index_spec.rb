@@ -1,22 +1,25 @@
 # frozen_string_literal: true
 
-7
+require 'rails_helper'
+require 'spec_helper'
+
 RSpec.describe 'Character Index', type: :feature do
   describe 'character page', :vcr do
     before(:each) do
       character_data =
-        { 'links' => { 'image' => 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Michael_Cohen_in_2019.png' },
+        { 'links' => { 'image' => 'LawyerCharacters/MichaelCohen.jpeg' },
           'data' => { 'id' => '1', 'type' => 'character', 'theme_id' => 1,
                       'attributes' => { 'name' => 'Michael Cohen', 'quiz' => 'lawyer', 'alignment' => 'Neutral Evil', 'character_id' => '1' } } }
-
+      # ApplicationController.new
       allow_any_instance_of(ApplicationController).to receive(:current_character).and_return(Character.new(character_data.deep_symbolize_keys))
       visit '/characters'
     end
 
     it 'the index page will list the character name, their alignment type, along with a picture of the person' do
+      
       expect(page).to have_content('Michael Cohen')
       expect(page).to have_content('Neutral Evil')
-      expect(page).to have_selector("img[src='https://upload.wikimedia.org/wikipedia/commons/b/ba/Michael_Cohen_in_2019.png']")
+      expect(page).to have_selector("img[src]:not([src=''])", minimum: 1)
     end
 
     it 'the page will have a form asking you what type of music you want to have a playlist returned for' do

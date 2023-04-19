@@ -22,9 +22,11 @@
 }
 
 .image {
-  width: 30vw;
-  height: auto;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -36,6 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1rem; /* add margin-top to create space between the image and description */
 }
 
 .form-container {
