@@ -4,24 +4,28 @@
 <div class="custom-gradient">
   <div class="container mx-auto">
     <% if @playlist.songs.size == 10 %>
-    <h1 class="text-3xl text-center font-bold mb-4 pop-text">
-      Your <%= @playlist.character %> + <%= @playlist.genre %>, AI generated playlist
-    </h1>
-      <div class="playlist-container">
-        <div class="form-container">
-          <ol class="list-decimal list-inside">
-            <% @playlist.songs.each do |song| %>
-              <div class="songs">
-                <li class="mb-2 lil-pop-text"><%= "#{song.name}, by #{song.artists.first.name}" %></li>
-              </div>
+      <h1 class="text-3xl text-center font-bold mb-4 pop-text">
+        Your <%= @playlist.character %> + <%= @playlist.genre %>, AI generated playlist
+      </h1>
+        <div class="playlist-container">
+          <div class="form-container">
+            <ol class="list-decimal list-inside">
+              <% @playlist.songs.each do |song| %>
+                <div class="songs">
+                  <li class="mb-2 lil-pop-text"><%= "#{song.name}, by #{song.artists.first.name}" %></li>
+                </div>
+              <% end %>
+            </ol>
+          </div>    
+      <div class="text-center">
+          <% if current_user %>
+            <%= form_with url: open_with_spotify_playlist_path(@playlist) do |form| %>
+              <%= form.check_box :email %>
+              <%= form.label :email, 'Email me my playlist' %>
+              <%= form.submit 'Open with Spotify', class: "btn btn-primary shadow-3d  lil-pop-text" %>
             <% end %>
-          </ol>
-        </div>    
-    <div class="text-center">
-        <% if current_user %>
-          <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary shadow-3d  lil-pop-text", data: { turbo: false }, target: "_blank" %>
-        <% end %>
-      <h2 class="text-xl font-bold mt-8 mb-2 lil-pop-text">Don't like what you see? Remix your playlist</h2>
+          <% end %>
+        <h2 class="text-xl font-bold mt-8 mb-2 lil-pop-text">Don't like what you see? Remix your playlist</h2>
     <% else %>
       <h2 class="text-2xl font-bold mb-4 lil-pop-text">We're sorry, OpenAi didn't like something about that last prompt. Please try again below.</h2>
     <% end %>
