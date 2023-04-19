@@ -6,7 +6,6 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -14,13 +13,14 @@
   <body class="min-h-screen flex flex-col">
     <nav class="toolbar">
       <ul>
-        <li><%= link_to "Home", home_clear_path%></li>
+        <li class="nav-pop-text"><%= link_to "Home", home_clear_path%></li>
         <% if current_user %>
-          <li><%= link_to "Logout", logout_path %></li>
+          <li class="nav-pop-text"><%= link_to "Logout", logout_path %></li>
           <% else %>
-          <li><%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-4 py-2 rounded-md shadow-md' %></li>
+          <li><%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-6 py-2 rounded-md shadow-md' %></li>
         <% end %>
       </ul>
+      <%= image_tag "logo.png", alt: "Character Chords", class: "logo" %>
     </nav>
 
     <% flash.each do |type, msg| %>
@@ -35,11 +35,14 @@
       <p><%= yield %></p>
     </div>
 
-    <div>
-      <center>
-        <p>This app is still in development</p>
-      </center>
+<footer class="custom-footer mt-auto">
+  <div class="container mx-auto px-4">
+    <div class="text-center">
+      <p class="footer-pop-text">This app is still in development</p>
     </div>
+  </div>
+</footer>
+
   </body>
 </html>
 
