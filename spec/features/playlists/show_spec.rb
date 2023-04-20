@@ -42,10 +42,10 @@ RSpec.describe 'Playlist Show Page', type: :feature do
       it 'should have a link to open with spotify' do
         login_with_oauth
         expect_any_instance_of(ApplicationController).to receive(:current_character).at_least(:once).and_return(Character.new(@character_data.deep_symbolize_keys))
-        expect_any_instance_of(ApplicationController).to receive(:current_playlist).and_return(Playlist.new(@playlist_json))
+        expect_any_instance_of(ApplicationController).to receive(:current_playlist).and_return(Playlist.new(@playlist_json, "US"))
         allow_any_instance_of(CharacterFacade).to receive(:all_characters_for_theme_id).and_return([Character.new(@character_data.deep_symbolize_keys)])
         visit '/playlists/1'
-        expect(page).to have_link('Open with Spotify')
+        expect(page).to have_button('Open with Spotify')
       end
 
       describe 'view on the page' do
@@ -58,7 +58,7 @@ RSpec.describe 'Playlist Show Page', type: :feature do
           allow_any_instance_of(ApplicationController).to receive(:current_playlist).and_wrap_original do |original_method, *args, &block|
             if first_call_to_current_playlist
               first_call_to_current_playlist = false
-              Playlist.new(@playlist_json)
+              Playlist.new(@playlist_json, "US")
             else
               original_method.call(*args, &block)
             end
