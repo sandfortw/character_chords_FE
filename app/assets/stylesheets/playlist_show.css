@@ -32,23 +32,8 @@
 
 .custom-gradient {
   min-height: 100vh;
-  background: linear-gradient(-45deg, #3f8b36, #8baa8d, #c8e1c9, #38932a);
+  background: linear-gradient(-45deg, #000000, #585858);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .container {
@@ -226,6 +211,7 @@ max-width: 100%;
   align-items: center;
   padding: 1rem;
   margin-bottom: 2rem;
+  background-color: #f2f2f2;
 }
 
 .form-label {

@@ -17,16 +17,20 @@
             <% end %>
           </ol>
         </div>    
-    <div class="text-center">
         <% if current_user %>
-          <%= link_to "Open with Spotify", open_with_spotify_playlist_path(@playlist), class: "btn btn-primary shadow-3d  lil-pop-text", data: { turbo: false }, target: "_blank" %>
+              <%= form_with url: open_with_spotify_playlist_path(@playlist) do |form| %>
+                <%= form.check_box :email %>
+                <%= form.label :email, 'Email me my playlist' %>
+                <%= form.submit 'Open with Spotify', class: "btn btn-primary shadow-3d  lil-pop-text" %>
+              <% end %>
         <% end %>
+      <div class="form-container">
       <h2 class="text-xl font-bold mt-8 mb-2 lil-pop-text">Don't like what you see? Remix your playlist</h2>
     <% else %>
+      <div class="form-container">
       <h2 class="text-2xl font-bold mb-4 lil-pop-text">We're sorry, OpenAi didn't like something about that last prompt. Please try again below.</h2>
     <% end %>
-    </div>
-  <div class="form-container">
+ 
     <%= form_with url: playlists_path, method: :post do |form| %>
       <%= form.label :query, "Genre", class: "form-label" %>
       <%= form.text_field :query, required: true, maxlength: 40, class: "form-input" %>
@@ -37,7 +41,6 @@
           <option value="<%=character.character_id%>"><%= character.name %></option>
         <% end %>
       </select>
-
       <%= form.submit "Create Playlist", class: "form-button" %>
     <% end %>
   </div>
