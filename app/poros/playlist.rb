@@ -23,8 +23,12 @@ class Playlist
   def clean_up(songs)
     if songs
       songs.map do |song|
-        cleaned_up_song = song.gsub(/[^a-zA-Z\s.]+/, '')
-        RSpotify::Track.search(cleaned_up_song, limit: 1, market: @country).first
+        if song 
+          cleaned_up_song = song.gsub(/[^a-zA-Z\s.]+/, '')
+          RSpotify::Track.search(cleaned_up_song, limit: 1, market: @country).first
+        else 
+          RSpotify::Track.search("Bug Song", limit: 1, market: @country).first
+        end
       end
     else
       RSpotify::Track.search("Bug Song", limit: 1, market: @country)

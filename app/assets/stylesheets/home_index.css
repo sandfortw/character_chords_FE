@@ -14,7 +14,7 @@
 .how_it_works {
   font-size: 1rem;
   display:flex;
-  justify-content: left;
+  justify-content: center;
   color: blue;
 }
 
@@ -36,7 +36,7 @@
 .about_this_project{
   font-size: 1rem;
   display:flex;
-  justify-content: left;
+  justify-content: center;
   color: blue;
 }
 
@@ -115,10 +115,8 @@
     display: block;
     max-width: 400px;
     word-wrap: break-word;
+    text-decoration: underline;
   }
-
-
-
 
 .quiz-custom:last-child {
   grid-column: 2 / span 1;
