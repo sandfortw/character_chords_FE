@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 50cdd4aa-3f92-4bd7-82be-35e0743da0bc
+      - a71eca50-29fd-46f9-a3b5-375df3fa79ba
       X-Runtime:
-      - '0.011178'
+      - '0.033068'
       Server-Timing:
-      - start_processing.action_controller;dur=0.11, sql.active_record;dur=2.15, instantiation.active_record;dur=0.12,
-        process_action.action_controller;dur=5.32
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.44, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=5.62
       Transfer-Encoding:
       - chunked
     body:
@@ -53,5 +53,5 @@ http_interactions:
         and Roll","id":1,"attributes":{"character_name":"Thurgood Marshall","quiz_theme":"lawyer","character_alignment":"Chaotic
         Neutral","song_titles":["Song 1","Song 2","Song 3","Song 4","Song 5","Song
         6","Song 7","Song 8","Song 9","Song 10"]}}}'
-  recorded_at: Tue, 18 Apr 2023 20:08:56 GMT
+  recorded_at: Thu, 20 Apr 2023 20:28:41 GMT
 recorded_with: VCR 6.1.0

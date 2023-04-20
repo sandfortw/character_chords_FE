@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 0ea9cc06-844f-4a4f-92ac-3fc86d77dbad
+      - 33a7c79f-4fbf-4b30-a661-7b2552645397
       X-Runtime:
-      - '0.013715'
+      - '0.024916'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=5.43, instantiation.active_record;dur=0.32,
-        process_action.action_controller;dur=9.12
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=6.49, instantiation.active_record;dur=0.29,
+        process_action.action_controller;dur=20.40
       Transfer-Encoding:
       - chunked
     body:
@@ -142,7 +142,7 @@ http_interactions:
   recorded_at: Thu, 20 Apr 2023 20:28:37 GMT
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes/2/characters/find_character?good_evil=0.0&lawful_chaotic=0.0
+    uri: http://localhost:4000/chordsapi/v1/themes/2/questions
     body:
       encoding: US-ASCII
       string: ''
@@ -175,24 +175,109 @@ http_interactions:
       Vary:
       - Accept
       Etag:
-      - W/"1fd946598bf30164ab40652522262ba4"
+      - W/"c41262d48ac05a218090b4d10873f934"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9b1e60bd-23d5-4b97-b752-b3f7d2730e56
+      - abb5cebb-d4d7-4553-b568-6074749e5ef8
       X-Runtime:
-      - '0.009423'
+      - '0.040929'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=2.42, instantiation.active_record;dur=0.15,
-        process_action.action_controller;dur=4.54
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=21.60,
+        instantiation.active_record;dur=0.39, process_action.action_controller;dur=33.92
       Transfer-Encoding:
       - chunked
     body:
       encoding: UTF-8
-      string: '{"links":{"image":"LawyerCharacters/RudyGuiliani.jpeg"},"data":{"type":"character","theme_id":2,"attributes":{"name":"Rudy
-        Guiliani","quiz":"lawyer","alignment":"Chaotic Evil","character_id":18,"description":"The
-        master of chaotic evil, where eyebrow-raising press conferences, baseless
-        conspiracy theories, and Four Seasons Total Landscaping mix for a potent cocktail
-        of public disorder."}}}'
+      string: '{"links":{"image":"http://image.com"},"data":[{"type":"question","id":1,"attributes":{"name":"A
+        high-profile client offers you a significant sum of money to represent them
+        in a case where they are clearly guilty. What do you do?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Reject
+        the case outright on moral grounds.","value":1},"B":{"text":"Accept the case
+        but donate the earnings to charity","value":2},"C":{"text":"Accept the case
+        and do your best to defend the client.","value":3},"D":{"text":"Accept the
+        case and use any means necessary to win, even if it involves bending the truth.","value":4},"E":{"text":"Accept
+        the case and actively participate in covering up the client''s crimes.","value":5}}}},{"type":"question","id":2,"attributes":{"name":"You
+        come across evidence that could potentially exonerate a defendant, but it
+        would also incriminate your client. How do you proceed?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Present
+        the evidence to the court and protect the innocent party.","value":1},"B":{"text":"Disclose
+        the evidence to both parties privately, seeking a resolution without jeopardizing
+        your client''s case.","value":2},"C":{"text":"Conceal the evidence but try
+        to minimize the harm caused to the innocent party.","value":3},"D":{"text":"Keep
+        the evidence hidden and prioritize your client''s interests above all else.","value":4},"E":{"text":"Use
+        the evidence to blackmail the innocent party for personal gain.","value":5}}}},{"type":"question","id":3,"attributes":{"name":"Your
+        client is a corporation that has caused significant environmental damage.
+        How do you approach the case?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Advise
+        the corporation to own up to its actions and compensate the affected communities.","value":1},"B":{"text":"Work
+        on a settlement that balances the corporation''s interests with the affected
+        communities'' needs.","value":2},"C":{"text":"Defend the corporation and attempt
+        to minimize any penalties.","value":3},"D":{"text":"Actively discredit or
+        suppress evidence of the corporation''s wrongdoing.","value":4},"E":{"text":"Help
+        the corporation cover up its actions and continue causing harm.","value":5}}}},{"type":"question","id":4,"attributes":{"name":"A
+        colleague is in danger of losing their job due to allegations of professional
+        misconduct. You know they''re innocent, but revealing the truth might harm
+        your career. What do you do?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Come
+        forward with the truth, regardless of the consequences to your career.","value":1},"B":{"text":"Try
+        to help your colleague clear their name without putting your own career at
+        risk.","value":2},"C":{"text":"Stay silent but offer support to your colleague
+        privately.","value":3},"D":{"text":"Stay silent and distance yourself from
+        your colleague to protect your reputation.","value":4},"E":{"text":"Use the
+        situation to your advantage and work to replace your colleague after they''re
+        dismissed.","value":5}}}},{"type":"question","id":5,"attributes":{"name":"You
+        discover that a fellow attorney has been knowingly providing false evidence
+        in court. How do you respond?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"Report
+        the attorney to the appropriate authorities immediately.","value":1},"B":{"text":"Confront
+        the attorney privately and give them a chance to correct their actions.","value":2},"C":{"text":"Stay
+        silent but distance yourself from the attorney professionally.","value":3},"D":{"text":"I
+        Keep quiet, as you believe that everyone deserves a zealous defense.","value":4},"E":{"text":"Use
+        the information to blackmail the attorney for personal gain.","value":5}}}},{"type":"question","id":6,"attributes":{"name":"Your
+        firm is representing a client who is known for their philanthropy, but you
+        discover they are involved in illegal activities. How do you handle the situation?","quiz":"lawyer","spectrum":"good_evil","answers":{"A":{"text":"I
+        Advise the client to end their illegal activities and make amends.","value":1},"B":{"text":"Continue
+        representing the client but encourage them to change their ways.","value":2},"C":{"text":"Ignore
+        the illegal activities and focus on the client''s philanthropic efforts.","value":3},"D":{"text":"Use
+        the client''s illegal activities to your advantage in negotiations.","value":4},"E":{"text":"IEncourage
+        the client to expand their illegal activities for mutual benefit.","value":5}}}},{"type":"question","id":7,"attributes":{"name":"A
+        new law is passed that you believe is unjust. How do you handle cases that
+        involve this law?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Uphold
+        the law, as it is your duty to follow the legal system.","value":1},"B":{"text":"Work
+        within the legal system to challenge the law or find loopholes.","value":2},"C":{"text":"Selectively
+        enforce the law, depending on the specific circumstances.","value":3},"D":{"text":"Encourage
+        clients to defy the law in protest.","value":4},"E":{"text":"Actively work
+        to undermine the law and assist clients in breaking it.","value":5}}}},{"type":"question","id":8,"attributes":{"name":"A
+        client you know to be innocent is found guilty in court. How do you proceed?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Accept
+        the verdict and move on, as the legal system has spoken.","value":1},"B":{"text":"Pursue
+        an appeal and exhaust all legal remedies available.","value":2},"C":{"text":"Investigate
+        alternative avenues for proving your client''s innocence.","value":3},"D":{"text":"Engage
+        in covert actions to expose the truth, even if it means bending the law.","value":4},"E":{"text":"Attempt
+        to sabotage the prosecution''s case or the legal system itself to free your
+        client.","value":5}}}},{"type":"question","id":9,"attributes":{"name":"You
+        are representing a client who is clearly guilty but insists on pleading not
+        guilty. How do you handle the situation?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Advise
+        the client to change their plea and seek a fair punishment.","value":1},"B":{"text":"Follow
+        the client''s wishes and present a defense within the confines of the law.","value":2},"C":{"text":"Develop
+        creative arguments to cast doubt on the evidence against your client.","value":3},"D":{"text":"Use
+        any means necessary to win the case, even if it involves bending the truth.","value":4},"E":{"text":"Actively
+        participate in covering up the client''s crimes.","value":5}}}},{"type":"question","id":10,"attributes":{"name":"Your
+        client is facing a long sentence for a crime they committed out of desperation.
+        How do you approach their defense?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Seek
+        the appropriate punishment under the law, regardless of the circumstances.","value":1},"B":{"text":"Argue
+        for leniency based on your client''s difficult situation.","value":2},"C":{"text":"Use
+        creative legal strategies to secure the best outcome for your client.","value":3},"D":{"text":"Discredit
+        or suppress evidence to ensure a favorable outcome for your client.","value":4},"E":{"text":"Encourage
+        your client to lie or manipulate the facts to avoid punishment.","value":5}}}},{"type":"question","id":11,"attributes":{"name":"You
+        are offered a bribe to sabotage a case you are working on. How do you respond?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Refuse
+        the bribe and report the incident to the authorities.","value":1},"B":{"text":"Refuse
+        the bribe but keep the incident to yourself.","value":2},"C":{"text":"Accept
+        the bribe but continue to work on the case to the best of your ability.","value":3},"D":{"text":"Accept
+        the bribe and subtly compromise the case.","value":4},"E":{"text":"Accept
+        the bribe and actively work to ensure your client loses.","value":5}}}},{"type":"question","id":12,"attributes":{"name":"You
+        discover a technicality that could potentially get your guilty client acquitted.
+        What do you do?","quiz":"lawyer","spectrum":"chaotic_lawful","answers":{"A":{"text":"Ignore
+        the technicality, as your client should face the consequences of their actions.","value":1},"B":{"text":"Present
+        the technicality in court and let the judge decide its significance.","value":2},"C":{"text":"Use
+        the technicality to negotiate a plea deal with reduced charges.","value":3},"D":{"text":"Exploit
+        the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
+        the technicality to manipulate the legal process and undermine the prosecution''s
+        case.","value":5}}}}]}'
   recorded_at: Thu, 20 Apr 2023 20:28:37 GMT
 recorded_with: VCR 6.1.0

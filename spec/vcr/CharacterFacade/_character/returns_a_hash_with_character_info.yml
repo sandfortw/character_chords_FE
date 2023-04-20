@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 3bf73855-ffa7-4d88-ae75-5c1e5f2d0f4b
+      - 324f608c-7251-4329-a772-03c0ed2d33ba
       X-Runtime:
-      - '0.023011'
+      - '0.153304'
       Server-Timing:
-      - start_processing.action_controller;dur=0.19, sql.active_record;dur=6.47, instantiation.active_record;dur=0.48,
-        process_action.action_controller;dur=12.53
+      - sql.active_record;dur=59.87, start_processing.action_controller;dur=0.14,
+        instantiation.active_record;dur=10.24, process_action.action_controller;dur=73.51
       Transfer-Encoding:
       - chunked
     body:
@@ -56,5 +56,5 @@ http_interactions:
         bend it to your own advantage. You are a master of deception and an expert
         at finding loopholes in any situation. You will never accept defeat, no matter
         how dire the consequences"}}}'
-  recorded_at: Tue, 18 Apr 2023 20:08:15 GMT
+  recorded_at: Thu, 20 Apr 2023 20:26:58 GMT
 recorded_with: VCR 6.1.0

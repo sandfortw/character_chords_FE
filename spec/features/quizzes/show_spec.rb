@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe 'Quiz Show Page', type: :feature do
@@ -11,6 +9,14 @@ RSpec.describe 'Quiz Show Page', type: :feature do
     it ' The title of the quiz is show ' do
       expect(page).to have_content('LAWYER QUIZ')
     end
+
+    it "the show spec has an option to sign in with spotify if you have not signed in already and once you sign in, you are redirected back to a blank show page for that quiz" do 
+      expect(page).to have_link('Sign in with Spotify')
+      login_with_oauth
+      expect(current_path).to eq(quiz_path(2))
+    end
+
+    it ""
 
     context 'When each question is answered and you click submit ' do
       it 'redirects you to the character index page where you see your results' do
@@ -36,7 +42,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
     end
 
     context 'When each question is NOT answered and you click submit' do
-      it ' redirects you to the quiz show page with a flash message' do
+      it ' redirects you to the quiz show page with a flash message and your quiz answers that you populated are still populated' do
         within('form') do
           choose("answers['1good_evil']", option: '0')
           choose("answers['2good_evil']", option: '0')
@@ -53,6 +59,20 @@ RSpec.describe 'Quiz Show Page', type: :feature do
 
         click_button 'Get your results'
         expect(page).to have_content('All questions must be answered to receive your results')
+        
+        within('form') do 
+          expect(page).to have_checked_field("answers['1good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['2good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['3good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['4good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['5good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['6good_evil']", with: '0')
+          expect(page).to have_checked_field("answers['7chaotic_lawful']", with: '0')
+          expect(page).to have_checked_field("answers['8chaotic_lawful']", with: '0')
+          expect(page).to have_checked_field("answers['9chaotic_lawful']", with: '0')
+          expect(page).to have_checked_field("answers['10chaotic_lawful']", with: '0')
+          expect(page).to have_checked_field("answers['11chaotic_lawful']", with: '0')
+        end
       end
     end
   end

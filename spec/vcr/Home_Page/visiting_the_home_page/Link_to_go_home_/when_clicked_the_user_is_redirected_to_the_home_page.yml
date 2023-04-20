@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - fd38968d-f9d3-43a2-898c-fbff7ac9757f
+      - 755c5976-2d61-4d9a-9593-939d2b3489e8
       X-Runtime:
-      - '0.006158'
+      - '0.006652'
       Server-Timing:
-      - start_processing.action_controller;dur=0.08, sql.active_record;dur=0.59, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=1.75
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=0.66, instantiation.active_record;dur=0.04,
+        process_action.action_controller;dur=2.06
       Transfer-Encoding:
       - chunked
     body:
@@ -62,7 +62,7 @@ http_interactions:
         of the Rings Character","image":null,"title":"Sauron or Samwise, take this
         LOTR character alignment to find where you stand in the fight for Middle Earth!","s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"title":"Techies
         Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz","s3_key":"CoderTheme.jpeg"}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:26 GMT
+  recorded_at: Thu, 20 Apr 2023 20:27:31 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes
@@ -102,12 +102,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 95420108-b3ac-4261-9c45-a6d659e7971c
+      - 737ac207-72de-4658-a008-1d3ed4b84d57
       X-Runtime:
-      - '0.006836'
+      - '0.006635'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=0.70, instantiation.active_record;dur=0.05,
-        process_action.action_controller;dur=1.74
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=1.27, instantiation.active_record;dur=0.05,
+        process_action.action_controller;dur=2.39
       Transfer-Encoding:
       - chunked
     body:
@@ -125,5 +125,5 @@ http_interactions:
         of the Rings Character","image":null,"title":"Sauron or Samwise, take this
         LOTR character alignment to find where you stand in the fight for Middle Earth!","s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"title":"Techies
         Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz","s3_key":"CoderTheme.jpeg"}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:26 GMT
+  recorded_at: Thu, 20 Apr 2023 20:27:31 GMT
 recorded_with: VCR 6.1.0
