@@ -13,7 +13,7 @@
 .pop-text {
   font-size: 2rem; /* Adjust the size according to your needs */
   font-weight: bold;
-  color: #000000; /* Light text color */
+  color: #ffffff; /* Light text color */
   padding: 0.5rem; /* Add some padding around the text */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
   padding: 0.5rem;
@@ -32,7 +32,7 @@
 
 .custom-gradient {
   min-height: 100vh;
-  background: linear-gradient(-45deg, #000000, #585858);
+  background: linear-gradient(-45deg, #222222, #484848);
   background-size: 400% 400%;
 }
 

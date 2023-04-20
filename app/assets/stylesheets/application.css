@@ -23,20 +23,12 @@
   border-radius: 5px; /* Add some border-radius for a more polished look */
 }
 
-.footer-pop-text {
-  font-size: 2rem; /* Adjust the size according to your needs */
-  font-weight: bold;
-  color: #ffffff; /* Light text color */
-  padding: 0.5rem; /* Add some padding around the text */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
-  padding: 0.5rem;
-  border-radius: 5px; /* Add some border-radius for a more polished look */
-}
-
 .custom-footer {
-  background-color: #444;
-  padding: .5rem 0;
   width: 100%;
+  height: 50px; /* adjust the height according to your needs */
+  background-color: #ffffff;
+  padding: .5rem 0;
+  flex-shrink: 0; /* add this property */
 }
 
 .padding-top {
@@ -52,4 +44,14 @@
   height: auto;
   max-width: 100%;
   border-radius: 75%; /* assumes your logo is circular */
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px); /* Subtract the height of the footer */
 }
