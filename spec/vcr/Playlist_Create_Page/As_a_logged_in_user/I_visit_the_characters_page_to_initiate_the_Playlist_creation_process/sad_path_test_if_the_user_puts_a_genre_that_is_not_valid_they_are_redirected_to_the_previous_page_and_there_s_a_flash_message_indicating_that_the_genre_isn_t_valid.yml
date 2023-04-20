@@ -1,61 +1,63 @@
 ---
 http_interactions:
 - request:
-    method: post
-    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists?genre=i%20am%20working%20my%20best%20to%20write%20an%20extreme
+    method: get
+    uri: https://api.spotify.com/v1/users/12345
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: ''
     headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Content-Length:
-      - '0'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
       - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQDuicuLDXJnKT4az63orbuAHVJ1SRb441Wwt2C8kXzAyj1DYUgsxgz3K-IwGsAp5NLGNlyCISviiNnR-Oc_QBh8gYBTi3PRrBYlibm6i1ROvRTaNQnT
+      Host:
+      - api.spotify.com
   response:
     status:
       code: 200
       message: OK
     headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
       Content-Type:
       - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"81b3e2952892bd9e926480a6e9bc9c4e"
       Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - 311e19ca-68d5-4086-b6f2-b251aa125847
-      X-Runtime:
-      - '8.742706'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.20, sql.active_record;dur=34.09,
-        instantiation.active_record;dur=6.76, process_action.action_controller;dur=8728.47
+      - public, max-age=14400
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Thu, 20 Apr 2023 20:28:06 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
       Transfer-Encoding:
       - chunked
     body:
-      encoding: UTF-8
-      string: '{"links":{"image":null},"data":{"type":"playlist","genre":"i am working
-        my best to write an extreme","id":23,"attributes":{"character_name":"Lawful
-        Good","quiz_theme":"Debugger Test!!","character_alignment":"Lawful Good","song_titles":["Amazing
-        Grace","Hallelujah","The Battle Hymn of the Republic","How Great Thou Art","I
-        Will Follow Him","You Raise Me Up","Lean on Me","Bridge Over Troubled Water","What
-        a Wonderful World","Over the Rainbow"]}}}'
-  recorded_at: Thu, 20 Apr 2023 17:05:48 GMT
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAFyPzQ6DIBCE730KwtlIbO2FV2kaQ+paSVYg/Nga47tXwBrbI9/szDDziRDaSmdQTI0SA1DCCa3Ol/pKi6jB24NVAptg0UVxXunKndFedlM67703jjOmDahyE8qHHlhwYFkOW11LCuw0on6BPYb1Frr4VAGxyMhrLzCyend+r/Y+YeRP3VilRscO/5ft/yI5iCek9hu5J+Ink3dHdz4KViayxfOo8G3J8gEAAP//AwD9sjGUNQEAAA==
+  recorded_at: Thu, 20 Apr 2023 20:28:06 GMT
 recorded_with: VCR 6.1.0

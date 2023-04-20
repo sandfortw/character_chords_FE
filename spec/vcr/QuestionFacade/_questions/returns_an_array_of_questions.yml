@@ -1,0 +1,117 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/1/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"56a88d37c046fe3974548e7198496a99"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1602e5ab-fa7e-4eac-ac29-6f6bda9784c1
+      X-Runtime:
+      - '0.025072'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.12, sql.active_record;dur=8.45, instantiation.active_record;dur=6.94,
+        process_action.action_controller;dur=19.15
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"http://image.com"},"data":[{"type":"question","id":1,"attributes":{"name":"Test
+        Question 1","quiz":"Debugger Test!!","spectrum":"good_evil","answers":{"A":{"text":"Very
+        Good","value":1},"B":{"text":"Kinda Good","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
+        Evil","value":4},"E":{"text":"Very Evil","value":5}}}},{"type":"question","id":2,"attributes":{"name":"Test
+        Question 2","quiz":"Debugger Test!!","spectrum":"chaotic_lawful","answers":{"A":{"text":"Very
+        Lawful","value":1},"B":{"text":"Kinda Lawful","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
+        Chaotic","value":4},"E":{"text":"Very Chaotic","value":5}}}}]}'
+  recorded_at: Thu, 20 Apr 2023 20:26:58 GMT
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/1/questions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"56a88d37c046fe3974548e7198496a99"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 9def00da-89d3-4bbc-8240-8855bcec1b3b
+      X-Runtime:
+      - '0.008032'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.30, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=3.80
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"http://image.com"},"data":[{"type":"question","id":1,"attributes":{"name":"Test
+        Question 1","quiz":"Debugger Test!!","spectrum":"good_evil","answers":{"A":{"text":"Very
+        Good","value":1},"B":{"text":"Kinda Good","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
+        Evil","value":4},"E":{"text":"Very Evil","value":5}}}},{"type":"question","id":2,"attributes":{"name":"Test
+        Question 2","quiz":"Debugger Test!!","spectrum":"chaotic_lawful","answers":{"A":{"text":"Very
+        Lawful","value":1},"B":{"text":"Kinda Lawful","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
+        Chaotic","value":4},"E":{"text":"Very Chaotic","value":5}}}}]}'
+  recorded_at: Thu, 20 Apr 2023 20:26:58 GMT
+recorded_with: VCR 6.1.0

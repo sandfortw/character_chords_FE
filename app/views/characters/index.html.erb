@@ -1,7 +1,3 @@
-<head>
-  <link rel="stylesheet" href=app/assets/stylesheets/characters_page.css>
-</head>
-
 <div class="center">
   <div class="character-container">
     <h1 class="title">You are <%= @character.name %></h1>
@@ -23,9 +19,7 @@
       <%= form.submit "Create Playlist", class: "form-button" %>
     <% end %>
       <div class="patience">
-    It will take a few seconds for us to ask ChatGPT and ChatGPT to respond. 
-    <br>
-    Patience, my young child, patience. 
+    Loading your playlist, one moment please... 
     </div >
 
     <script>

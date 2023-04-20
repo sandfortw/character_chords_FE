@@ -30,7 +30,6 @@ RSpec.describe 'Character Create', type: :feature do
         click_button("Get your results")
       end 
         expect(current_path).to eq("/characters")
-        save_and_open_page
         expect(page).to have_content("You are")
         expect(page).to have_css("img[src]:not([src=''])")
       

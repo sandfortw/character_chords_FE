@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"654caccd21900a6eb4c5418ff91c0fc0"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - a71eca50-29fd-46f9-a3b5-375df3fa79ba
+      X-Runtime:
+      - '0.033068'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=2.44, instantiation.active_record;dur=0.11,
+        process_action.action_controller;dur=5.62
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":"https://media.npr.org/assets/img/2022/07/22/bcs_609_gl_1005_0864-rt_wide-c958ce0b1e351340c63e2f5823f499afe3fbf840-s1600-c85.webp"},"data":{"type":"playlist","genre":"Rock
+        and Roll","id":1,"attributes":{"character_name":"Thurgood Marshall","quiz_theme":"lawyer","character_alignment":"Chaotic
+        Neutral","song_titles":["Song 1","Song 2","Song 3","Song 4","Song 5","Song
+        6","Song 7","Song 8","Song 9","Song 10"]}}}'
+  recorded_at: Thu, 20 Apr 2023 20:28:41 GMT
+recorded_with: VCR 6.1.0

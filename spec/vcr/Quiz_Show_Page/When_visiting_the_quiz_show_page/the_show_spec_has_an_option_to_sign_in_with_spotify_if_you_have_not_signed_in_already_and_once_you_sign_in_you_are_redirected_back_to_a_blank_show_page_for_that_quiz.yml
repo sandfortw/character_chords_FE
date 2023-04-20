@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - a21a2027-14a2-4098-bccf-70c6f706c0c8
+      - 3a3ed1cc-2c3c-4793-88f9-70eddbb14656
       X-Runtime:
-      - '0.087088'
+      - '0.016573'
       Server-Timing:
-      - start_processing.action_controller;dur=0.29, sql.active_record;dur=38.11,
-        instantiation.active_record;dur=0.94, process_action.action_controller;dur=69.78
+      - start_processing.action_controller;dur=0.11, sql.active_record;dur=7.74, instantiation.active_record;dur=0.35,
+        process_action.action_controller;dur=11.78
       Transfer-Encoding:
       - chunked
     body:
@@ -139,7 +139,67 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Thu, 20 Apr 2023 18:50:45 GMT
+  recorded_at: Thu, 20 Apr 2023 20:28:36 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/users/12345
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQDuicuLDXJnKT4az63orbuAHVJ1SRb441Wwt2C8kXzAyj1DYUgsxgz3K-IwGsAp5NLGNlyCISviiNnR-Oc_QBh8gYBTi3PRrBYlibm6i1ROvRTaNQnT
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - public, max-age=14400
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Thu, 20 Apr 2023 20:28:36 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAFyPzQ6DIBCE730KwtlIbO2FV2kaQ+paSVYg/Nga47tXwBrbI9/szDDziRDaSmdQTI0SA1DCCa3Ol/pKi6jB24NVAptg0UVxXunKndFedlM67703jjOmDahyE8qHHlhwYFkOW11LCuw0on6BPYb1Frr4VAGxyMhrLzCyend+r/Y+YeRP3VilRscO/5ft/yI5iCek9hu5J+Ink3dHdz4KViayxfOo8G3J8gEAAP//AwD9sjGUNQEAAA==
+  recorded_at: Thu, 20 Apr 2023 20:28:36 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/2/questions
@@ -179,12 +239,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 28efe2ed-47fb-4d8d-a0e1-a82f41cce146
+      - 33450f1c-8ba0-44a9-817f-0eef70924e07
       X-Runtime:
-      - '0.036978'
+      - '0.032383'
       Server-Timing:
-      - start_processing.action_controller;dur=0.25, sql.active_record;dur=10.61,
-        instantiation.active_record;dur=0.88, process_action.action_controller;dur=20.42
+      - start_processing.action_controller;dur=0.19, sql.active_record;dur=16.14,
+        instantiation.active_record;dur=0.65, process_action.action_controller;dur=22.67
       Transfer-Encoding:
       - chunked
     body:
@@ -279,5 +339,5 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Thu, 20 Apr 2023 18:55:31 GMT
+  recorded_at: Thu, 20 Apr 2023 20:28:37 GMT
 recorded_with: VCR 6.1.0
