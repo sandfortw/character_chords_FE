@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d773fa7b-509e-4cb9-be6f-b395dbcb6c75
+      - 1602e5ab-fa7e-4eac-ac29-6f6bda9784c1
       X-Runtime:
-      - '0.015096'
+      - '0.025072'
       Server-Timing:
-      - start_processing.action_controller;dur=0.16, sql.active_record;dur=5.91, instantiation.active_record;dur=0.45,
-        process_action.action_controller;dur=9.24
+      - start_processing.action_controller;dur=0.12, sql.active_record;dur=8.45, instantiation.active_record;dur=6.94,
+        process_action.action_controller;dur=19.15
       Transfer-Encoding:
       - chunked
     body:
@@ -56,7 +56,7 @@ http_interactions:
         Question 2","quiz":"Debugger Test!!","spectrum":"chaotic_lawful","answers":{"A":{"text":"Very
         Lawful","value":1},"B":{"text":"Kinda Lawful","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
         Chaotic","value":4},"E":{"text":"Very Chaotic","value":5}}}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:15 GMT
+  recorded_at: Thu, 20 Apr 2023 20:26:58 GMT
 - request:
     method: get
     uri: http://localhost:4000/chordsapi/v1/themes/1/questions
@@ -96,12 +96,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - de9dbe03-a4da-4d51-8c64-87b7bdc3b361
+      - 9def00da-89d3-4bbc-8240-8855bcec1b3b
       X-Runtime:
-      - '0.011547'
+      - '0.008032'
       Server-Timing:
-      - start_processing.action_controller;dur=0.14, sql.active_record;dur=3.40, instantiation.active_record;dur=0.13,
-        process_action.action_controller;dur=5.29
+      - start_processing.action_controller;dur=0.07, sql.active_record;dur=2.30, instantiation.active_record;dur=0.13,
+        process_action.action_controller;dur=3.80
       Transfer-Encoding:
       - chunked
     body:
@@ -113,5 +113,5 @@ http_interactions:
         Question 2","quiz":"Debugger Test!!","spectrum":"chaotic_lawful","answers":{"A":{"text":"Very
         Lawful","value":1},"B":{"text":"Kinda Lawful","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
         Chaotic","value":4},"E":{"text":"Very Chaotic","value":5}}}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:15 GMT
+  recorded_at: Thu, 20 Apr 2023 20:26:58 GMT
 recorded_with: VCR 6.1.0

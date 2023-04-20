@@ -28,6 +28,8 @@ class UsersController < ApplicationController
       redirect_to playlist_path(current_playlist.id)
     elsif current_character
       redirect_to characters_path
+    elsif session[:quiz_id]
+      redirect_to quiz_path(session[:quiz_id])
     else
       redirect_to root_path
     end

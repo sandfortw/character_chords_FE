@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class PlaylistsController < ApplicationController
   def create
     if genre_valid?(params[:query])
@@ -11,6 +9,7 @@ class PlaylistsController < ApplicationController
 
   def show
     @playlist = current_playlist
+    @character = current_character
     @characters = special_sort(current_characters, current_character)                        
   end
 

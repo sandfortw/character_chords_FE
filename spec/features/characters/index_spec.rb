@@ -1,4 +1,3 @@
-# frozen_string_literal: true
 
 require 'rails_helper'
 require 'spec_helper'
@@ -37,7 +36,7 @@ RSpec.describe 'Character Index', type: :feature do
       
       expect(page).to have_css('.songs', count: 10)
       page.all('.song').each do |song_div|
-        expect(song_div).to have_css('li', text: /\w+/) # Use 'have_css' with ':text' option to check for text
+        expect(song_div).to have_css('li', text: /\w+/) 
       end
     end
 

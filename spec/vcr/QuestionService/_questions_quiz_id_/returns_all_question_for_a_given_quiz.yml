@@ -39,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 33b01de9-c933-463d-a3ef-e62098f655cd
+      - 9663671e-0df8-42d4-8a5e-9337a34d1248
       X-Runtime:
-      - '0.009353'
+      - '0.008045'
       Server-Timing:
-      - start_processing.action_controller;dur=0.13, sql.active_record;dur=1.90, instantiation.active_record;dur=0.14,
-        process_action.action_controller;dur=3.84
+      - start_processing.action_controller;dur=0.10, sql.active_record;dur=1.88, instantiation.active_record;dur=0.14,
+        process_action.action_controller;dur=3.39
       Transfer-Encoding:
       - chunked
     body:
@@ -56,5 +56,5 @@ http_interactions:
         Question 2","quiz":"Debugger Test!!","spectrum":"chaotic_lawful","answers":{"A":{"text":"Very
         Lawful","value":1},"B":{"text":"Kinda Lawful","value":2},"C":{"text":"Neutral","value":3},"D":{"text":"Kinda
         Chaotic","value":4},"E":{"text":"Very Chaotic","value":5}}}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:56 GMT
+  recorded_at: Thu, 20 Apr 2023 20:28:41 GMT
 recorded_with: VCR 6.1.0
