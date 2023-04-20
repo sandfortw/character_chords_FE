@@ -29,7 +29,7 @@
 }
 
 .bg-white {
-  background-color: #fff; /* Set the background color */
+  background-color: rgba(242, 242, 242, 0.5);
 }
 
 .rounded-lg {
@@ -105,4 +105,15 @@
 
 .quiz-question {
   flex-basis: 100%;
+}
+
+.each-quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(242, 242, 242, 0.5); /* transparent gray color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

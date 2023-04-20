@@ -11,38 +11,42 @@
   </head>
 
   <body class="min-h-screen flex flex-col">
-    <nav class="toolbar">
-      <ul>
-        <li class="nav-pop-text"><%= link_to "Home", home_clear_path%></li>
-        <% if current_user %>
-          <li class="nav-pop-text"><%= link_to "Logout", logout_path %></li>
-          <% else %>
-          <li><%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-6 py-2 rounded-md shadow-md' %></li>
-        <% end %>
-      </ul>
-      <%= image_tag "logo.png", alt: "Character Chords", class: "logo" %>
-    </nav>
-
-    <% flash.each do |type, msg| %>
-      <center>
-        <div>
-          <%= msg %>
-        </div>
-      </center>
-    <% end %>
-
     <div class="flex-grow">
-      <p><%= yield %></p>
-    </div>
+      <nav class="toolbar">
+        <ul>
+          <li class="nav-pop-text"><%= link_to "Home", home_clear_path%></li>
+          <% if current_user %>
+            <li class="nav-pop-text"><%= link_to "Logout", logout_path %></li>
+            <% else %>
+            <li><%= link_to 'Sign in with Spotify', '/auth/spotify', method: :post, class: 'bg-green-500 text-white px-6 py-2 rounded-md shadow-md' %></li>
+          <% end %>
+        </ul>
+        <%= image_tag "logo.png", alt: "Character Chords", class: "logo" %>
+      </nav>
 
-<footer class="custom-footer mt-auto">
-  <div class="container mx-auto px-4">
-    <div class="text-center">
-      <p class="footer-pop-text">This app is still in development</p>
-    </div>
+      <% flash.each do |type, msg| %>
+        <center>
+          <div>
+            <%= msg %>
+          </div>
+        </center>
+      <% end %>
+
+      <div class="content flex-grow">
+        <div class="custom-gradient">
+          <div class="container mx-auto">
+            <p><%= yield %></p>
+          </div>
+        </div>  
+      </div>
+<footer class="custom-footer">
+  <div>
+    <p class="footer-pop-text">This app is still in development <a href="https://github.com/sandfortw/character_chords_fe"><img src="https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png" alt="github" class="github-logo"></a></p>
   </div>
 </footer>
 
+
+    </div>
   </body>
 </html>
 

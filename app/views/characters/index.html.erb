@@ -1,10 +1,12 @@
 <div class="center">
   <div class="character-container">
-    <h1 class="title">You are <%= @character.name %></h1>
-    <h2 class="subtitle"> Alignment: <%= @character.alignment %></h2>
-    <div class="character-info">
-      <%= image_tag s3_presigned_url('characterchordsbucket23', @character.s3key), class: "image" %>
-      <p class="description"><%= @character.description %></p>
+    <div>
+      <h1 class="title">You are <%= @character.name %></h1>
+      <h2 class="subtitle"> Alignment: <%= @character.alignment %></h2>
+      <div class="character-info">
+        <%= image_tag s3_presigned_url('characterchordsbucket23', @character.s3key), class: "image" %>
+        <p class="description"><%= @character.description %></p>
+      </div>
     </div>
   </div>
 
