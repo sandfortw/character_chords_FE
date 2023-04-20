@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://localhost:4000/chordsapi/v1/themes/1/characters/1/playlists?genre=i%20am%20working%20my%20best%20to%20write%20an%20extreme
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"81b3e2952892bd9e926480a6e9bc9c4e"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 311e19ca-68d5-4086-b6f2-b251aa125847
+      X-Runtime:
+      - '8.742706'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.20, sql.active_record;dur=34.09,
+        instantiation.active_record;dur=6.76, process_action.action_controller;dur=8728.47
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"links":{"image":null},"data":{"type":"playlist","genre":"i am working
+        my best to write an extreme","id":23,"attributes":{"character_name":"Lawful
+        Good","quiz_theme":"Debugger Test!!","character_alignment":"Lawful Good","song_titles":["Amazing
+        Grace","Hallelujah","The Battle Hymn of the Republic","How Great Thou Art","I
+        Will Follow Him","You Raise Me Up","Lean on Me","Bridge Over Troubled Water","What
+        a Wonderful World","Over the Rainbow"]}}}'
+  recorded_at: Thu, 20 Apr 2023 17:05:48 GMT
+recorded_with: VCR 6.1.0

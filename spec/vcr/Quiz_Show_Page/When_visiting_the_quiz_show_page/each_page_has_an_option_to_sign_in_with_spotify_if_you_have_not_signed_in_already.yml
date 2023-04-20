@@ -2,69 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: http://localhost:4000/chordsapi/v1/themes
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.4
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      X-Frame-Options:
-      - SAMEORIGIN
-      X-Xss-Protection:
-      - '0'
-      X-Content-Type-Options:
-      - nosniff
-      X-Download-Options:
-      - noopen
-      X-Permitted-Cross-Domain-Policies:
-      - none
-      Referrer-Policy:
-      - strict-origin-when-cross-origin
-      Content-Type:
-      - application/json; charset=utf-8
-      Vary:
-      - Accept
-      Etag:
-      - W/"c870806db1a8abd3e34b41541befb7a6"
-      Cache-Control:
-      - max-age=0, private, must-revalidate
-      X-Request-Id:
-      - c9c6a73d-7ea6-4a5c-9f2f-b149da750179
-      X-Runtime:
-      - '0.006662'
-      Server-Timing:
-      - start_processing.action_controller;dur=0.06, sql.active_record;dur=0.92, instantiation.active_record;dur=0.07,
-        process_action.action_controller;dur=2.42
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: UTF-8
-      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":null,"title":"Debugging
-        Test","s3_key":"DebugTheme.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":null,"title":"Want
-        To Know Which Famous Lawyer You''re Most Like? Take This Quiz And Achieve
-        Ultimate Enlightenment!","s3_key":"LawyerTheme.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":null,"title":"Discover
-        Your True Nature With This Fun DnD Alignment Quiz","s3_key":"AlignmentTheme.png"}},{"type":"theme","id":4,"attributes":{"name":"Star
-        Wars Character","image":null,"title":"May The Force Be With You: Discover
-        Your Inner Star Wars Character With This Quiz","s3_key":"StarWarsTheme.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
-        Potter Character","image":null,"title":"Are You A Hero, Villain, Or An Extra?
-        Take This Harry Potter Character Quiz And Find Out Where You Stand In The
-        Wizarding World!","s3_key":"HarryPotterTheme.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
-        of the Rings Character","image":null,"title":"Sauron or Samwise, take this
-        LOTR character alignment to find where you stand in the fight for Middle Earth!","s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"title":"Techies
-        Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz","s3_key":"CoderTheme.jpeg"}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:26 GMT
-- request:
-    method: get
     uri: http://localhost:4000/chordsapi/v1/themes/2/questions
     body:
       encoding: US-ASCII
@@ -102,12 +39,12 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 2cdebd15-8593-4d62-a9eb-14d4c5f4d58a
+      - '0694d8f2-ca7f-4a23-a23c-b0731bc3aa58'
       X-Runtime:
-      - '0.017127'
+      - '0.036460'
       Server-Timing:
-      - start_processing.action_controller;dur=0.10, sql.active_record;dur=7.06, instantiation.active_record;dur=0.35,
-        process_action.action_controller;dur=12.03
+      - start_processing.action_controller;dur=0.22, sql.active_record;dur=9.84, instantiation.active_record;dur=1.85,
+        process_action.action_controller;dur=22.53
       Transfer-Encoding:
       - chunked
     body:
@@ -202,5 +139,68 @@ http_interactions:
         the technicality to the fullest extent to secure your client''s acquittal.","value":4},"E":{"text":"Use
         the technicality to manipulate the legal process and undermine the prosecution''s
         case.","value":5}}}}]}'
-  recorded_at: Tue, 18 Apr 2023 20:08:27 GMT
+  recorded_at: Thu, 20 Apr 2023 18:31:29 GMT
+- request:
+    method: get
+    uri: http://localhost:4000/chordsapi/v1/themes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"c870806db1a8abd3e34b41541befb7a6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 43e0d34d-c8b3-42d3-a980-1db396e12fe9
+      X-Runtime:
+      - '0.040841'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.16, sql.active_record;dur=6.41, instantiation.active_record;dur=0.77,
+        process_action.action_controller;dur=18.52
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"type":"theme","id":1,"attributes":{"name":"Debugger Test!!","image":null,"title":"Debugging
+        Test","s3_key":"DebugTheme.jpeg"}},{"type":"theme","id":2,"attributes":{"name":"lawyer","image":null,"title":"Want
+        To Know Which Famous Lawyer You''re Most Like? Take This Quiz And Achieve
+        Ultimate Enlightenment!","s3_key":"LawyerTheme.jpeg"}},{"type":"theme","id":3,"attributes":{"name":"alignment","image":null,"title":"Discover
+        Your True Nature With This Fun DnD Alignment Quiz","s3_key":"AlignmentTheme.png"}},{"type":"theme","id":4,"attributes":{"name":"Star
+        Wars Character","image":null,"title":"May The Force Be With You: Discover
+        Your Inner Star Wars Character With This Quiz","s3_key":"StarWarsTheme.png"}},{"type":"theme","id":5,"attributes":{"name":"Harry
+        Potter Character","image":null,"title":"Are You A Hero, Villain, Or An Extra?
+        Take This Harry Potter Character Quiz And Find Out Where You Stand In The
+        Wizarding World!","s3_key":"HarryPotterTheme.png"}},{"type":"theme","id":6,"attributes":{"name":"Lord
+        of the Rings Character","image":null,"title":"Sauron or Samwise, take this
+        LOTR character alignment to find where you stand in the fight for Middle Earth!","s3_key":"LordOfTheRingsTheme.jpeg"}},{"type":"theme","id":7,"attributes":{"name":"coder","image":null,"title":"Techies
+        Unite: Find out Which Side of the Digital Divide You''re on with Our CyberQuiz","s3_key":"CoderTheme.jpeg"}}]}'
+  recorded_at: Thu, 20 Apr 2023 18:31:53 GMT
 recorded_with: VCR 6.1.0

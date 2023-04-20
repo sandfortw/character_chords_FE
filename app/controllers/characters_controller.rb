@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 class CharactersController < ApplicationController
 
   def create
-    if answer_params[:answers].to_h.size == params[:question_count].to_i # checks if the count of the questions is the same as the number of submitted answers
+    if answer_params[:answers].to_h.size == params[:question_count].to_i 
       session[:character] = CharacterFacade.new(answer_params, params[:quiz_id]).character
       session.delete(:quiz_answers)
       redirect_to characters_path
