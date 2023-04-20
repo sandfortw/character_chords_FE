@@ -38,6 +38,7 @@
   display:flex;
   justify-content: center;
   color: blue;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .popup-content {
@@ -128,4 +129,26 @@
 
 .quiz-custom:last-child .quiz-link-custom {
   margin-top: 20px;
+}
+
+.each-quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(242, 242, 242, 0.5); /* transparent gray color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.lil-pop-text {
+  font-size: 1rem; /* Adjust the size according to your needs */
+  font-weight: bold;
+  color: #000000; /* Light text color */
+  padding: 0.5rem; /* Add some padding around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
+  padding: 0.5rem;
+  border-radius: 5px; /* Add some border-radius for a more polished look */
 }

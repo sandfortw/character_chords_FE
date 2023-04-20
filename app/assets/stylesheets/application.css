@@ -70,6 +70,7 @@ body {
   position: relative; /* Set position to relative */
   display: inline-block; /* Set display to inline-block */
   display: flex;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   justify-content: center;
 }
 

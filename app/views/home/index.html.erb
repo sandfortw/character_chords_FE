@@ -1,9 +1,9 @@
 
-
-
 <div class="container">
-  <h2 class="text-4xl-custom">Character Chords</h2>
-  <p class="text-lg-custom">Bringing AI to Your Spotify</p>
+  <div class="lil-pop-text">
+    <h2 class="text-4xl-custom">Character Chords</h2>
+    <p class="text-lg-custom">Bringing AI to Your Spotify</p>
+  </div>
 
   <p class="how_it_works" id="how_it_works_button">How does it work?</p>
   <div id="popup" class="popup hidden">
@@ -40,10 +40,14 @@
 <div class="quiz-container-custom">
   <% @quizzes.each do |quiz|%>
     <div class="quiz-custom">
-      <div class="quiz-image-container">
-        <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image-custom', alt: "#{quiz.title} quiz image" %>
+      <div class="each-quiz-container">
+        <div class="quiz-image-container">
+          <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image-custom', alt: "#{quiz.title} quiz image" %>
+        </div>
+        <div class ="lil-pop-text">
+          <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link-custom'%>
+        </div>
       </div>
-      <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link-custom'%>
     </div>
   <%end%>
 </div>
