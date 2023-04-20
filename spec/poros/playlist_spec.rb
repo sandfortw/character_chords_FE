@@ -22,7 +22,7 @@ RSpec.describe Playlist do
                                           'Bodak Yellow by Cardi B',
                                           'Mask Off by Future'] } } }
   end
-  let(:playlist) { Playlist.new(playlist_data) }
+  let(:playlist) { Playlist.new(playlist_data, "US") }
 
   describe 'attr_readers', :vcr do
     it 'should have attributes' do

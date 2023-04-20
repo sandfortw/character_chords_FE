@@ -40,14 +40,15 @@
     </div>
   </div>
   
-  <div class="quiz-container-custom">
-    <% @quizzes.each do |quiz|%>
-      <div class="quiz-custom">
+<div class="quiz-container-custom">
+  <% @quizzes.each do |quiz|%>
+    <div class="quiz-custom">
+      <div class="quiz-image-container">
         <%= image_tag s3_presigned_url('characterchordsbucket23', quiz.s3_key), class: 'quiz-image-custom', alt: "#{quiz.title} quiz image" %>
-        <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link-custom'%>
       </div>
-    <%end%>
-  </div>
+      <%= link_to quiz.title, quiz_path(quiz.id), class: 'quiz-link-custom'%>
+    </div>
+  <%end%>
 </div>
 
 <script>
