@@ -23,6 +23,16 @@
   border-radius: 5px; /* Add some border-radius for a more polished look */
 }
 
+.blah-pop-text {
+  font-size: 1rem; /* Adjust the size according to your needs */
+  font-weight: bold;
+  color: #000000; /* Light text color */
+  padding: 0.5rem; /* Add some padding around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adjust the values to create the desired shadow effect */  
+  padding: 0.5rem;
+  border-radius: 5px; /* Add some border-radius for a more polished look */
+}
+
 .custom-footer {
   width: 100%;
   height: 50px; /* adjust the height according to your needs */
@@ -54,4 +64,22 @@ body {
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 50px); /* Subtract the height of the footer */
+}
+
+.footer-pop-text {
+  position: relative; /* Set position to relative */
+  display: inline-block; /* Set display to inline-block */
+  display: flex;
+  justify-content: center;
+}
+
+.footer-pop-text a {
+  position: absolute; /* Set position to absolute */
+  bottom: 0; /* Position at the bottom of the parent element */
+  right: 0; /* Position at the right of the parent element */
+}
+
+.github-logo {
+  width: 60px;
+  height: 30px;
 }
