@@ -13,7 +13,8 @@
     - [Home Page](#home-page)
     - [Quiz Page](#quiz-page)
     - [Character Page](#character-page)
-    - [Playlist Page](#playlist-page)
+    - [Playlist Page (not logged in)](#playlist-page-not-logged-in)
+    - [Playlist Page (logged in)](#playlist-page-logged-in)
   - [Goals](#goals)
     - [Learning Goals](#learning-goals)
     - [Future Goals](#future-goals)
@@ -40,7 +41,7 @@
   - **`Spotify OAuth:`** We use Spotify OAuth to enable users to log in to the app securely and access their Spotify accounts.
   - **`Amazon S3:`** Character Chords utilizes Amazon S3 for cloud storage, which allows us to securely store and manage user-generated content like playlists and user data.
   - **`External APIs:`** Character Chords consumes external APIs from `Spotify` and `OpenAI` to provide personalized music recommendations based on user preferences and personality traits.
-- ### Spotify OAuth
+### Spotify OAuth
 By using Spotify OAuth, our users can log in securely to their Spotify accounts without the need to create a new account or remember another set of login credentials. By authorizing our app to access their Spotify account, we can retrieve their user data and use it to personalize their experience within our app. This allows our users to seamlessly integrate their existing Spotify preferences with our app. Overall, using Spotify OAuth provides a more personalized and user-friendly experience for our users, which can increase engagement and retention.
 ## Getting Started
 Character Chords is a full-stack Ruby on Rails app that requires you to clone and set up both the [frontend](https://github.com/sandfortw/character_chords_fe) and backend repositories. You will need to ensure all required gems are installed and that environment variables are properly configured in order to run the app locally. Additionally, this app establishes API endpoints for use with the [Character Chords Front End](https://github.com/sandfortw/character_chords_fe) repository.
@@ -63,17 +64,19 @@ bundle exec rspec spec
 
 ## Wireframes
 ### *Home Page*
-![Screenshot 2023-04-21 at 9 35 10 AM](https://user-images.githubusercontent.com/116698937/233663369-166b243b-3fa4-4819-b237-27282a8c2895.png)
+![Screenshot 2023-04-21 at 11 02 37 AM](https://user-images.githubusercontent.com/116698937/233683474-ca1b28d8-69b7-4b79-95f4-a7c20f03050a.png)
 
 ### *Quiz Page*
-![Screenshot 2023-04-21 at 9 37 30 AM](https://user-images.githubusercontent.com/116698937/233664939-a9aa89f9-830b-4f7f-a19f-0a1beae9a602.png)
+![Screenshot 2023-04-21 at 11 03 15 AM](https://user-images.githubusercontent.com/116698937/233683518-d94c7b9d-5b23-4996-85ef-ebb1baa32f22.png)
 
 ### *Character Page*
-![Screenshot 2023-04-21 at 9 40 10 AM](https://user-images.githubusercontent.com/116698937/233665218-d0efc271-f79a-488c-b86d-56bfc50b36dd.png)
-*Note:* `Loading your playlist, one moment please` only displays once the `Create Playlist` button has been clicked
+![Screenshot 2023-04-21 at 11 04 15 AM](https://user-images.githubusercontent.com/116698937/233683571-0ad022e7-460a-4ef5-b8df-75e647bc2474.png)
 
-### *Playlist Page*
-![Screenshot 2023-04-21 at 9 41 24 AM](https://user-images.githubusercontent.com/116698937/233665803-500be946-3e55-4a60-8f43-708025c2f374.png)
+### *Playlist Page (not logged in)*
+![Screenshot 2023-04-21 at 11 04 46 AM](https://user-images.githubusercontent.com/116698937/233683643-0f443988-11fe-483e-85a5-2e05c83cb4e2.png)
+
+### *Playlist Page (logged in)*
+![Screenshot 2023-04-21 at 11 05 58 AM](https://user-images.githubusercontent.com/116698937/233683826-14db06d6-feb7-4b3d-99e8-76dc2479cc8a.png)
 
 ## Goals
 - ### Learning Goals
