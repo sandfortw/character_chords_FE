@@ -7,6 +7,7 @@
 ## Table of Contents
   - [Directory](#directory)
   - [Technical Details](#technical-details)
+    - [Spotify OAuth](#spotify-oauth)
   - [Getting Started](#getting-started)  
   - [Wireframes](#wireframes)
     - [Home Page](#home-page)
@@ -39,7 +40,8 @@
   - **`Spotify OAuth:`** We use Spotify OAuth to enable users to log in to the app securely and access their Spotify accounts.
   - **`Amazon S3:`** Character Chords utilizes Amazon S3 for cloud storage, which allows us to securely store and manage user-generated content like playlists and user data.
   - **`External APIs:`** Character Chords consumes external APIs from `Spotify` and `OpenAI` to provide personalized music recommendations based on user preferences and personality traits.
-
+- ### Spotify OAuth
+By using Spotify OAuth, our users can log in securely to their Spotify accounts without the need to create a new account or remember another set of login credentials. By authorizing our app to access their Spotify account, we can retrieve their user data and use it to personalize their experience within our app. This allows our users to seamlessly integrate their existing Spotify preferences with our app. Overall, using Spotify OAuth provides a more personalized and user-friendly experience for our users, which can increase engagement and retention.
 ## Getting Started
 Character Chords is a full-stack Ruby on Rails app that requires you to clone and set up both the [frontend](https://github.com/sandfortw/character_chords_fe) and backend repositories. You will need to ensure all required gems are installed and that environment variables are properly configured in order to run the app locally. Additionally, this app establishes API endpoints for use with the [Character Chords Front End](https://github.com/sandfortw/character_chords_fe) repository.
 
