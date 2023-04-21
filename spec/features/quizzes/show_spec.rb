@@ -6,7 +6,7 @@ RSpec.describe 'Quiz Show Page', type: :feature do
       visit quiz_path(2)
     end
 
-    it ' The title of the quiz is show ' do
+    it 'The title of the quiz is show ' do
       expect(page).to have_content('LAWYER QUIZ')
     end
 
@@ -15,8 +15,6 @@ RSpec.describe 'Quiz Show Page', type: :feature do
       login_with_oauth
       expect(current_path).to eq(quiz_path(2))
     end
-
-    it ""
 
     context 'When each question is answered and you click submit ' do
       it 'redirects you to the character index page where you see your results' do
