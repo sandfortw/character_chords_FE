@@ -6,11 +6,16 @@
   Discover your perfect playlist with Character Chords, the app that combines the fun of taking a personality test with the joy of music exploration. Find new music that resonates with you, explore the fictional world of your favorite characters through music, and uncover real-life kindred spirits along the way. Let AI choose your next song for you based on your moral leanings, personality traits, and musical preferences!
 ## Table of Contents
   - [Directory](#directory)
-  - [Technical Details](#technical-details) 
+  - [Technical Details](#technical-details)
+  - [Getting Started](#getting-started)  
   - [Wireframes](#wireframes)
+    - [Home Page](#home-page)
+    - [Quiz Page](#quiz-page)
+    - [Character Page](#character-page)
+    - [Playlist Page](#playlist-page)
   - [Goals](#goals)
     - [Learning Goals](#learning-goals)
-    - [Future Goals](#futured-goals)
+    - [Future Goals](#future-goals)
   - [Contact Us](#contact-us)
   - [Contributors](#contributors)
 
@@ -25,6 +30,8 @@
   Character Chords is a full-stack Ruby on Rails app that uses a variety of technologies to provide a seamless and engaging music exploration experience. Here are some of the key technologies we use:
 
   - **`Ruby:`** Character Chords is built with Ruby, a powerful and dynamic programming language that is well-suited to web development.
+  - **`Ruby on Rails:`** This application is also built with Ruby on Rails, a powerful web framework for easy web development with APIs and data storage options.
+  - **`PostgreSQL:`** We used PostgreSQL for robust web application data storage and management.
   - **`HTML/CSS:`** We use HTML and CSS to create the app's user interface and styling, respectively.
   - **`Tailwind CSS:`** Character Chords leverages Tailwind CSS, a utility-first CSS framework, to create a streamlined and responsive design.
   - **`CircleCI:`** We use CircleCI for our continuous integration and continuous deployment (CI/CD) pipeline, which automates the testing and deployment of new code changes.
@@ -33,19 +40,59 @@
   - **`Amazon S3:`** Character Chords utilizes Amazon S3 for cloud storage, which allows us to securely store and manage user-generated content like playlists and user data.
   - **`External APIs:`** Character Chords consumes external APIs from `Spotify` and `OpenAI` to provide personalized music recommendations based on user preferences and personality traits.
 
+## Getting Started
+Character Chords is a full-stack Ruby on Rails app that requires you to clone and set up both the [frontend](https://github.com/sandfortw/character_chords_fe) and backend repositories. You will need to ensure all required gems are installed and that environment variables are properly configured in order to run the app locally. Additionally, this app establishes API endpoints for use with the [Character Chords Front End](https://github.com/sandfortw/character_chords_fe) repository.
+
+To get started, clone this repo down and install all gems by running:
+``` 
+bundle install
+```
+Next, run this command to make sure the database is properly created and migrated:
+```
+rails db:{create,migrate}
+```
+## Getting Started
+Character Chords is a full-stack Ruby on Rails app that requires you to clone and set up both the [frontend](https://github.com/sandfortw/character_chords_fe) and backend repositories. You will need to ensure all required gems are installed and that environment variables are properly configured in order to run the app locally. Additionally, this app establishes API endpoints for use with the [Character Chords Front End](https://github.com/sandfortw/character_chords_fe) repository.
+
+To get started, clone this repo down and install all gems by running:
+``` 
+bundle install
+```
+Next, run this command to make sure the database is properly created and migrated:
+```
+rails db:{create,migrate}
+```
+After running that command, inspect `/db/schema` in the application to make sure the database was properly created. This is what the schema for this repo should look like:
+![Screenshot 2023-04-21 at 9 56 12 AM](https://user-images.githubusercontent.com/116698937/233668219-86e1993f-4cdc-466c-9db2-1daf3085a4cc.png)
+
+If you'd like to run the test suite for this repo, make sure you are connected to a server (either via the deployment on Heroku or localhost) and run this command:
+```
+bundle exec rspec spec
+```
+
 ## Wireframes
+### *Home Page*
+![Screenshot 2023-04-21 at 9 35 10 AM](https://user-images.githubusercontent.com/116698937/233663369-166b243b-3fa4-4819-b237-27282a8c2895.png)
 
-### INSERT WIREFRAMES HERE ONCE STYLING COMPLETED 
-  ## Goals
-  - ### Learning Goals
-    - Create a web application that solves a real world problem and utilizes Service-Oriented Architecture (SOA).
-    - Implement authentication via OAuth and consume at least two other APIs.
-    - Develop a Rails "back end" API that acts as the interface layer to the database, handles API consumption, and uses Serializers.
-    - Gain professional development benefits such as experience working on a larger team, understanding the impact of changes on a system, and familiarity with SOA/multi-app systems.
+### *Quiz Page*
+![Screenshot 2023-04-21 at 9 37 30 AM](https://user-images.githubusercontent.com/116698937/233664939-a9aa89f9-830b-4f7f-a19f-0a1beae9a602.png)
 
+### *Character Page*
+![Screenshot 2023-04-21 at 9 40 10 AM](https://user-images.githubusercontent.com/116698937/233665218-d0efc271-f79a-488c-b86d-56bfc50b36dd.png)
+*Note:* `Loading your playlist, one moment please` only displays once the `Create Playlist` button has been clicked
 
-  - ### Futured Goals
-    - LIST UNFINSHED EXTENSIONS HERE
+### *Playlist Page*
+![Screenshot 2023-04-21 at 9 41 24 AM](https://user-images.githubusercontent.com/116698937/233665803-500be946-3e55-4a60-8f43-708025c2f374.png)
+
+## Goals
+- ### Learning Goals
+  - Create a web application that solves a real world problem and utilizes Service-Oriented Architecture (SOA).
+  - Implement authentication via OAuth and consume at least two other APIs.
+  - Develop a Rails "back end" API that acts as the interface layer to the database, handles API consumption, and uses Serializers.
+  - Gain professional development benefits such as experience working on a larger team, understanding the impact of changes on a system, and familiarity with SOA/multi-app systems.
+- ### Future Goals
+  - With additional time and resources, we would like to implement the ChatGPT API in at least two other locations in the project. First, in the creation of the questions and answers for quizzes. We would like for the user to be able to input a profession or a theme and then receive the relevant alignment questions based off of their input. As of the production of this project (April 2023), the API only supports Chat GPT3.5 and not 4.0, making longer and more complex queries more volatile based on user input. 
+  - We would also like to implmenet DALL-E 2, the image generator of Open AI to provide a fictional album cover that is based off of the individual user's character selected and music genre. We would then upload the image to the user's Spotify playlist and send them the image in PDF format along with their playlist selection. 
 
 ## Contact Us
   Thank you for using Character Chords! If you have any questions, suggestions, or bug reports, please don't hesitate to get in touch. You can contact us by creating a new issue on this repo page. We appreciate your feedback and look forward to hearing from you!
@@ -70,35 +117,35 @@
   <tr>
     <td>
       <a href="https://github.com/hadyematar23"  rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
         </a><br>
       <a href="https://www.linkedin.com/in/hady-emmanuel-matar/" rel="nofollow noreferrer">
-    <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
         </a>
     </td>
         <td>
        <a href="https://github.com/hwryan12" rel="nofollow noreferrer">
-            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/JTaylor28" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/james-taylor-a02a7a199/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/sandfortw" rel="nofollow noreferrer">
-            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/westonsandfort/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
   </tr>   
-</table> 
+</table>
