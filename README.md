@@ -70,35 +70,35 @@
   <tr>
     <td>
       <a href="https://github.com/hadyematar23"  rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
         </a><br>
       <a href="https://www.linkedin.com/in/hady-emmanuel-matar/" rel="nofollow noreferrer">
-    <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
         </a>
     </td>
         <td>
        <a href="https://github.com/hwryan12" rel="nofollow noreferrer">
-            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/harrison-ryan-2b987725a/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/JTaylor28" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+          <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/james-taylor-a02a7a199/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
         <td>
        <a href="https://github.com/sandfortw" rel="nofollow noreferrer">
-            <img_tag src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
+            <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
       </a><br>
         <a href="https://www.linkedin.com/in/westonsandfort/" rel="nofollow noreferrer">
-          <img_tag src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
+          <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn
       </a>
     </td>
   </tr>   
-</table> 
+</table>
