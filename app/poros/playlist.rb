@@ -21,7 +21,7 @@ class Playlist
   end
 
   def clean_up(songs)
-    if songs
+    if songs && songs.size == 10 
       songs.map do |song|
         if song 
           cleaned_up_song = song.gsub(/[^a-zA-Z\s.]+/, '')

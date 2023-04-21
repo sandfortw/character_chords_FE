@@ -1325,4 +1325,64 @@ http_interactions:
         Evil","quiz":"Debugger Test!!","alignment":"Chaotic Evil","character_id":9,"description":"This
         is a description of the character"}}}]'
   recorded_at: Thu, 20 Apr 2023 20:29:27 GMT
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=1&offset=0&q=Ohh...%20this%20is%20going%20to%20be%20so%20much%20fun%20Heres%20a%20playlist%20that%20The%20Lich%20would%20love%20to%20listen%20to%0A%0ABe%20Prepared%20%0AFriend%20Like%20Me%20%0APoor%20Unfortunate%20Souls%20%0AMother%20Knows%20Best%20%0AGaston%20%0ATrust%20in%20Me%20%0AShiny%20%0AOogie%20Boogies%20Song%20%0AThe%20Worlds%20Greatest%20Criminal%20Mind%20%0AFriend%20Like%20Me%20End%20Title%20%0A%0ANEXTSONG%20%0A%0AEnjoy%20evil%20one&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin21 x86_64) ruby/3.1.1p18
+      Authorization:
+      - Bearer BQBMmN12D1F7mIYIDAtABrT2yxZHXjBBwP9Ouy_mya2cUN5gWO6JXwLrfSxsTUWdxH0DNjWlDpXy4-Qk0oJTejYIExLyNMTCXwcStrRJY8Kpb2Np2BTK
+      Host:
+      - api.spotify.com
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Cache-Control:
+      - private, max-age=0
+      X-Robots-Tag:
+      - noindex, nofollow
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Content-Encoding:
+      - gzip
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Fri, 21 Apr 2023 19:58:05 GMT
+      Server:
+      - envoy
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAKrmUlBQSi0qyi9SUrBSqAbygPziksSS0mKQgImBgQ5ELDe1uDgxPRUkqOSUmKJQlFpYmlpcoqcElK7lqgUAAAD//wMA/GhNbEgAAAA=
+  recorded_at: Fri, 21 Apr 2023 19:58:05 GMT
 recorded_with: VCR 6.1.0
