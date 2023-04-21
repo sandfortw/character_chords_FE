@@ -51,17 +51,6 @@ Next, run this command to make sure the database is properly created and migrate
 ```
 rails db:{create,migrate}
 ```
-## Getting Started
-Character Chords is a full-stack Ruby on Rails app that requires you to clone and set up both the [frontend](https://github.com/sandfortw/character_chords_fe) and backend repositories. You will need to ensure all required gems are installed and that environment variables are properly configured in order to run the app locally. Additionally, this app establishes API endpoints for use with the [Character Chords Front End](https://github.com/sandfortw/character_chords_fe) repository.
-
-To get started, clone this repo down and install all gems by running:
-``` 
-bundle install
-```
-Next, run this command to make sure the database is properly created and migrated:
-```
-rails db:{create,migrate}
-```
 After running that command, inspect `/db/schema` in the application to make sure the database was properly created. This is what the schema for this repo should look like:
 ![Screenshot 2023-04-21 at 9 56 12 AM](https://user-images.githubusercontent.com/116698937/233668219-86e1993f-4cdc-466c-9db2-1daf3085a4cc.png)
 
