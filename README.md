@@ -22,7 +22,7 @@
   - [Contributors](#contributors)
 
 ## Directroy
-  [Hosted Website](https://calm-bastion-20348.herokuapp.com/)
+  [Hosted Website](https://characterchords.herokuapp.com/)
 
   [Backend Service Site](https://frozen-savannah-58383.herokuapp.com/)
 
